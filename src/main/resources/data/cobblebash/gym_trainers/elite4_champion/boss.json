@@ -1,0 +1,171 @@
+{
+    "display_name": "Champion Darius",
+    "dialogue": {
+        "lines": [
+            "You have reached your final challenge, Trainer. Prove you are worthy of the Champion's crown."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds": [
+        {
+            "id": "build_a",
+            "name": "Balanced Champion",
+            "pokemon": [
+                {
+                    "species": "Garchomp",
+                    "level": 100,
+                    "ability": "Rough Skin",
+                    "held_item": "Rocky Helmet",
+                    "moves": [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Stone Edge",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Rotom",
+                    "level": 100,
+                    "ability": "Levitate",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Hydro Pump",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "level": 100,
+                    "ability": "Flame Body",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves": [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Giga Drain"
+                    ]
+                },
+                {
+                    "species": "Aegislash",
+                    "level": 100,
+                    "ability": "Stance Change",
+                    "held_item": "Weakness Policy",
+                    "moves": [
+                        "Shadow Ball",
+                        "Flash Cannon",
+                        "Shadow Sneak",
+                        "King's Shield"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "level": 100,
+                    "ability": "Serene Grace",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Air Slash",
+                        "Moonblast",
+                        "Thunder Wave",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Metagross",
+                    "level": 100,
+                    "ability": "Clear Body",
+                    "held_item": "Assault Vest",
+                    "moves": [
+                        "Meteor Mash",
+                        "Zen Headbutt",
+                        "Earthquake",
+                        "Bullet Punch"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Champion",
+            "pokemon": [
+                {
+                    "species": "Dragonite",
+                    "level": 100,
+                    "ability": "Multiscale",
+                    "held_item": "Weakness Policy",
+                    "moves": [
+                        "Dragon Dance",
+                        "Dragon Claw",
+                        "Fire Punch",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Greninja",
+                    "level": 100,
+                    "ability": "Torrent",
+                    "held_item": "Choice Specs",
+                    "moves": [
+                        "Hydro Pump",
+                        "Dark Pulse",
+                        "Ice Beam",
+                        "Spikes"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "level": 100,
+                    "ability": "Technician",
+                    "held_item": "Choice Band",
+                    "moves": [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Superpower",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Gengar",
+                    "level": 100,
+                    "ability": "Cursed Body",
+                    "held_item": "Life Orb",
+                    "moves": [
+                        "Shadow Ball",
+                        "Sludge Wave",
+                        "Focus Blast",
+                        "Nasty Plot"
+                    ]
+                },
+                {
+                    "species": "Azumarill",
+                    "level": 100,
+                    "ability": "Huge Power",
+                    "held_item": "Sitrus Berry",
+                    "moves": [
+                        "Play Rough",
+                        "Aqua Jet",
+                        "Liquidation",
+                        "Belly Drum"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "level": 100,
+                    "ability": "Rough Skin",
+                    "held_item": "Life Orb",
+                    "moves": [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Fire Fang",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

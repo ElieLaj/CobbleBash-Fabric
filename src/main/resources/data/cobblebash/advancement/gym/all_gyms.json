@@ -1,0 +1,180 @@
+{
+    "parent": "cobblebash:gym/beat_first_gym",
+    "display": {
+        "icon": {
+            "id": "cobblebash:champion_upgrade_smithing_template"
+        },
+        "title": "Road to the Elite Four",
+        "description": "Defeat all 18 CobbleBash Gym Leaders to earn your first Elite Four Training Disk.",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "bug": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "bug"
+            }
+        },
+        "dark": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "dark"
+            }
+        },
+        "dragon": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "dragon"
+            }
+        },
+        "electric": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "electric"
+            }
+        },
+        "fairy": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "fairy"
+            }
+        },
+        "fighting": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "fighting"
+            }
+        },
+        "fire": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "fire"
+            }
+        },
+        "flying": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "flying"
+            }
+        },
+        "ghost": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "ghost"
+            }
+        },
+        "grass": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "grass"
+            }
+        },
+        "ground": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "ground"
+            }
+        },
+        "ice": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "ice"
+            }
+        },
+        "normal": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "normal"
+            }
+        },
+        "poison": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "poison"
+            }
+        },
+        "psychic": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "psychic"
+            }
+        },
+        "rock": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "rock"
+            }
+        },
+        "steel": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "steel"
+            }
+        },
+        "water": {
+            "trigger": "cobblebash:gym_boss_defeated",
+            "conditions": {
+                "gym_type": "water"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "bug"
+        ],
+        [
+            "dark"
+        ],
+        [
+            "dragon"
+        ],
+        [
+            "electric"
+        ],
+        [
+            "fairy"
+        ],
+        [
+            "fighting"
+        ],
+        [
+            "fire"
+        ],
+        [
+            "flying"
+        ],
+        [
+            "ghost"
+        ],
+        [
+            "grass"
+        ],
+        [
+            "ground"
+        ],
+        [
+            "ice"
+        ],
+        [
+            "normal"
+        ],
+        [
+            "poison"
+        ],
+        [
+            "psychic"
+        ],
+        [
+            "rock"
+        ],
+        [
+            "steel"
+        ],
+        [
+            "water"
+        ]
+    ]
+}

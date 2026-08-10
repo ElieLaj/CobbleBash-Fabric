@@ -1,0 +1,168 @@
+{
+    "display_name": "Elite Four Solara",
+    "dialogue": {
+        "lines": [
+            "Flame reveals the shape of courage. Light reveals what is left."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds": [
+        {
+            "id": "build_a",
+            "name": "Sunlit Court",
+            "pokemon": [
+                {
+                    "species": "Torkoal",
+                    "level": 95,
+                    "ability": "Drought",
+                    "held_item": "Heat Rock",
+                    "moves": [
+                        "Lava Plume",
+                        "Stealth Rock",
+                        "Rapid Spin",
+                        "Yawn"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "level": 95,
+                    "ability": "Flame Body",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves": [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Giga Drain"
+                    ]
+                },
+                {
+                    "species": "Azumarill",
+                    "level": 95,
+                    "ability": "Huge Power",
+                    "held_item": "Sitrus Berry",
+                    "moves": [
+                        "Play Rough",
+                        "Aqua Jet",
+                        "Liquidation",
+                        "Belly Drum"
+                    ]
+                },
+                {
+                    "species": "Hatterene",
+                    "level": 95,
+                    "ability": "Magic Bounce",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Moonblast",
+                        "Psychic",
+                        "Mystical Fire",
+                        "Calm Mind"
+                    ]
+                },
+                {
+                    "species": "Arcanine",
+                    "level": 96,
+                    "ability": "Intimidate",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves": [
+                        "Flare Blitz",
+                        "Extreme Speed",
+                        "Close Combat",
+                        "Morning Sun"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "level": 98,
+                    "ability": "Serene Grace",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Air Slash",
+                        "Moonblast",
+                        "Thunder Wave",
+                        "Roost"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Wildfire Masquerade",
+            "pokemon": [
+                {
+                    "species": "Ninetales",
+                    "level": 95,
+                    "ability": "Drought",
+                    "held_item": "Heat Rock",
+                    "moves": [
+                        "Flamethrower",
+                        "Solar Beam",
+                        "Nasty Plot",
+                        "Will-O-Wisp"
+                    ]
+                },
+                {
+                    "species": "Mimikyu",
+                    "level": 95,
+                    "ability": "Disguise",
+                    "held_item": "Life Orb",
+                    "moves": [
+                        "Play Rough",
+                        "Shadow Claw",
+                        "Shadow Sneak",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Infernape",
+                    "level": 95,
+                    "ability": "Blaze",
+                    "held_item": "Focus Sash",
+                    "moves": [
+                        "Close Combat",
+                        "Flare Blitz",
+                        "Stealth Rock",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Grimmsnarl",
+                    "level": 95,
+                    "ability": "Prankster",
+                    "held_item": "Light Clay",
+                    "moves": [
+                        "Spirit Break",
+                        "Reflect",
+                        "Light Screen",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Charizard",
+                    "level": 96,
+                    "ability": "Solar Power",
+                    "held_item": "Life Orb",
+                    "moves": [
+                        "Fire Blast",
+                        "Air Slash",
+                        "Solar Beam",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Gardevoir",
+                    "level": 98,
+                    "ability": "Trace",
+                    "held_item": "Choice Scarf",
+                    "moves": [
+                        "Moonblast",
+                        "Psychic",
+                        "Focus Blast",
+                        "Trick"
+                    ]
+                }
+            ]
+        }
+    ]
+}

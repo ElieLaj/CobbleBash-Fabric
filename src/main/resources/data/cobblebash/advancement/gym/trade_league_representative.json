@@ -1,0 +1,23 @@
+{
+    "parent": "cobblebash:gym/meet_league_representative",
+    "display": {
+        "icon": {
+            "id": "cobblebash:normal_training_disk"
+        },
+        "title": "League Registration",
+        "description": "League Representatives sell training disks, specialty Poke Balls, and battle-prep items.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "traded": {
+            "trigger": "cobblebash:league_representative_traded"
+        }
+    },
+    "requirements": [
+        [
+            "traded"
+        ]
+    ]
+}

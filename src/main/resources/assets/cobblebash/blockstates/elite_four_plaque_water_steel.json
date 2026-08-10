@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cobblebash:block/elite4/elite_four_plaque_water_steel",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "cobblebash:block/elite4/elite_four_plaque_water_steel",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "cobblebash:block/elite4/elite_four_plaque_water_steel"
+    },
+    "facing=west": {
+      "model": "cobblebash:block/elite4/elite_four_plaque_water_steel",
+      "y": 90
+    }
+  }
+}

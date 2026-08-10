@@ -1,22 +1,22 @@
 {
     "display_name": "Fairy Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Fairy gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "A pretty move can still hit like a hammer."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Setup & Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Azumarill",
                     "ability": "Huge Power",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Aqua Jet",
                         "Liquidation",
@@ -27,7 +27,7 @@
                     "species": "Togekiss",
                     "ability": "Serene Grace",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Air Slash",
                         "Thunder Wave",
                         "Roost",
@@ -38,7 +38,7 @@
                     "species": "Grimmsnarl",
                     "ability": "Prankster",
                     "held_item": "Light Clay",
-                    "moves":  [
+                    "moves": [
                         "Reflect",
                         "Light Screen",
                         "Spirit Break",
@@ -49,7 +49,7 @@
                     "species": "Hatterene",
                     "ability": "Magic Bounce",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Psychic",
                         "Dazzling Gleam",
                         "Mystical Fire",
@@ -60,7 +60,7 @@
                     "species": "Sylveon",
                     "ability": "Pixilate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Hyper Voice",
                         "Wish",
                         "Protect",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Offensive Fairy",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Gardevoir",
                     "ability": "Trace",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Moonblast",
                         "Psychic",
                         "Mystical Fire",
@@ -88,7 +88,7 @@
                     "species": "Mimikyu",
                     "ability": "Disguise",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Shadow Claw",
                         "Swords Dance",
@@ -99,7 +99,7 @@
                     "species": "Togekiss",
                     "ability": "Serene Grace",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Air Slash",
                         "Dazzling Gleam",
                         "Aura Sphere",
@@ -110,7 +110,7 @@
                     "species": "Azumarill",
                     "ability": "Huge Power",
                     "held_item": "Sitrus Berry",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Aqua Jet",
                         "Belly Drum",
@@ -121,7 +121,7 @@
                     "species": "Grimmsnarl",
                     "ability": "Prankster",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Spirit Break",
                         "Taunt",
                         "Thunder Wave",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Utility & Sustain",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Clefable",
                     "ability": "Magic Guard",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Moonblast",
                         "Soft-Boiled",
                         "Calm Mind",
@@ -149,7 +149,7 @@
                     "species": "Florges",
                     "ability": "Flower Veil",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Moonblast",
                         "Wish",
                         "Protect",
@@ -160,7 +160,7 @@
                     "species": "Togekiss",
                     "ability": "Serene Grace",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Air Slash",
                         "Thunder Wave",
                         "Roost",
@@ -171,7 +171,7 @@
                     "species": "Mawile",
                     "ability": "Intimidate",
                     "held_item": "Black Glasses",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Sucker Punch",
                         "Iron Head",
@@ -182,7 +182,7 @@
                     "species": "Sylveon",
                     "ability": "Pixilate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Hyper Voice",
                         "Wish",
                         "Protect",

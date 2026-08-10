@@ -1,22 +1,22 @@
 {
     "display_name": "Steel Boss",
-    "dialogue":  {
-        "lines":  [
-            "This is the final Steel test. Win, and the badge is yours."
+    "dialogue": {
+        "lines": [
+            "I have tempered this team for challengers like you."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Steel Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Scizor",
                     "ability": "Technician",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Bullet Punch",
                         "U-turn",
                         "Swords Dance",
@@ -27,7 +27,7 @@
                     "species": "Ferrothorn",
                     "ability": "Iron Barbs",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Leech Seed",
                         "Gyro Ball",
@@ -38,7 +38,7 @@
                     "species": "Metagross",
                     "ability": "Clear Body",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Meteor Mash",
                         "Zen Headbutt",
                         "Earthquake",
@@ -49,7 +49,7 @@
                     "species": "Magnezone",
                     "ability": "Magnet Pull",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Flash Cannon",
                         "Volt Switch",
@@ -57,21 +57,24 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Wash",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Hydro Pump",
                         "Volt Switch",
                         "Will-O-Wisp",
                         "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
                     ]
                 },
                 {
                     "species": "Dragonite",
                     "ability": "Multiscale",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Dragon Claw",
                         "Fire Punch",
@@ -83,12 +86,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Steel Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Lucario",
                     "ability": "Inner Focus",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Meteor Mash",
                         "Extreme Speed",
@@ -99,7 +102,7 @@
                     "species": "Bisharp",
                     "ability": "Defiant",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Iron Head",
                         "Knock Off",
                         "Sucker Punch",
@@ -110,7 +113,7 @@
                     "species": "Aegislash",
                     "ability": "Stance Change",
                     "held_item": "Weakness Policy",
-                    "moves":  [
+                    "moves": [
                         "King's Shield",
                         "Shadow Ball",
                         "Sacred Sword",
@@ -121,7 +124,7 @@
                     "species": "Empoleon",
                     "ability": "Torrent",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Flash Cannon",
                         "Ice Beam",
@@ -132,7 +135,7 @@
                     "species": "Garchomp",
                     "ability": "Rough Skin",
                     "held_item": "Rocky Helmet",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Dragon Claw",
                         "Stealth Rock",
@@ -143,7 +146,7 @@
                     "species": "Togekiss",
                     "ability": "Serene Grace",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Air Slash",
                         "Thunder Wave",
                         "Roost",

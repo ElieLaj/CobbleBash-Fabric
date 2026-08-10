@@ -1,22 +1,22 @@
 {
     "display_name": "Ghost Boss",
-    "dialogue":  {
-        "lines":  [
-            "This is the final Ghost test. Win, and the badge is yours."
+    "dialogue": {
+        "lines": [
+            "The brave do not fear shadows. They learn what waits inside them."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Ghost Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Dragapult",
                     "ability": "Infiltrator",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Draco Meteor",
                         "Shadow Ball",
                         "Flamethrower",
@@ -27,7 +27,7 @@
                     "species": "Aegislash",
                     "ability": "Stance Change",
                     "held_item": "Weakness Policy",
-                    "moves":  [
+                    "moves": [
                         "King's Shield",
                         "Shadow Ball",
                         "Sacred Sword",
@@ -38,7 +38,7 @@
                     "species": "Gengar",
                     "ability": "Cursed Body",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Sludge Bomb",
                         "Focus Blast",
@@ -49,7 +49,7 @@
                     "species": "Mimikyu",
                     "ability": "Disguise",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Shadow Sneak",
                         "Swords Dance",
@@ -60,7 +60,7 @@
                     "species": "Tyranitar",
                     "ability": "Sand Stream",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Crunch",
                         "Stone Edge",
                         "Superpower",
@@ -71,7 +71,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "Flamethrower",
@@ -83,12 +83,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Ghost Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Dragapult",
                     "ability": "Infiltrator",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Dragon Darts",
                         "Phantom Force",
                         "U-turn",
@@ -99,7 +99,7 @@
                     "species": "Gengar",
                     "ability": "Cursed Body",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Sludge Bomb",
                         "Destiny Bond",
@@ -110,7 +110,7 @@
                     "species": "Chandelure",
                     "ability": "Flash Fire",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Flamethrower",
                         "Energy Ball",
@@ -121,7 +121,7 @@
                     "species": "Mimikyu",
                     "ability": "Disguise",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Shadow Sneak",
                         "Swords Dance",
@@ -132,7 +132,7 @@
                     "species": "Bisharp",
                     "ability": "Defiant",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Iron Head",
                         "Knock Off",
                         "Sucker Punch",
@@ -143,7 +143,7 @@
                     "species": "Mandibuzz",
                     "ability": "Overcoat",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Foul Play",
                         "Roost",
                         "Defog",

@@ -1,22 +1,22 @@
 {
     "display_name": "The Kindler",
-    "dialogue":  {
-        "lines":  [
-            "Every blaze starts with a spark. Let's see what you carry."
+    "dialogue": {
+        "lines": [
+            "The Fire gym begins here. Every blaze starts with a spark."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Sun Setup",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Torkoal",
                     "ability": "Drought",
                     "held_item": "Heat Rock",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Lava Plume",
                         "Rapid Spin",
@@ -27,7 +27,7 @@
                     "species": "Arcanine",
                     "ability": "Intimidate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Flare Blitz",
                         "Extreme Speed",
                         "Morning Sun",
@@ -38,7 +38,7 @@
                     "species": "Talonflame",
                     "ability": "Gale Wings",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Brave Bird",
                         "Flare Blitz",
                         "Roost",
@@ -49,7 +49,7 @@
                     "species": "Houndoom",
                     "ability": "Flash Fire",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Nasty Plot",
                         "Dark Pulse",
                         "Flamethrower",
@@ -61,12 +61,12 @@
         {
             "id": "build_b",
             "name": "Offensive Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Infernape",
                     "ability": "Blaze",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Flare Blitz",
                         "U-turn",
@@ -74,21 +74,24 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Heat",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Overheat",
                         "Volt Switch",
                         "Thunderbolt",
                         "Will-O-Wisp"
+                    ],
+                    "aspects": [
+                        "heat-appliance"
                     ]
                 },
                 {
                     "species": "Arcanine",
                     "ability": "Intimidate",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Flare Blitz",
                         "Morning Sun",
                         "Extreme Speed",
@@ -99,7 +102,7 @@
                     "species": "Talonflame",
                     "ability": "Gale Wings",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Brave Bird",
                         "Roost",
                         "Swords Dance",

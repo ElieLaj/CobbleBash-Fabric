@@ -1,22 +1,22 @@
 {
     "display_name": "Dark Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Dark gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "Keep your eyes open. The nastiest tricks happen in plain sight."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Screens and Setup",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Grimmsnarl",
                     "ability": "Prankster",
                     "held_item": "Light Clay",
-                    "moves":  [
+                    "moves": [
                         "Reflect",
                         "Light Screen",
                         "Spirit Break",
@@ -27,7 +27,7 @@
                     "species": "Bisharp",
                     "ability": "Defiant",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Sucker Punch",
                         "Iron Head",
                         "Swords Dance",
@@ -38,7 +38,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "U-turn",
@@ -49,7 +49,7 @@
                     "species": "Weavile",
                     "ability": "Pressure",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Knock Off",
                         "Icicle Crash",
                         "Ice Shard",
@@ -60,7 +60,7 @@
                     "species": "Umbreon",
                     "ability": "Synchronize",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Foul Play",
                         "Wish",
                         "Protect",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Sand Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Tyranitar",
                     "ability": "Sand Stream",
                     "held_item": "Smooth Rock",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Crunch",
                         "Stealth Rock",
@@ -88,7 +88,7 @@
                     "species": "Excadrill",
                     "ability": "Sand Rush",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Iron Head",
                         "Rapid Spin",
@@ -99,7 +99,7 @@
                     "species": "Mandibuzz",
                     "ability": "Overcoat",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Foul Play",
                         "Roost",
                         "Defog",
@@ -110,7 +110,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "Flamethrower",
@@ -121,7 +121,7 @@
                     "species": "Drapion",
                     "ability": "Battle Armor",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Knock Off",
                         "Poison Jab",
                         "Earthquake",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Fast Offense",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Weavile",
                     "ability": "Pressure",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Knock Off",
                         "Icicle Crash",
                         "Ice Shard",
@@ -149,7 +149,7 @@
                     "species": "Houndoom",
                     "ability": "Flash Fire",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Nasty Plot",
                         "Fire Blast",
                         "Dark Pulse",
@@ -160,7 +160,7 @@
                     "species": "Bisharp",
                     "ability": "Defiant",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Sucker Punch",
                         "Iron Head",
                         "Swords Dance",
@@ -171,7 +171,7 @@
                     "species": "Absol",
                     "ability": "Super Luck",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Night Slash",
                         "Play Rough",
                         "Sucker Punch",
@@ -182,7 +182,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "Flamethrower",

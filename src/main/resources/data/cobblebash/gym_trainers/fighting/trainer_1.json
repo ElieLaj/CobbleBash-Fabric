@@ -1,22 +1,22 @@
 {
     "display_name": "Fighting Trainer 1",
-    "dialogue":  {
-        "lines":  [
+    "dialogue": {
+        "lines": [
             "The Fighting gym begins here. Show me your opening move."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Aggressive Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Lucario",
                     "ability": "Inner Focus",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Extreme Speed",
                         "Swords Dance",
@@ -27,7 +27,7 @@
                     "species": "Hawlucha",
                     "ability": "Unburden",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Acrobatics",
                         "Close Combat",
                         "Swords Dance",
@@ -38,7 +38,7 @@
                     "species": "Machamp",
                     "ability": "Guts",
                     "held_item": "Flame Orb",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Knock Off",
                         "Facade",
@@ -49,7 +49,7 @@
                     "species": "Passimian",
                     "ability": "Defiant",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "U-turn",
                         "Rock Slide",
@@ -61,12 +61,12 @@
         {
             "id": "build_b",
             "name": "Bulk & Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Conkeldurr",
                     "ability": "Guts",
                     "held_item": "Flame Orb",
-                    "moves":  [
+                    "moves": [
                         "Drain Punch",
                         "Mach Punch",
                         "Knock Off",
@@ -77,7 +77,7 @@
                     "species": "Scrafty",
                     "ability": "Intimidate",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Drain Punch",
                         "Knock Off",
                         "Dragon Dance",
@@ -88,7 +88,7 @@
                     "species": "Gallade",
                     "ability": "Sharpness",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Sacred Sword",
                         "Psycho Cut",
                         "Swords Dance",
@@ -99,7 +99,7 @@
                     "species": "Hawlucha",
                     "ability": "Unburden",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Acrobatics",
                         "Close Combat",
                         "Taunt",

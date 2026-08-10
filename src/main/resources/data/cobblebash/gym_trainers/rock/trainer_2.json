@@ -1,22 +1,22 @@
 {
     "display_name": "Rock Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Rock gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "Pressure makes stone, but it also breaks weak teams."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Sand and Hazards",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Gigalith",
                     "ability": "Sand Stream",
                     "held_item": "Smooth Rock",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Rock Blast",
                         "Earthquake",
@@ -24,21 +24,21 @@
                     ]
                 },
                 {
-                    "species": "Lycanroc",
-                    "ability": "Sand Rush",
+                    "species": "Golem",
+                    "ability": "Sturdy",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
-                        "Accelerock",
-                        "Drill Run",
-                        "Swords Dance"
+                        "Earthquake",
+                        "Rock Polish",
+                        "Explosion"
                     ]
                 },
                 {
                     "species": "Cradily",
                     "ability": "Storm Drain",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Giga Drain",
                         "Rock Slide",
                         "Recover",
@@ -49,7 +49,7 @@
                     "species": "Rhyperior",
                     "ability": "Solid Rock",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Rock Blast",
                         "Megahorn",
@@ -60,7 +60,7 @@
                     "species": "Aerodactyl",
                     "ability": "Rock Head",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Dual Wingbeat",
                         "Earthquake",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Offensive Rock Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Tyrantrum",
                     "ability": "Rock Head",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Head Smash",
                         "Dragon Claw",
                         "Earthquake",
@@ -88,7 +88,7 @@
                     "species": "Aerodactyl",
                     "ability": "Rock Head",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Dual Wingbeat",
                         "Earthquake",
@@ -99,7 +99,7 @@
                     "species": "Omastar",
                     "ability": "Shell Armor",
                     "held_item": "White Herb",
-                    "moves":  [
+                    "moves": [
                         "Hydro Pump",
                         "Ancient Power",
                         "Ice Beam",
@@ -110,7 +110,7 @@
                     "species": "Kabutops",
                     "ability": "Swift Swim",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Liquidation",
                         "Aqua Jet",
@@ -121,7 +121,7 @@
                     "species": "Aggron",
                     "ability": "Rock Head",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Head Smash",
                         "Heavy Slam",
                         "Earthquake",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Sustain and Counterplay",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Cradily",
                     "ability": "Storm Drain",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Giga Drain",
                         "Rock Slide",
                         "Recover",
@@ -149,7 +149,7 @@
                     "species": "Rhyperior",
                     "ability": "Solid Rock",
                     "held_item": "Weakness Policy",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Rock Blast",
                         "Megahorn",
@@ -160,7 +160,7 @@
                     "species": "Gigalith",
                     "ability": "Sand Stream",
                     "held_item": "Smooth Rock",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Rock Blast",
                         "Earthquake",
@@ -171,7 +171,7 @@
                     "species": "Sudowoodo",
                     "ability": "Sturdy",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Wood Hammer",
                         "Earthquake",
@@ -182,7 +182,7 @@
                     "species": "Armaldo",
                     "ability": "Battle Armor",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "X-Scissor",
                         "Rapid Spin",

@@ -1,0 +1,171 @@
+{
+    "display_name": "Elite Four Cassian",
+    "dialogue": {
+        "lines": [
+            "The ground remembers every storm. Prove you can stand in both."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds": [
+        {
+            "id": "build_a",
+            "name": "Sand Circuit",
+            "pokemon": [
+                {
+                    "species": "Hippowdon",
+                    "level": 95,
+                    "ability": "Sand Stream",
+                    "held_item": "Smooth Rock",
+                    "moves": [
+                        "Earthquake",
+                        "Stealth Rock",
+                        "Slack Off",
+                        "Whirlwind"
+                    ]
+                },
+                {
+                    "species": "Excadrill",
+                    "level": 95,
+                    "ability": "Sand Rush",
+                    "held_item": "Life Orb",
+                    "moves": [
+                        "Earthquake",
+                        "Iron Head",
+                        "Rock Slide",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Magnezone",
+                    "level": 95,
+                    "ability": "Magnet Pull",
+                    "held_item": "Choice Specs",
+                    "moves": [
+                        "Thunderbolt",
+                        "Flash Cannon",
+                        "Volt Switch",
+                        "Tri Attack"
+                    ]
+                },
+                {
+                    "species": "Gliscor",
+                    "level": 95,
+                    "ability": "Poison Heal",
+                    "held_item": "Toxic Orb",
+                    "moves": [
+                        "Earthquake",
+                        "Facade",
+                        "Roost",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Rotom",
+                    "level": 96,
+                    "ability": "Levitate",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Hydro Pump",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "level": 98,
+                    "ability": "Rough Skin",
+                    "held_item": "Rocky Helmet",
+                    "moves": [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Stone Edge",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Overcharged Faultline",
+            "pokemon": [
+                {
+                    "species": "Swampert",
+                    "level": 95,
+                    "ability": "Torrent",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Earthquake",
+                        "Waterfall",
+                        "Ice Punch",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Electivire",
+                    "level": 95,
+                    "ability": "Motor Drive",
+                    "held_item": "Expert Belt",
+                    "moves": [
+                        "Wild Charge",
+                        "Earthquake",
+                        "Ice Punch",
+                        "Fire Punch"
+                    ]
+                },
+                {
+                    "species": "Flygon",
+                    "level": 95,
+                    "ability": "Levitate",
+                    "held_item": "Choice Scarf",
+                    "moves": [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "U-turn",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Rhyperior",
+                    "level": 95,
+                    "ability": "Solid Rock",
+                    "held_item": "Weakness Policy",
+                    "moves": [
+                        "Earthquake",
+                        "Stone Edge",
+                        "Megahorn",
+                        "Rock Polish"
+                    ]
+                },
+                {
+                    "species": "Jolteon",
+                    "level": 96,
+                    "ability": "Volt Absorb",
+                    "held_item": "Choice Specs",
+                    "moves": [
+                        "Thunderbolt",
+                        "Shadow Ball",
+                        "Volt Switch",
+                        "Hyper Voice"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "level": 98,
+                    "ability": "Rough Skin",
+                    "held_item": "Life Orb",
+                    "moves": [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Fire Fang",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

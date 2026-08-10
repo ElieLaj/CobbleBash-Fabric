@@ -1,22 +1,22 @@
 {
     "display_name": "The Furnace",
-    "dialogue":  {
-        "lines":  [
-            "Heat, pressure, and patience. That's how challengers are tested."
+    "dialogue": {
+        "lines": [
+            "Heat alone is nothing. Control is what wins battles."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Sun Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Torkoal",
                     "ability": "Drought",
                     "held_item": "Heat Rock",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Lava Plume",
                         "Rapid Spin",
@@ -27,7 +27,7 @@
                     "species": "Volcarona",
                     "ability": "Flame Body",
                     "held_item": "Heavy-Duty Boots",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Fiery Dance",
                         "Bug Buzz",
@@ -38,7 +38,7 @@
                     "species": "Charizard",
                     "ability": "Solar Power",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Fire Blast",
                         "Solar Beam",
                         "Air Slash",
@@ -49,7 +49,7 @@
                     "species": "Infernape",
                     "ability": "Blaze",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Flare Blitz",
                         "U-turn",
@@ -60,7 +60,7 @@
                     "species": "Arcanine",
                     "ability": "Intimidate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Flare Blitz",
                         "Extreme Speed",
                         "Morning Sun",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Fast Offense",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Cinderace",
                     "ability": "Blaze",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Pyro Ball",
                         "High Jump Kick",
                         "U-turn",
@@ -88,7 +88,7 @@
                     "species": "Infernape",
                     "ability": "Blaze",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Flare Blitz",
                         "U-turn",
@@ -99,7 +99,7 @@
                     "species": "Talonflame",
                     "ability": "Gale Wings",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Brave Bird",
                         "Flare Blitz",
                         "Roost",
@@ -107,10 +107,13 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Heat",
+                    "species": "Rotom",
+                    "aspects": [
+                        "heat-appliance"
+                    ],
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Overheat",
                         "Volt Switch",
                         "Thunderbolt",
@@ -121,7 +124,7 @@
                     "species": "Houndoom",
                     "ability": "Flash Fire",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Nasty Plot",
                         "Dark Pulse",
                         "Flamethrower",
@@ -133,12 +136,12 @@
         {
             "id": "build_c",
             "name": "Bulk & Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Torkoal",
                     "ability": "Drought",
                     "held_item": "Heat Rock",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Lava Plume",
                         "Rapid Spin",
@@ -146,10 +149,13 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Heat",
+                    "species": "Rotom",
+                    "aspects": [
+                        "heat-appliance"
+                    ],
                     "ability": "Levitate",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Overheat",
                         "Volt Switch",
                         "Will-O-Wisp",
@@ -160,7 +166,7 @@
                     "species": "Arcanine",
                     "ability": "Intimidate",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Flare Blitz",
                         "Morning Sun",
                         "Toxic",
@@ -171,7 +177,7 @@
                     "species": "Volcarona",
                     "ability": "Flame Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Fiery Dance",
                         "Bug Buzz",
@@ -182,7 +188,7 @@
                     "species": "Charizard",
                     "ability": "Blaze",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Flamethrower",
                         "Air Slash",
                         "Roost",

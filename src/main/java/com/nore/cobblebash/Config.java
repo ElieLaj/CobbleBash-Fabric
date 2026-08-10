@@ -21,9 +21,10 @@ import java.util.List;
  * Configuration.
  *
  * <p>L'original passe par {@code ModConfigSpec}, propre a NeoForge. Fabric n'a
- * pas d'equivalent en API de base, et tirer une bibliotheque de configuration
- * pour une seule liste d'items serait disproportionne : on lit un JSON ecrit a
- * la main, cree avec ses valeurs par defaut au premier lancement.
+ * pas d'equivalent en API de base : on lit un JSON, cree avec ses valeurs par
+ * defaut au premier lancement. Les bornes de l'original sont conservees, et un
+ * reglage hors bornes est ramene dedans plutot que de faire echouer le
+ * chargement.
  */
 public final class Config {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
@@ -33,14 +34,18 @@ public final class Config {
             "minecraft:firework_rocket"
     );
 
-    private static List<String> gymItemBlacklist = DEFAULT_BLACKLIST;
+    private static Values values = new Values();
 
     private Config() {
     }
 
-    /** Modele de serialisation : un seul champ, comme la config d'origine. */
+    /** Modele de serialisation : les memes cinq reglages que la version NeoForge. */
     private static final class Values {
         List<String> gymItemBlacklist = new ArrayList<>(DEFAULT_BLACKLIST);
+        int cobbleDollarsRepeatTrainerReward = 500;
+        int cobbleDollarsRepeatBossReward = 1500;
+        double repeatClearTrainerXpMultiplier = 1.2D;
+        double repeatClearBossXpMultiplier = 1.5D;
     }
 
     public static void load() {
@@ -48,34 +53,44 @@ public final class Config {
 
         if (Files.notExists(path)) {
             write(path, new Values());
-            gymItemBlacklist = DEFAULT_BLACKLIST;
+            values = new Values();
             return;
         }
 
         try (Reader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8)) {
-            Values values = GSON.fromJson(reader, Values.class);
-            gymItemBlacklist = values == null || values.gymItemBlacklist == null
-                    ? DEFAULT_BLACKLIST
-                    : List.copyOf(values.gymItemBlacklist);
+            Values read = GSON.fromJson(reader, Values.class);
+            values = read == null ? new Values() : read;
         } catch (IOException | RuntimeException exception) {
             CobbleBash.LOGGER.warn("Could not read {}, falling back to defaults.", path, exception);
-            gymItemBlacklist = DEFAULT_BLACKLIST;
+            values = new Values();
         }
 
+        if (values.gymItemBlacklist == null) {
+            values.gymItemBlacklist = new ArrayList<>(DEFAULT_BLACKLIST);
+        }
+        values.cobbleDollarsRepeatTrainerReward = Math.max(0, values.cobbleDollarsRepeatTrainerReward);
+        values.cobbleDollarsRepeatBossReward = Math.max(0, values.cobbleDollarsRepeatBossReward);
+        values.repeatClearTrainerXpMultiplier = clamp(values.repeatClearTrainerXpMultiplier);
+        values.repeatClearBossXpMultiplier = clamp(values.repeatClearBossXpMultiplier);
+
         // Une entree mal orthographiee ne bloquerait jamais rien : on le dit,
-        // plutot que de laisser le joueur croire que l'item est interdit.
-        for (String id : gymItemBlacklist) {
+        // plutot que de laisser croire que l'item est interdit.
+        for (String id : values.gymItemBlacklist) {
             if (!isKnownItem(id)) {
                 CobbleBash.LOGGER.warn("gymItemBlacklist: unknown item '{}', it will never match.", id);
             }
         }
     }
 
-    private static void write(Path path, Values values) {
+    private static double clamp(double v) {
+        return Math.min(100.0D, Math.max(1.0D, v));
+    }
+
+    private static void write(Path path, Values v) {
         try {
             Files.createDirectories(path.getParent());
             try (Writer writer = Files.newBufferedWriter(path, StandardCharsets.UTF_8)) {
-                GSON.toJson(values, writer);
+                GSON.toJson(v, writer);
             }
         } catch (IOException exception) {
             CobbleBash.LOGGER.warn("Could not write {}.", path, exception);
@@ -88,7 +103,23 @@ public final class Config {
         }
 
         ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stack.getItem());
-        return gymItemBlacklist.contains(itemId.toString());
+        return values.gymItemBlacklist.contains(itemId.toString());
+    }
+
+    public static int cobbleDollarsRepeatTrainerReward() {
+        return values.cobbleDollarsRepeatTrainerReward;
+    }
+
+    public static int cobbleDollarsRepeatBossReward() {
+        return values.cobbleDollarsRepeatBossReward;
+    }
+
+    public static double repeatClearTrainerXpMultiplier() {
+        return values.repeatClearTrainerXpMultiplier;
+    }
+
+    public static double repeatClearBossXpMultiplier() {
+        return values.repeatClearBossXpMultiplier;
     }
 
     private static boolean isKnownItem(String itemName) {

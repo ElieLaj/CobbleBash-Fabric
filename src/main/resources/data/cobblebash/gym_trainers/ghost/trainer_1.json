@@ -1,22 +1,22 @@
 {
     "display_name": "Ghost Trainer 1",
-    "dialogue":  {
-        "lines":  [
-            "The Ghost gym begins here. Show me your opening move."
+    "dialogue": {
+        "lines": [
+            "The Ghost gym begins here. Do not let the silence fool you."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Disruption Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Mimikyu",
                     "ability": "Disguise",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Shadow Claw",
                         "Swords Dance",
@@ -27,7 +27,7 @@
                     "species": "Gengar",
                     "ability": "Cursed Body",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Sludge Bomb",
                         "Destiny Bond",
@@ -38,7 +38,7 @@
                     "species": "Dusclops",
                     "ability": "Pressure",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Will-O-Wisp",
                         "Pain Split",
                         "Night Shade",
@@ -49,7 +49,7 @@
                     "species": "Froslass",
                     "ability": "Cursed Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Spikes",
                         "Ice Beam",
                         "Shadow Ball",
@@ -61,12 +61,12 @@
         {
             "id": "build_b",
             "name": "Defensive Haunt",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Spiritomb",
                     "ability": "Pressure",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Will-O-Wisp",
                         "Pain Split",
@@ -77,7 +77,7 @@
                     "species": "Dusclops",
                     "ability": "Pressure",
                     "held_item": "Eviolite",
-                    "moves":  [
+                    "moves": [
                         "Will-O-Wisp",
                         "Night Shade",
                         "Pain Split",
@@ -88,7 +88,7 @@
                     "species": "Mismagius",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Mystical Fire",
                         "Nasty Plot",
@@ -99,7 +99,7 @@
                     "species": "Froslass",
                     "ability": "Cursed Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Spikes",
                         "Ice Beam",
                         "Shadow Ball",

@@ -1,0 +1,24 @@
+{
+    "parent": "cobblebash:gym/enter_first_gym",
+    "display": {
+        "icon": {
+            "id": "cobblebash:trainer_ribbon"
+        },
+        "title": "First Badge",
+        "description": "Defeat any CobbleBash Gym Leader.",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "defeat_boss": {
+            "trigger": "cobblebash:gym_boss_defeated"
+        }
+    },
+    "requirements": [
+        [
+            "defeat_boss"
+        ]
+    ]
+}

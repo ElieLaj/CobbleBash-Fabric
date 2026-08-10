@@ -1,22 +1,22 @@
 {
     "display_name": "Water Boss",
-    "dialogue":  {
-        "lines":  [
-            "This is the final Water test. Win, and the badge is yours."
+    "dialogue": {
+        "lines": [
+            "Flow with the battle or be swept out of it."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Water Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Pelipper",
                     "ability": "Drizzle",
                     "held_item": "Damp Rock",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Hurricane",
                         "Roost",
@@ -27,7 +27,7 @@
                     "species": "Barraskewda",
                     "ability": "Swift Swim",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Liquidation",
                         "Close Combat",
                         "Psychic Fangs",
@@ -38,7 +38,7 @@
                     "species": "Kingdra",
                     "ability": "Swift Swim",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Hydro Pump",
                         "Draco Meteor",
                         "Ice Beam",
@@ -49,7 +49,7 @@
                     "species": "Toxapex",
                     "ability": "Regenerator",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Toxic",
                         "Recover",
@@ -60,7 +60,7 @@
                     "species": "Ferrothorn",
                     "ability": "Iron Barbs",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Power Whip",
                         "Gyro Ball",
                         "Leech Seed",
@@ -71,7 +71,7 @@
                     "species": "Dragonite",
                     "ability": "Multiscale",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Dragon Claw",
                         "Fire Punch",
@@ -83,12 +83,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Water Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Gyarados",
                     "ability": "Intimidate",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Waterfall",
                         "Ice Fang",
@@ -99,7 +99,7 @@
                     "species": "Azumarill",
                     "ability": "Huge Power",
                     "held_item": "Sitrus Berry",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Aqua Jet",
                         "Belly Drum",
@@ -110,7 +110,7 @@
                     "species": "Greninja",
                     "ability": "Torrent",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Hydro Pump",
                         "Dark Pulse",
                         "Ice Beam",
@@ -121,7 +121,7 @@
                     "species": "Swampert",
                     "ability": "Torrent",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Waterfall",
                         "Earthquake",
                         "Ice Punch",
@@ -132,7 +132,7 @@
                     "species": "Scizor",
                     "ability": "Technician",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Bullet Punch",
                         "U-turn",
                         "Superpower",
@@ -143,7 +143,7 @@
                     "species": "Gliscor",
                     "ability": "Poison Heal",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Roost",
                         "Toxic",

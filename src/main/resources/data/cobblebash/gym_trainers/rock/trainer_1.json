@@ -1,22 +1,22 @@
 {
     "display_name": "Rock Trainer 1",
-    "dialogue":  {
-        "lines":  [
-            "The Rock gym begins here. Show me your opening move."
+    "dialogue": {
+        "lines": [
+            "The Rock gym begins here. Stand firm or be broken."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Stone Wall Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Tyrantrum",
                     "ability": "Rock Head",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Head Smash",
                         "Dragon Claw",
                         "Earthquake",
@@ -27,7 +27,7 @@
                     "species": "Gigalith",
                     "ability": "Sand Stream",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Rock Blast",
                         "Earthquake",
@@ -35,21 +35,21 @@
                     ]
                 },
                 {
-                    "species": "Lycanroc",
-                    "ability": "Sand Rush",
+                    "species": "Golem",
+                    "ability": "Sturdy",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
-                        "Accelerock",
-                        "Drill Run",
-                        "Swords Dance"
+                        "Earthquake",
+                        "Rock Polish",
+                        "Explosion"
                     ]
                 },
                 {
                     "species": "Cradily",
                     "ability": "Storm Drain",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Giga Drain",
                         "Rock Slide",
                         "Recover",
@@ -61,12 +61,12 @@
         {
             "id": "build_b",
             "name": "Fossil Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Aerodactyl",
                     "ability": "Rock Head",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Dual Wingbeat",
                         "Earthquake",
@@ -77,7 +77,7 @@
                     "species": "Kabutops",
                     "ability": "Swift Swim",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Liquidation",
                         "Aqua Jet",
@@ -88,7 +88,7 @@
                     "species": "Omastar",
                     "ability": "Shell Armor",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Hydro Pump",
                         "Ancient Power",
                         "Ice Beam",
@@ -99,7 +99,7 @@
                     "species": "Sudowoodo",
                     "ability": "Sturdy",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Wood Hammer",
                         "Earthquake",

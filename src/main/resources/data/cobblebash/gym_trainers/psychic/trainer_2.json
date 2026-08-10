@@ -1,22 +1,22 @@
 {
     "display_name": "Psychic Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Psychic gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "If I know your move before you make it, is it still yours?"
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Offensive Psychic Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Alakazam",
                     "ability": "Magic Guard",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Psychic",
                         "Shadow Ball",
                         "Focus Blast",
@@ -27,7 +27,7 @@
                     "species": "Metagross",
                     "ability": "Clear Body",
                     "held_item": "Assault Vest",
-                    "moves":  [
+                    "moves": [
                         "Meteor Mash",
                         "Zen Headbutt",
                         "Earthquake",
@@ -38,7 +38,7 @@
                     "species": "Gardevoir",
                     "ability": "Trace",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Psychic",
                         "Moonblast",
                         "Thunderbolt",
@@ -49,7 +49,7 @@
                     "species": "Gallade",
                     "ability": "Sharpness",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Psycho Cut",
                         "Close Combat",
                         "Swords Dance",
@@ -60,7 +60,7 @@
                     "species": "Slowbro",
                     "ability": "Regenerator",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Psychic",
                         "Slack Off",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Speed Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Espeon",
                     "ability": "Magic Bounce",
                     "held_item": "Light Clay",
-                    "moves":  [
+                    "moves": [
                         "Reflect",
                         "Light Screen",
                         "Psychic",
@@ -88,7 +88,7 @@
                     "species": "Alakazam",
                     "ability": "Magic Guard",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Psychic",
                         "Shadow Ball",
                         "Focus Blast",
@@ -99,7 +99,7 @@
                     "species": "Metagross",
                     "ability": "Clear Body",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Meteor Mash",
                         "Zen Headbutt",
                         "Earthquake",
@@ -110,7 +110,7 @@
                     "species": "Gardevoir",
                     "ability": "Trace",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Psychic",
                         "Moonblast",
                         "Thunderbolt",
@@ -121,7 +121,7 @@
                     "species": "Slowking",
                     "ability": "Regenerator",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Psychic",
                         "Slack Off",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Sustain & Setup",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Reuniclus",
                     "ability": "Magic Guard",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Psychic",
                         "Focus Blast",
                         "Recover",
@@ -149,7 +149,7 @@
                     "species": "Slowbro",
                     "ability": "Regenerator",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Psychic",
                         "Slack Off",
@@ -160,7 +160,7 @@
                     "species": "Bronzong",
                     "ability": "Levitate",
                     "held_item": "Rocky Helmet",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Gyro Ball",
                         "Toxic",
@@ -171,7 +171,7 @@
                     "species": "Espeon",
                     "ability": "Magic Bounce",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Psychic",
                         "Dazzling Gleam",
                         "Calm Mind",
@@ -182,7 +182,7 @@
                     "species": "Gallade",
                     "ability": "Sharpness",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Psycho Cut",
                         "Close Combat",
                         "Swords Dance",

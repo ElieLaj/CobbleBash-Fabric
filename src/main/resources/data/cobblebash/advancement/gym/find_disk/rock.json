@@ -1,0 +1,30 @@
+{
+    "parent": "cobblebash:gym/find_training_disk",
+    "display": {
+        "icon": {
+            "id": "cobblebash:rock_training_disk"
+        },
+        "title": "Rock Training Disk",
+        "description": "Find a Rock Training Disk in abandoned mineshafts or trial chamber corridors.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "rock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:rock_training_disk"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "rock"
+        ]
+    ]
+}

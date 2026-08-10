@@ -1,0 +1,30 @@
+{
+    "parent": "cobblebash:gym/find_training_disk",
+    "display": {
+        "icon": {
+            "id": "cobblebash:grass_training_disk"
+        },
+        "title": "Grass Training Disk",
+        "description": "Find a Grass Training Disk in jungle temples, plains village houses, or taiga village houses.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "grass": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:grass_training_disk"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "grass"
+        ]
+    ]
+}

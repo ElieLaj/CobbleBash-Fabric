@@ -1,0 +1,7 @@
+{
+  "parent": "cobblebash:item/training_disc_base",
+  "textures": {
+    "0": "cobblebash:item/training_disc_elite4_texture",
+    "particle": "cobblebash:item/training_disc_elite4_texture"
+  }
+}

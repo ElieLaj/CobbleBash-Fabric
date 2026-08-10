@@ -1,7 +1,31 @@
 {
   "variants": {
-    "": {
+    "facing=north,half=lower": {
+      "model": "cobblebash:block/training_simulator",
+      "y": 180
+    },
+    "facing=east,half=lower": {
+      "model": "cobblebash:block/training_simulator",
+      "y": 270
+    },
+    "facing=south,half=lower": {
       "model": "cobblebash:block/training_simulator"
+    },
+    "facing=west,half=lower": {
+      "model": "cobblebash:block/training_simulator",
+      "y": 90
+    },
+    "facing=north,half=upper": {
+      "model": "cobblebash:block/training_simulator_upper"
+    },
+    "facing=east,half=upper": {
+      "model": "cobblebash:block/training_simulator_upper"
+    },
+    "facing=south,half=upper": {
+      "model": "cobblebash:block/training_simulator_upper"
+    },
+    "facing=west,half=upper": {
+      "model": "cobblebash:block/training_simulator_upper"
     }
   }
 }

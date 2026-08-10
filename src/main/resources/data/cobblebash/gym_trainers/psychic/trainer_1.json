@@ -1,22 +1,22 @@
 {
     "display_name": "Psychic Trainer 1",
-    "dialogue":  {
-        "lines":  [
-            "The Psychic gym begins here. Show me your opening move."
+    "dialogue": {
+        "lines": [
+            "The Psychic gym begins here. Think carefully before you move."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Screen Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Alakazam",
                     "ability": "Magic Guard",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Psychic",
                         "Shadow Ball",
                         "Focus Blast",
@@ -27,7 +27,7 @@
                     "species": "Espeon",
                     "ability": "Magic Bounce",
                     "held_item": "Light Clay",
-                    "moves":  [
+                    "moves": [
                         "Reflect",
                         "Light Screen",
                         "Psychic",
@@ -38,7 +38,7 @@
                     "species": "Slowbro",
                     "ability": "Regenerator",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Psychic",
                         "Slack Off",
@@ -49,7 +49,7 @@
                     "species": "Gallade",
                     "ability": "Sharpness",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Psycho Cut",
                         "Close Combat",
                         "Swords Dance",
@@ -61,12 +61,12 @@
         {
             "id": "build_b",
             "name": "Bulky Psychic Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Slowking",
                     "ability": "Regenerator",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Psychic",
                         "Slack Off",
@@ -77,7 +77,7 @@
                     "species": "Reuniclus",
                     "ability": "Magic Guard",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Psychic",
                         "Focus Blast",
                         "Recover",
@@ -88,7 +88,7 @@
                     "species": "Bronzong",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Gyro Ball",
                         "Toxic",
@@ -99,7 +99,7 @@
                     "species": "Metagross",
                     "ability": "Clear Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Meteor Mash",
                         "Zen Headbutt",
                         "Earthquake",

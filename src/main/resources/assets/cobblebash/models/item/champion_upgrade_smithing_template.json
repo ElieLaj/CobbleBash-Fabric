@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cobblebash:item/champion_upgrade_smithing_template"
+  }
+}

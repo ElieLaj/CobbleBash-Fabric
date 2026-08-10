@@ -1,22 +1,22 @@
 {
     "display_name": "Ground Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Ground gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "The arena remembers every careless step."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Sand Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Hippowdon",
                     "ability": "Sand Stream",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Earthquake",
                         "Slack Off",
@@ -27,7 +27,7 @@
                     "species": "Excadrill",
                     "ability": "Sand Rush",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Iron Head",
                         "Swords Dance",
@@ -38,7 +38,7 @@
                     "species": "Garchomp",
                     "ability": "Rough Skin",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Dragon Claw",
                         "Stone Edge",
@@ -49,7 +49,7 @@
                     "species": "Gastrodon",
                     "ability": "Storm Drain",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Earth Power",
                         "Recover",
@@ -60,7 +60,7 @@
                     "species": "Mamoswine",
                     "ability": "Thick Fat",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Icicle Crash",
                         "Ice Shard",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Offensive Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Garchomp",
                     "ability": "Rough Skin",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Dragon Claw",
                         "Swords Dance",
@@ -88,7 +88,7 @@
                     "species": "Excadrill",
                     "ability": "Mold Breaker",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Iron Head",
                         "Rapid Spin",
@@ -99,7 +99,7 @@
                     "species": "Mamoswine",
                     "ability": "Thick Fat",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Icicle Crash",
                         "Ice Shard",
@@ -107,21 +107,24 @@
                     ]
                 },
                 {
-                    "species": "Landorus-Therian",
+                    "species": "Landorus",
                     "ability": "Intimidate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "U-turn",
                         "Stone Edge",
                         "Defog"
+                    ],
+                    "aspects": [
+                        "therian-forme"
                     ]
                 },
                 {
                     "species": "Gliscor",
                     "ability": "Poison Heal",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Roost",
                         "Toxic",
@@ -133,12 +136,12 @@
         {
             "id": "build_c",
             "name": "Sustain & Hazard",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Clodsire",
                     "ability": "Unaware",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Toxic",
                         "Recover",
@@ -149,7 +152,7 @@
                     "species": "Gastrodon",
                     "ability": "Storm Drain",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Earth Power",
                         "Recover",
@@ -160,7 +163,7 @@
                     "species": "Hippowdon",
                     "ability": "Sand Stream",
                     "held_item": "Smooth Rock",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Earthquake",
                         "Slack Off",
@@ -171,7 +174,7 @@
                     "species": "Gliscor",
                     "ability": "Poison Heal",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Roost",
                         "Toxic",
@@ -182,7 +185,7 @@
                     "species": "Donphan",
                     "ability": "Sturdy",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Rapid Spin",
                         "Ice Shard",

@@ -1,22 +1,22 @@
 {
     "display_name": "Normal Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Normal gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "No tricks here. Just clean reads and sharper timing."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Bulky Normal Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Snorlax",
                     "ability": "Thick Fat",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Body Slam",
                         "Earthquake",
                         "Curse",
@@ -27,7 +27,7 @@
                     "species": "Porygon2",
                     "ability": "Trace",
                     "held_item": "Eviolite",
-                    "moves":  [
+                    "moves": [
                         "Tri Attack",
                         "Ice Beam",
                         "Recover",
@@ -38,7 +38,7 @@
                     "species": "Staraptor",
                     "ability": "Intimidate",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Brave Bird",
                         "Close Combat",
                         "U-turn",
@@ -49,7 +49,7 @@
                     "species": "Kangaskhan",
                     "ability": "Scrappy",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Fake Out",
                         "Double-Edge",
                         "Earthquake",
@@ -60,7 +60,7 @@
                     "species": "Exploud",
                     "ability": "Scrappy",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Boomburst",
                         "Fire Blast",
                         "Surf",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Guts and Breakers",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Obstagoon",
                     "ability": "Guts",
                     "held_item": "Flame Orb",
-                    "moves":  [
+                    "moves": [
                         "Facade",
                         "Knock Off",
                         "Close Combat",
@@ -88,7 +88,7 @@
                     "species": "Ursaring",
                     "ability": "Guts",
                     "held_item": "Flame Orb",
-                    "moves":  [
+                    "moves": [
                         "Facade",
                         "Close Combat",
                         "Crunch",
@@ -99,7 +99,7 @@
                     "species": "Braviary",
                     "ability": "Defiant",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Brave Bird",
                         "Close Combat",
                         "U-turn",
@@ -110,7 +110,7 @@
                     "species": "Porygon-Z",
                     "ability": "Adaptability",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Tri Attack",
                         "Thunderbolt",
                         "Ice Beam",
@@ -121,7 +121,7 @@
                     "species": "Blissey",
                     "ability": "Natural Cure",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Seismic Toss",
                         "Soft-Boiled",
                         "Toxic",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Sustain & Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Blissey",
                     "ability": "Natural Cure",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Seismic Toss",
                         "Soft-Boiled",
                         "Toxic",
@@ -149,7 +149,7 @@
                     "species": "Snorlax",
                     "ability": "Thick Fat",
                     "held_item": "Chesto Berry",
-                    "moves":  [
+                    "moves": [
                         "Body Slam",
                         "Earthquake",
                         "Curse",
@@ -160,7 +160,7 @@
                     "species": "Porygon2",
                     "ability": "Trace",
                     "held_item": "Eviolite",
-                    "moves":  [
+                    "moves": [
                         "Tri Attack",
                         "Ice Beam",
                         "Recover",
@@ -171,7 +171,7 @@
                     "species": "Stoutland",
                     "ability": "Intimidate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Return",
                         "Crunch",
                         "Play Rough",
@@ -182,7 +182,7 @@
                     "species": "Kangaskhan",
                     "ability": "Scrappy",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Fake Out",
                         "Double-Edge",
                         "Earthquake",

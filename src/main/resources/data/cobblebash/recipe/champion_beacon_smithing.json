@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:smithing_transform",
+    "template": {
+        "item": "cobblebash:champion_upgrade_smithing_template"
+    },
+    "base": {
+        "item": "minecraft:beacon"
+    },
+    "addition": {
+        "item": "minecraft:netherite_ingot"
+    },
+    "result": {
+        "count": 1,
+        "id": "cobblebash:champion_beacon"
+    }
+}

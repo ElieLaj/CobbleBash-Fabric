@@ -1,0 +1,30 @@
+{
+    "parent": "cobblebash:gym/find_training_disk",
+    "display": {
+        "icon": {
+            "id": "cobblebash:fighting_training_disk"
+        },
+        "title": "Fighting Training Disk",
+        "description": "Find a Fighting Training Disk in pillager outposts or trial chamber rewards.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "fighting": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:fighting_training_disk"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "fighting"
+        ]
+    ]
+}

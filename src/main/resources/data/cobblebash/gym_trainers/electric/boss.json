@@ -1,33 +1,36 @@
 {
     "display_name": "Electric Boss",
-    "dialogue":  {
-        "lines":  [
-            "This is the final Electric test. Win, and the badge is yours."
+    "dialogue": {
+        "lines": [
+            "I want to see if your spark can survive a storm."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Electric Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
-                    "species": "Rotom-Wash",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Hydro Pump",
                         "Volt Switch",
                         "Will-O-Wisp",
                         "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
                     ]
                 },
                 {
                     "species": "Magnezone",
                     "ability": "Magnet Pull",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Flash Cannon",
                         "Volt Switch",
@@ -38,7 +41,7 @@
                     "species": "Jolteon",
                     "ability": "Volt Absorb",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Shadow Ball",
                         "Volt Switch",
@@ -49,7 +52,7 @@
                     "species": "Electivire",
                     "ability": "Motor Drive",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Thunder Punch",
                         "Ice Punch",
                         "Earthquake",
@@ -60,7 +63,7 @@
                     "species": "Garchomp",
                     "ability": "Rough Skin",
                     "held_item": "Rocky Helmet",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Dragon Claw",
                         "Stealth Rock",
@@ -71,7 +74,7 @@
                     "species": "Gliscor",
                     "ability": "Poison Heal",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Roost",
                         "Toxic",
@@ -83,34 +86,37 @@
         {
             "id": "build_b",
             "name": "Aggressive Electric Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Jolteon",
                     "ability": "Volt Absorb",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Shadow Ball",
                         "Volt Switch",
-                        "Signal Beam"
+                        "Thunder Wave"
                     ]
                 },
                 {
-                    "species": "Rotom-Heat",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Overheat",
                         "Volt Switch",
                         "Thunderbolt",
                         "Will-O-Wisp"
+                    ],
+                    "aspects": [
+                        "heat-appliance"
                     ]
                 },
                 {
                     "species": "Magnezone",
                     "ability": "Magnet Pull",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Flash Cannon",
                         "Volt Switch",
@@ -121,7 +127,7 @@
                     "species": "Electivire",
                     "ability": "Motor Drive",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Thunder Punch",
                         "Ice Punch",
                         "Earthquake",
@@ -132,7 +138,7 @@
                     "species": "Flygon",
                     "ability": "Levitate",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Dragon Claw",
                         "U-turn",
@@ -143,7 +149,7 @@
                     "species": "Ferrothorn",
                     "ability": "Iron Barbs",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Power Whip",
                         "Gyro Ball",
                         "Leech Seed",

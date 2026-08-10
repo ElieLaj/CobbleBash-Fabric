@@ -1,22 +1,22 @@
 {
     "display_name": "Steel Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Steel gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "Steel does not rush. Steel waits for the perfect strike."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Hazard Steel Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Ferrothorn",
                     "ability": "Iron Barbs",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Leech Seed",
                         "Gyro Ball",
@@ -27,7 +27,7 @@
                     "species": "Skarmory",
                     "ability": "Sturdy",
                     "held_item": "Rocky Helmet",
-                    "moves":  [
+                    "moves": [
                         "Brave Bird",
                         "Spikes",
                         "Roost",
@@ -38,7 +38,7 @@
                     "species": "Magnezone",
                     "ability": "Magnet Pull",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Flash Cannon",
                         "Volt Switch",
@@ -49,7 +49,7 @@
                     "species": "Lucario",
                     "ability": "Inner Focus",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Meteor Mash",
                         "Extreme Speed",
@@ -60,7 +60,7 @@
                     "species": "Empoleon",
                     "ability": "Torrent",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Flash Cannon",
                         "Ice Beam",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Steel",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Scizor",
                     "ability": "Technician",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Bullet Punch",
                         "U-turn",
                         "Swords Dance",
@@ -88,7 +88,7 @@
                     "species": "Bisharp",
                     "ability": "Defiant",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Iron Head",
                         "Knock Off",
                         "Sucker Punch",
@@ -99,7 +99,7 @@
                     "species": "Metagross",
                     "ability": "Clear Body",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Meteor Mash",
                         "Zen Headbutt",
                         "Earthquake",
@@ -110,7 +110,7 @@
                     "species": "Lucario",
                     "ability": "Inner Focus",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Meteor Mash",
                         "Extreme Speed",
@@ -121,7 +121,7 @@
                     "species": "Magnezone",
                     "ability": "Magnet Pull",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Flash Cannon",
                         "Volt Switch",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Sustain & Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Ferrothorn",
                     "ability": "Iron Barbs",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Leech Seed",
                         "Gyro Ball",
@@ -149,7 +149,7 @@
                     "species": "Bronzong",
                     "ability": "Levitate",
                     "held_item": "Rocky Helmet",
-                    "moves":  [
+                    "moves": [
                         "Gyro Ball",
                         "Stealth Rock",
                         "Toxic",
@@ -160,7 +160,7 @@
                     "species": "Empoleon",
                     "ability": "Torrent",
                     "held_item": "Assault Vest",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Flash Cannon",
                         "Ice Beam",
@@ -171,7 +171,7 @@
                     "species": "Skarmory",
                     "ability": "Sturdy",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Brave Bird",
                         "Spikes",
                         "Roost",
@@ -182,7 +182,7 @@
                     "species": "Aegislash",
                     "ability": "Stance Change",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "King's Shield",
                         "Shadow Ball",
                         "Sacred Sword",

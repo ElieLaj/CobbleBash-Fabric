@@ -1,0 +1,30 @@
+{
+    "parent": "cobblebash:gym/find_training_disk",
+    "display": {
+        "icon": {
+            "id": "cobblebash:bug_training_disk"
+        },
+        "title": "Bug Training Disk",
+        "description": "Find a Bug Training Disk in jungle temples, abandoned mineshafts, or taiga village houses.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "bug": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:bug_training_disk"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "bug"
+        ]
+    ]
+}

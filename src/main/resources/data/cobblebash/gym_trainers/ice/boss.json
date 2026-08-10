@@ -1,33 +1,36 @@
 {
     "display_name": "Ice Boss",
-    "dialogue":  {
-        "lines":  [
-            "This is the final Ice test. Win, and the badge is yours."
+    "dialogue": {
+        "lines": [
+            "One calm breath. One clean strike. That is all the cold allows."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Ice Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
-                    "species": "Alolan Ninetales",
+                    "species": "Ninetales",
                     "ability": "Snow Warning",
                     "held_item": "Light Clay",
-                    "moves":  [
+                    "moves": [
                         "Aurora Veil",
                         "Freeze-Dry",
                         "Moonblast",
                         "Encore"
+                    ],
+                    "aspects": [
+                        "alolan"
                     ]
                 },
                 {
                     "species": "Weavile",
                     "ability": "Pressure",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Icicle Crash",
                         "Knock Off",
                         "Ice Shard",
@@ -38,7 +41,7 @@
                     "species": "Mamoswine",
                     "ability": "Thick Fat",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Icicle Crash",
                         "Ice Shard",
@@ -49,7 +52,7 @@
                     "species": "Lapras",
                     "ability": "Water Absorb",
                     "held_item": "Assault Vest",
-                    "moves":  [
+                    "moves": [
                         "Freeze-Dry",
                         "Surf",
                         "Thunderbolt",
@@ -60,7 +63,7 @@
                     "species": "Heatran",
                     "ability": "Flash Fire",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Lava Plume",
                         "Earth Power",
                         "Toxic",
@@ -68,14 +71,17 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Wash",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Hydro Pump",
                         "Volt Switch",
                         "Will-O-Wisp",
                         "Pain Split"
+                    ],
+                    "aspects": [
+                        "wash-appliance"
                     ]
                 }
             ]
@@ -83,12 +89,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Ice Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Weavile",
                     "ability": "Pressure",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Icicle Crash",
                         "Knock Off",
                         "Ice Shard",
@@ -99,7 +105,7 @@
                     "species": "Mamoswine",
                     "ability": "Thick Fat",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Icicle Crash",
                         "Ice Shard",
@@ -110,7 +116,7 @@
                     "species": "Froslass",
                     "ability": "Cursed Body",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Spikes",
                         "Ice Beam",
                         "Shadow Ball",
@@ -121,7 +127,7 @@
                     "species": "Glaceon",
                     "ability": "Ice Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Ice Beam",
                         "Shadow Ball",
                         "Freeze-Dry",
@@ -132,7 +138,7 @@
                     "species": "Scizor",
                     "ability": "Technician",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Bullet Punch",
                         "U-turn",
                         "Swords Dance",
@@ -143,7 +149,7 @@
                     "species": "Volcarona",
                     "ability": "Flame Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Fiery Dance",
                         "Bug Buzz",

@@ -1,33 +1,36 @@
 {
     "display_name": "Ice Trainer 1",
-    "dialogue":  {
-        "lines":  [
-            "The Ice gym begins here. Show me your opening move."
+    "dialogue": {
+        "lines": [
+            "The Ice gym begins here. Stay calm, or crack."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Hail Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
-                    "species": "Alolan Ninetales",
+                    "species": "Ninetales",
                     "ability": "Snow Warning",
                     "held_item": "Light Clay",
-                    "moves":  [
+                    "moves": [
                         "Aurora Veil",
                         "Freeze-Dry",
                         "Moonblast",
                         "Encore"
+                    ],
+                    "aspects": [
+                        "alolan"
                     ]
                 },
                 {
                     "species": "Mamoswine",
                     "ability": "Thick Fat",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Icicle Crash",
                         "Ice Shard",
@@ -38,7 +41,7 @@
                     "species": "Weavile",
                     "ability": "Pressure",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Icicle Crash",
                         "Knock Off",
                         "Ice Shard",
@@ -49,7 +52,7 @@
                     "species": "Froslass",
                     "ability": "Cursed Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Spikes",
                         "Ice Beam",
                         "Shadow Ball",
@@ -61,12 +64,12 @@
         {
             "id": "build_b",
             "name": "Defensive Ice",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Avalugg",
                     "ability": "Sturdy",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Rapid Spin",
                         "Recover",
                         "Avalanche",
@@ -77,7 +80,7 @@
                     "species": "Lapras",
                     "ability": "Water Absorb",
                     "held_item": "Assault Vest",
-                    "moves":  [
+                    "moves": [
                         "Freeze-Dry",
                         "Surf",
                         "Thunderbolt",
@@ -88,7 +91,7 @@
                     "species": "Frosmoth",
                     "ability": "Ice Scales",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Ice Beam",
                         "Bug Buzz",
@@ -99,7 +102,7 @@
                     "species": "Glaceon",
                     "ability": "Ice Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Ice Beam",
                         "Shadow Ball",
                         "Wish",

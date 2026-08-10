@@ -1,22 +1,22 @@
 {
     "display_name": "Electric Trainer 1",
-    "dialogue":  {
-        "lines":  [
-            "The Electric gym begins here. Show me your opening move."
+    "dialogue": {
+        "lines": [
+            "The Electric gym begins here. One spark is all it takes."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Speed Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Raichu",
                     "ability": "Lightning Rod",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Volt Switch",
                         "Grass Knot",
@@ -27,7 +27,7 @@
                     "species": "Luxray",
                     "ability": "Intimidate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Wild Charge",
                         "Crunch",
                         "Ice Fang",
@@ -38,7 +38,7 @@
                     "species": "Electrode",
                     "ability": "Static",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Thunder",
                         "Volt Switch",
                         "Taunt",
@@ -46,14 +46,14 @@
                     ]
                 },
                 {
-                    "species": "Heliolisk",
-                    "ability": "Dry Skin",
+                    "species": "Jolteon",
+                    "ability": "Volt Absorb",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
-                        "Surf",
                         "Volt Switch",
-                        "Hyper Voice"
+                        "Shadow Ball",
+                        "Quick Attack"
                     ]
                 }
             ]
@@ -61,12 +61,12 @@
         {
             "id": "build_b",
             "name": "Pivot Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Volt Switch",
                         "Will-O-Wisp",
@@ -77,7 +77,7 @@
                     "species": "Ampharos",
                     "ability": "Static",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Dragon Pulse",
                         "Volt Switch",
@@ -88,7 +88,7 @@
                     "species": "Luxray",
                     "ability": "Intimidate",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Wild Charge",
                         "Crunch",
                         "Ice Fang",
@@ -99,7 +99,7 @@
                     "species": "Raichu",
                     "ability": "Lightning Rod",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Thunderbolt",
                         "Encore",
                         "Nasty Plot",

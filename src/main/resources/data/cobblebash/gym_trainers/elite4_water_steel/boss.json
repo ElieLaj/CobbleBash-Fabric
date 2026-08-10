@@ -1,0 +1,168 @@
+{
+    "display_name": "Elite Four Calder",
+    "dialogue": {
+        "lines": [
+            "Steel bends in the deep. The tide does not."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds": [
+        {
+            "id": "build_a",
+            "name": "Rain Foundry",
+            "pokemon": [
+                {
+                    "species": "Pelipper",
+                    "level": 95,
+                    "ability": "Drizzle",
+                    "held_item": "Damp Rock",
+                    "moves": [
+                        "Scald",
+                        "Hurricane",
+                        "Roost",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Empoleon",
+                    "level": 95,
+                    "ability": "Torrent",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Surf",
+                        "Flash Cannon",
+                        "Ice Beam",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "level": 95,
+                    "ability": "Technician",
+                    "held_item": "Choice Band",
+                    "moves": [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Superpower",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Kingdra",
+                    "level": 95,
+                    "ability": "Swift Swim",
+                    "held_item": "Choice Specs",
+                    "moves": [
+                        "Hydro Pump",
+                        "Draco Meteor",
+                        "Surf",
+                        "Ice Beam"
+                    ]
+                },
+                {
+                    "species": "Ferrothorn",
+                    "level": 96,
+                    "ability": "Iron Barbs",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Power Whip",
+                        "Gyro Ball",
+                        "Leech Seed",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Metagross",
+                    "level": 98,
+                    "ability": "Clear Body",
+                    "held_item": "Assault Vest",
+                    "moves": [
+                        "Meteor Mash",
+                        "Zen Headbutt",
+                        "Earthquake",
+                        "Bullet Punch"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Sunken Arsenal",
+            "pokemon": [
+                {
+                    "species": "Skarmory",
+                    "level": 95,
+                    "ability": "Sturdy",
+                    "held_item": "Rocky Helmet",
+                    "moves": [
+                        "Brave Bird",
+                        "Roost",
+                        "Spikes",
+                        "Whirlwind"
+                    ]
+                },
+                {
+                    "species": "Milotic",
+                    "level": 95,
+                    "ability": "Marvel Scale",
+                    "held_item": "Flame Orb",
+                    "moves": [
+                        "Scald",
+                        "Recover",
+                        "Ice Beam",
+                        "Haze"
+                    ]
+                },
+                {
+                    "species": "Magnezone",
+                    "level": 95,
+                    "ability": "Magnet Pull",
+                    "held_item": "Choice Specs",
+                    "moves": [
+                        "Thunderbolt",
+                        "Flash Cannon",
+                        "Volt Switch",
+                        "Tri Attack"
+                    ]
+                },
+                {
+                    "species": "Swampert",
+                    "level": 95,
+                    "ability": "Torrent",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Waterfall",
+                        "Earthquake",
+                        "Ice Punch",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Aegislash",
+                    "level": 96,
+                    "ability": "Stance Change",
+                    "held_item": "Weakness Policy",
+                    "moves": [
+                        "Shadow Ball",
+                        "Flash Cannon",
+                        "Shadow Sneak",
+                        "King's Shield"
+                    ]
+                },
+                {
+                    "species": "Gyarados",
+                    "level": 98,
+                    "ability": "Intimidate",
+                    "held_item": "Life Orb",
+                    "moves": [
+                        "Waterfall",
+                        "Crunch",
+                        "Earthquake",
+                        "Dragon Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

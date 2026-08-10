@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cobblebash:block/champion_beacon"
+    },
+    "facing=east": {
+      "model": "cobblebash:block/champion_beacon",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cobblebash:block/champion_beacon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cobblebash:block/champion_beacon",
+      "y": 270
+    }
+  }
+}

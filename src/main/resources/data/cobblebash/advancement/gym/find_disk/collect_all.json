@@ -1,0 +1,252 @@
+{
+    "parent": "cobblebash:gym/find_training_disk",
+    "display": {
+        "icon": {
+            "id": "cobblebash:champion_upgrade_smithing_template"
+        },
+        "title": "Full Disk Archive",
+        "description": "Collect all 18 CobbleBash training disks.",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "bug": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:bug_training_disk"
+                    }
+                ]
+            }
+        },
+        "dark": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:dark_training_disk"
+                    }
+                ]
+            }
+        },
+        "dragon": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:dragon_training_disk"
+                    }
+                ]
+            }
+        },
+        "electric": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:electric_training_disk"
+                    }
+                ]
+            }
+        },
+        "fairy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:fairy_training_disk"
+                    }
+                ]
+            }
+        },
+        "fighting": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:fighting_training_disk"
+                    }
+                ]
+            }
+        },
+        "fire": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:fire_training_disk"
+                    }
+                ]
+            }
+        },
+        "flying": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:flying_training_disk"
+                    }
+                ]
+            }
+        },
+        "ghost": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:ghost_training_disk"
+                    }
+                ]
+            }
+        },
+        "grass": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:grass_training_disk"
+                    }
+                ]
+            }
+        },
+        "ground": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:ground_training_disk"
+                    }
+                ]
+            }
+        },
+        "ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:ice_training_disk"
+                    }
+                ]
+            }
+        },
+        "normal": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:normal_training_disk"
+                    }
+                ]
+            }
+        },
+        "poison": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:poison_training_disk"
+                    }
+                ]
+            }
+        },
+        "psychic": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:psychic_training_disk"
+                    }
+                ]
+            }
+        },
+        "rock": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:rock_training_disk"
+                    }
+                ]
+            }
+        },
+        "steel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:steel_training_disk"
+                    }
+                ]
+            }
+        },
+        "water": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:water_training_disk"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "bug"
+        ],
+        [
+            "dark"
+        ],
+        [
+            "dragon"
+        ],
+        [
+            "electric"
+        ],
+        [
+            "fairy"
+        ],
+        [
+            "fighting"
+        ],
+        [
+            "fire"
+        ],
+        [
+            "flying"
+        ],
+        [
+            "ghost"
+        ],
+        [
+            "grass"
+        ],
+        [
+            "ground"
+        ],
+        [
+            "ice"
+        ],
+        [
+            "normal"
+        ],
+        [
+            "poison"
+        ],
+        [
+            "psychic"
+        ],
+        [
+            "rock"
+        ],
+        [
+            "steel"
+        ],
+        [
+            "water"
+        ]
+    ]
+}

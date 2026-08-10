@@ -1,0 +1,7 @@
+{
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "cobblemon:block/functional/pc_particle"
+  },
+  "elements": []
+}

@@ -34,6 +34,7 @@
     "fabric-api": "*",
     "cobblemon": ">=1.7.3",
     "rctapi": ">=0.15.2-beta",
-    "cobblebadges": ">=4.0.0"
+    "cobblebadges": ">=4.0.0",
+    "accessories": "*"
   }
 }

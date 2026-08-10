@@ -1,0 +1,31 @@
+{
+    "parent": "cobblebash:gym/all_gyms",
+    "display": {
+        "icon": {
+            "id": "cobblebash:elite_four_training_disk"
+        },
+        "title": "Elite Four Training Disk",
+        "description": "Earned once after defeating all 18 Gym Leaders. Rarely found in End Cities or traded by master League Representatives.",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "elite_four": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:elite_four_training_disk"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "elite_four"
+        ]
+    ]
+}

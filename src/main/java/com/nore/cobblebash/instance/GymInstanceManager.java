@@ -1,87 +1,104 @@
 package com.nore.cobblebash.instance;
 
+import com.nore.cobblebash.gym.GymType;
+import java.util.ArrayDeque;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Queue;
+import java.util.UUID;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 
-import java.util.ArrayDeque;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Queue;
-import java.util.UUID;
-
 public class GymInstanceManager {
-    private static final Map<UUID, GymInstance> ACTIVE_BY_PLAYER = new HashMap<>();
-    private static final Map<Integer, GymInstance> ACTIVE_BY_SLOT = new HashMap<>();
-    private static final Queue<Integer> FREE_SLOTS = new ArrayDeque<>();
+   private static final Map<UUID, GymInstance> ACTIVE_BY_PLAYER = new HashMap<>();
+   private static final Map<Integer, GymInstance> ACTIVE_BY_SLOT = new HashMap<>();
+   private static final Map<String, Queue<Integer>> FREE_SLOTS_BY_GYM = new HashMap<>();
+   private static final Map<String, Integer> PRIMARY_SLOTS_BY_GYM = createPrimarySlots();
+   private static int nextOverflowSlotId = PRIMARY_SLOTS_BY_GYM.size();
 
-    private static int nextSlotId = 0;
+   public static GymInstance createOrGet(
+      UUID playerId,
+      String gymType,
+      boolean repeatClear,
+      int[] trainerLevels,
+      ResourceKey<Level> returnDimension,
+      double returnX,
+      double returnY,
+      double returnZ,
+      float returnYRot,
+      float returnXRot,
+      GameType returnGameMode
+   ) {
+      GymInstance gyminstance = ACTIVE_BY_PLAYER.get(playerId);
+      if (gyminstance != null) {
+         return gyminstance;
+      }
 
-    public static GymInstance createOrGet(
-            UUID playerId,
-            String gymType,
-            boolean repeatClear,
-            int[] trainerLevels,
-            ResourceKey<Level> returnDimension,
-            double returnX,
-            double returnY,
-            double returnZ,
-            float returnYRot,
-            float returnXRot,
-            GameType returnGameMode
-    ) {
-        GymInstance existing = ACTIVE_BY_PLAYER.get(playerId);
-        if (existing != null) {
-            return existing;
-        }
+      int i = getReusableSlot(gymType);
+      GymInstance gyminstance1 = new GymInstance(
+         i, playerId, gymType, repeatClear, trainerLevels, returnDimension, returnX, returnY, returnZ, returnYRot, returnXRot, returnGameMode
+      );
+      ACTIVE_BY_PLAYER.put(playerId, gyminstance1);
+      ACTIVE_BY_SLOT.put(i, gyminstance1);
+      return gyminstance1;
+   }
 
-        int slotId = FREE_SLOTS.isEmpty() ? nextSlotId++ : FREE_SLOTS.poll();
+   public static GymInstance getActive(UUID playerId) {
+      return ACTIVE_BY_PLAYER.get(playerId);
+   }
 
-        GymInstance instance = new GymInstance(
-                slotId,
-                playerId,
-                gymType,
-                repeatClear,
-                trainerLevels,
-                returnDimension,
-                returnX,
-                returnY,
-                returnZ,
-                returnYRot,
-                returnXRot,
-                returnGameMode
-        );
+   public static GymInstance clear(UUID playerId) {
+      GymInstance gyminstance = ACTIVE_BY_PLAYER.remove(playerId);
+      if (gyminstance != null) {
+         ACTIVE_BY_SLOT.remove(gyminstance.getSlotId());
+         FREE_SLOTS_BY_GYM.computeIfAbsent(gyminstance.getGymType(), ignored -> new ArrayDeque<>()).add(gyminstance.getSlotId());
+      }
 
-        ACTIVE_BY_PLAYER.put(playerId, instance);
-        ACTIVE_BY_SLOT.put(slotId, instance);
+      return gyminstance;
+   }
 
-        return instance;
-    }
+   public static int getActiveCount() {
+      return ACTIVE_BY_PLAYER.size();
+   }
 
-    public static GymInstance getActive(UUID playerId) {
-        return ACTIVE_BY_PLAYER.get(playerId);
-    }
+   public static int getFreeSlotCount() {
+      int i = 0;
 
-    public static GymInstance clear(UUID playerId) {
-        GymInstance instance = ACTIVE_BY_PLAYER.remove(playerId);
+      for (Queue<Integer> queue : FREE_SLOTS_BY_GYM.values()) {
+         i += queue.size();
+      }
 
-        if (instance != null) {
-            ACTIVE_BY_SLOT.remove(instance.getSlotId());
-            FREE_SLOTS.add(instance.getSlotId());
-        }
+      return i;
+   }
 
-        return instance;
-    }
+   public static int getNextSlotId() {
+      return nextOverflowSlotId;
+   }
 
-    public static int getActiveCount() {
-        return ACTIVE_BY_PLAYER.size();
-    }
+   private static int getReusableSlot(String gymType) {
+      Queue<Integer> queue = FREE_SLOTS_BY_GYM.get(gymType);
 
-    public static int getFreeSlotCount() {
-        return FREE_SLOTS.size();
-    }
+      while (queue != null && !queue.isEmpty()) {
+         int i = queue.poll();
+         if (!ACTIVE_BY_SLOT.containsKey(i)) {
+            return i;
+         }
+      }
 
-    public static int getNextSlotId() {
-        return nextSlotId;
-    }
+      Integer integer = PRIMARY_SLOTS_BY_GYM.get(gymType);
+      return integer != null && !ACTIVE_BY_SLOT.containsKey(integer) ? integer : nextOverflowSlotId++;
+   }
+
+   private static Map<String, Integer> createPrimarySlots() {
+      Map<String, Integer> map = new LinkedHashMap<>();
+
+      for (GymType gymtype : GymType.values()) {
+         map.put(gymtype.getId(), map.size());
+      }
+
+      map.put("elite4", map.size());
+      return Map.copyOf(map);
+   }
 }

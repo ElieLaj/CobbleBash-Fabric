@@ -1,0 +1,30 @@
+{
+    "parent": "cobblebash:gym/find_training_disk",
+    "display": {
+        "icon": {
+            "id": "cobblebash:psychic_training_disk"
+        },
+        "title": "Psychic Training Disk",
+        "description": "Find a Psychic Training Disk in stronghold libraries or ancient cities.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "psychic": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:psychic_training_disk"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "psychic"
+        ]
+    ]
+}

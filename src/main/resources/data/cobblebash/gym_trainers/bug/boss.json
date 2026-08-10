@@ -1,22 +1,22 @@
 {
     "display_name": "The Hive Queen",
-    "dialogue":  {
-        "lines":  [
-            "My hive does not yield badges easily. Show me your resolve."
+    "dialogue": {
+        "lines": [
+            "Every tiny opening becomes a swarm. Show me you can survive one."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Bug Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Volcarona",
                     "ability": "Flame Body",
                     "held_item": "Heavy-Duty Boots",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Fiery Dance",
                         "Bug Buzz",
@@ -27,7 +27,7 @@
                     "species": "Scizor",
                     "ability": "Technician",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Bullet Punch",
                         "Swords Dance",
                         "U-turn",
@@ -38,7 +38,7 @@
                     "species": "Forretress",
                     "ability": "Sturdy",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Spikes",
                         "Rapid Spin",
@@ -49,7 +49,7 @@
                     "species": "Araquanid",
                     "ability": "Water Bubble",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Liquidation",
                         "Leech Life",
                         "Mirror Coat",
@@ -60,7 +60,7 @@
                     "species": "Drapion",
                     "ability": "Battle Armor",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Knock Off",
                         "Poison Jab",
                         "Earthquake",
@@ -71,7 +71,7 @@
                     "species": "Flygon",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Dragon Claw",
                         "U-turn",
@@ -83,12 +83,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Bug Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Galvantula",
                     "ability": "Compound Eyes",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Sticky Web",
                         "Thunder",
                         "Bug Buzz",
@@ -99,7 +99,7 @@
                     "species": "Volcarona",
                     "ability": "Flame Body",
                     "held_item": "Heavy-Duty Boots",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Fiery Dance",
                         "Bug Buzz",
@@ -110,7 +110,7 @@
                     "species": "Scizor",
                     "ability": "Technician",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Bullet Punch",
                         "Swords Dance",
                         "Knock Off",
@@ -121,7 +121,7 @@
                     "species": "Heracross",
                     "ability": "Guts",
                     "held_item": "Flame Orb",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Megahorn",
                         "Knock Off",
@@ -132,7 +132,7 @@
                     "species": "Golisopod",
                     "ability": "Emergency Exit",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "First Impression",
                         "Liquidation",
                         "Leech Life",
@@ -143,7 +143,7 @@
                     "species": "Flygon",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Dragon Claw",
                         "U-turn",

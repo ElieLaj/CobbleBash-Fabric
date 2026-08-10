@@ -1,22 +1,22 @@
 {
     "display_name": "Dragon Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Dragon gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "A dragon battle is decided before the first roar fades."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Setup Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Dragonite",
                     "ability": "Multiscale",
                     "held_item": "Weakness Policy",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Dual Wingbeat",
                         "Earthquake",
@@ -27,7 +27,7 @@
                     "species": "Garchomp",
                     "ability": "Rough Skin",
                     "held_item": "Rocky Helmet",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Earthquake",
                         "Dragon Tail",
@@ -38,7 +38,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "Flamethrower",
@@ -49,7 +49,7 @@
                     "species": "Kingdra",
                     "ability": "Swift Swim",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Hydro Pump",
                         "Draco Meteor",
                         "Ice Beam",
@@ -60,7 +60,7 @@
                     "species": "Altaria",
                     "ability": "Natural Cure",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Dragon Pulse",
                         "Roost",
                         "Heal Bell",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Dragapult",
                     "ability": "Infiltrator",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Dragon Darts",
                         "U-turn",
                         "Phantom Force",
@@ -88,7 +88,7 @@
                     "species": "Haxorus",
                     "ability": "Mold Breaker",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Outrage",
                         "Earthquake",
@@ -99,7 +99,7 @@
                     "species": "Salamence",
                     "ability": "Intimidate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Dual Wingbeat",
                         "Earthquake",
@@ -110,7 +110,7 @@
                     "species": "Flygon",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Dragon Claw",
                         "U-turn",
@@ -121,7 +121,7 @@
                     "species": "Noivern",
                     "ability": "Infiltrator",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Draco Meteor",
                         "Hurricane",
                         "Flamethrower",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Bulk and Utility",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Goodra",
                     "ability": "Sap Sipper",
                     "held_item": "Assault Vest",
-                    "moves":  [
+                    "moves": [
                         "Draco Meteor",
                         "Flamethrower",
                         "Thunderbolt",
@@ -149,7 +149,7 @@
                     "species": "Garchomp",
                     "ability": "Rough Skin",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Dragon Tail",
                         "Stealth Rock",
@@ -160,7 +160,7 @@
                     "species": "Dragonite",
                     "ability": "Multiscale",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Roost",
                         "Dragon Tail",
                         "Thunder Wave",
@@ -171,7 +171,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "Flamethrower",
@@ -182,7 +182,7 @@
                     "species": "Kingdra",
                     "ability": "Sniper",
                     "held_item": "Scope Lens",
-                    "moves":  [
+                    "moves": [
                         "Draco Meteor",
                         "Hydro Pump",
                         "Ice Beam",

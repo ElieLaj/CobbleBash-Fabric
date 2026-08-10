@@ -1,22 +1,22 @@
 {
     "display_name": "Ground Trainer 1",
-    "dialogue":  {
-        "lines":  [
-            "The Ground gym begins here. Show me your opening move."
+    "dialogue": {
+        "lines": [
+            "The Ground gym begins here. Watch your step."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Sand Setup",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Hippowdon",
                     "ability": "Sand Stream",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Earthquake",
                         "Slack Off",
@@ -27,7 +27,7 @@
                     "species": "Excadrill",
                     "ability": "Sand Rush",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Iron Head",
                         "Swords Dance",
@@ -38,7 +38,7 @@
                     "species": "Gastrodon",
                     "ability": "Storm Drain",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Earth Power",
                         "Recover",
@@ -49,7 +49,7 @@
                     "species": "Mamoswine",
                     "ability": "Thick Fat",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Icicle Crash",
                         "Ice Shard",
@@ -61,12 +61,12 @@
         {
             "id": "build_b",
             "name": "Bulky Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Clodsire",
                     "ability": "Unaware",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Toxic",
                         "Recover",
@@ -77,7 +77,7 @@
                     "species": "Swampert",
                     "ability": "Torrent",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Waterfall",
                         "Stealth Rock",
@@ -88,7 +88,7 @@
                     "species": "Gliscor",
                     "ability": "Poison Heal",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Roost",
                         "Toxic",
@@ -99,7 +99,7 @@
                     "species": "Donphan",
                     "ability": "Sturdy",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Rapid Spin",
                         "Ice Shard",

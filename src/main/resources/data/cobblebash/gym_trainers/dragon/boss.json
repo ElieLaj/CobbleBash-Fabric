@@ -1,22 +1,22 @@
 {
     "display_name": "Dragon Boss",
-    "dialogue":  {
-        "lines":  [
-            "This is the final Dragon test. Win, and the badge is yours."
+    "dialogue": {
+        "lines": [
+            "Stand tall. Dragons only respect challengers who refuse to bow."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Dragon Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Dragonite",
                     "ability": "Multiscale",
                     "held_item": "Weakness Policy",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Dual Wingbeat",
                         "Earthquake",
@@ -27,7 +27,7 @@
                     "species": "Garchomp",
                     "ability": "Rough Skin",
                     "held_item": "Rocky Helmet",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Earthquake",
                         "Dragon Tail",
@@ -38,7 +38,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "Flamethrower",
@@ -49,7 +49,7 @@
                     "species": "Goodra",
                     "ability": "Sap Sipper",
                     "held_item": "Assault Vest",
-                    "moves":  [
+                    "moves": [
                         "Draco Meteor",
                         "Flamethrower",
                         "Thunderbolt",
@@ -60,7 +60,7 @@
                     "species": "Heatran",
                     "ability": "Flash Fire",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Lava Plume",
                         "Earth Power",
                         "Stealth Rock",
@@ -71,7 +71,7 @@
                     "species": "Gyarados",
                     "ability": "Intimidate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Waterfall",
                         "Ice Fang",
@@ -83,12 +83,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Dragon Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Dragapult",
                     "ability": "Infiltrator",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Dragon Darts",
                         "U-turn",
                         "Phantom Force",
@@ -99,7 +99,7 @@
                     "species": "Haxorus",
                     "ability": "Mold Breaker",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Outrage",
                         "Earthquake",
@@ -110,7 +110,7 @@
                     "species": "Salamence",
                     "ability": "Intimidate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dragon Dance",
                         "Dual Wingbeat",
                         "Earthquake",
@@ -121,7 +121,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "Flamethrower",
@@ -132,7 +132,7 @@
                     "species": "Metagross",
                     "ability": "Clear Body",
                     "held_item": "Weakness Policy",
-                    "moves":  [
+                    "moves": [
                         "Meteor Mash",
                         "Zen Headbutt",
                         "Earthquake",
@@ -143,7 +143,7 @@
                     "species": "Azumarill",
                     "ability": "Huge Power",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Aqua Jet",
                         "Liquidation",

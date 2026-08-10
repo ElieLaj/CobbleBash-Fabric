@@ -1,6 +1,23 @@
 {
   "itemGroup.cobblebash": "CobbleBash",
   "block.cobblebash.training_simulator": "Training Simulator",
+  "block.cobblebash.champion_beacon": "Champion Beacon",
+  "block.cobblebash.elite_four_plaque_electric_ground": "Electric/Ground Elite Four Plaque",
+  "block.cobblebash.elite_four_plaque_fire_fairy": "Fire/Fairy Elite Four Plaque",
+  "block.cobblebash.elite_four_plaque_grass_ghost": "Grass/Ghost Elite Four Plaque",
+  "block.cobblebash.elite_four_plaque_water_steel": "Water/Steel Elite Four Plaque",
+  "container.cobblebash.champion_beacon": "Champion Beacon",
+  "entity.minecraft.villager.cobblebash:league_representative": "League Representative",
+  "entity.minecraft.villager.cobblebash.league_representative": "League Representative",
+  "item.cobblebash.champion_upgrade_smithing_template": "Smithing Template",
+  "item.cobblebash.elite_four_training_disk": "Elite Four Training Disk",
+  "upgrade.cobblebash.champion_upgrade": "Champion Upgrade",
+  "item.cobblebash.smithing_template.champion_upgrade.applies_to": "Trainer Ribbons & Beacons",
+  "item.cobblebash.smithing_template.champion_upgrade.ingredients": "Netherite Ingot",
+  "item.cobblebash.smithing_template.champion_upgrade.base_slot_description": "Add a Trainer Ribbon or Beacon",
+  "item.cobblebash.smithing_template.champion_upgrade.additions_slot_description": "Add Netherite Ingot",
+  "item.cobblebash.trainer_ribbon": "Trainer Ribbon",
+  "item.cobblebash.champion_ribbon": "Champion Ribbon",
   "item.cobblebash.bug_training_disk": "Bug Training Disk",
   "item.cobblebash.dark_training_disk": "Dark Training Disk",
   "item.cobblebash.dragon_training_disk": "Dragon Training Disk",
@@ -27,5 +44,6 @@
   "cobblebash.configuration.items": "Item List",
   "cobblebash.configuration.logDirtBlock": "Log Dirt Block",
   "cobblebash.configuration.magicNumberIntroduction": "Magic Number Text",
-  "cobblebash.configuration.magicNumber": "Magic Number"
+  "cobblebash.configuration.magicNumber": "Magic Number",
+  "message.cobblebash.cobble_dollars_reward": "Received %s bonus Cobble Dollars."
 }

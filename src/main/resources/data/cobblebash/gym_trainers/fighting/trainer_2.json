@@ -1,22 +1,22 @@
 {
     "display_name": "Fighting Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Fighting gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "Plant your feet. If your stance breaks, so will your team."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Fighters",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Lucario",
                     "ability": "Inner Focus",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Extreme Speed",
                         "Swords Dance",
@@ -27,7 +27,7 @@
                     "species": "Conkeldurr",
                     "ability": "Guts",
                     "held_item": "Flame Orb",
-                    "moves":  [
+                    "moves": [
                         "Drain Punch",
                         "Mach Punch",
                         "Knock Off",
@@ -38,7 +38,7 @@
                     "species": "Gallade",
                     "ability": "Sharpness",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Sacred Sword",
                         "Psycho Cut",
                         "Swords Dance",
@@ -49,7 +49,7 @@
                     "species": "Hawlucha",
                     "ability": "Unburden",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Acrobatics",
                         "Close Combat",
                         "Swords Dance",
@@ -60,7 +60,7 @@
                     "species": "Mienshao",
                     "ability": "Regenerator",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "U-turn",
                         "Knock Off",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Fast Offensive Core",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Mienshao",
                     "ability": "Regenerator",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "U-turn",
                         "Knock Off",
@@ -88,7 +88,7 @@
                     "species": "Infernape",
                     "ability": "Blaze",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Flare Blitz",
                         "U-turn",
@@ -99,7 +99,7 @@
                     "species": "Lucario",
                     "ability": "Inner Focus",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Extreme Speed",
                         "Swords Dance",
@@ -110,7 +110,7 @@
                     "species": "Hawlucha",
                     "ability": "Unburden",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Acrobatics",
                         "Close Combat",
                         "Swords Dance",
@@ -121,7 +121,7 @@
                     "species": "Breloom",
                     "ability": "Technician",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Spore",
                         "Mach Punch",
                         "Bullet Seed",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Disruption & Sustain",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Conkeldurr",
                     "ability": "Guts",
                     "held_item": "Flame Orb",
-                    "moves":  [
+                    "moves": [
                         "Drain Punch",
                         "Mach Punch",
                         "Knock Off",
@@ -149,7 +149,7 @@
                     "species": "Scrafty",
                     "ability": "Intimidate",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Drain Punch",
                         "Knock Off",
                         "Dragon Dance",
@@ -160,7 +160,7 @@
                     "species": "Toxicroak",
                     "ability": "Dry Skin",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Drain Punch",
                         "Sucker Punch",
                         "Gunk Shot",
@@ -171,7 +171,7 @@
                     "species": "Gallade",
                     "ability": "Sharpness",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Sacred Sword",
                         "Psycho Cut",
                         "Swords Dance",
@@ -182,7 +182,7 @@
                     "species": "Mienshao",
                     "ability": "Regenerator",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "U-turn",
                         "Knock Off",

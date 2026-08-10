@@ -1,22 +1,22 @@
 {
     "display_name": "Dark Boss",
-    "dialogue":  {
-        "lines":  [
-            "This is the final Dark test. Win, and the badge is yours."
+    "dialogue": {
+        "lines": [
+            "No more warnings. Step forward, and bring your nerve with you."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Dark Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Tyranitar",
                     "ability": "Sand Stream",
                     "held_item": "Smooth Rock",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Crunch",
                         "Stealth Rock",
@@ -27,7 +27,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "Flamethrower",
@@ -38,7 +38,7 @@
                     "species": "Bisharp",
                     "ability": "Defiant",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Sucker Punch",
                         "Iron Head",
                         "Swords Dance",
@@ -49,7 +49,7 @@
                     "species": "Mandibuzz",
                     "ability": "Overcoat",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Foul Play",
                         "Roost",
                         "Defog",
@@ -60,7 +60,7 @@
                     "species": "Toxicroak",
                     "ability": "Dry Skin",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Drain Punch",
                         "Gunk Shot",
                         "Sucker Punch",
@@ -71,7 +71,7 @@
                     "species": "Excadrill",
                     "ability": "Sand Rush",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Iron Head",
                         "Rapid Spin",
@@ -83,12 +83,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Dark Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Grimmsnarl",
                     "ability": "Prankster",
                     "held_item": "Light Clay",
-                    "moves":  [
+                    "moves": [
                         "Reflect",
                         "Light Screen",
                         "Spirit Break",
@@ -99,7 +99,7 @@
                     "species": "Weavile",
                     "ability": "Pressure",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Knock Off",
                         "Icicle Crash",
                         "Ice Shard",
@@ -110,7 +110,7 @@
                     "species": "Hydreigon",
                     "ability": "Levitate",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Draco Meteor",
                         "Flamethrower",
@@ -121,7 +121,7 @@
                     "species": "Bisharp",
                     "ability": "Defiant",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Sucker Punch",
                         "Iron Head",
                         "Swords Dance",
@@ -132,7 +132,7 @@
                     "species": "Gengar",
                     "ability": "Cursed Body",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Sludge Bomb",
                         "Focus Blast",
@@ -143,7 +143,7 @@
                     "species": "Excadrill",
                     "ability": "Mold Breaker",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Iron Head",
                         "Rapid Spin",

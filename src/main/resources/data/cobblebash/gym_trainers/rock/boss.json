@@ -1,22 +1,22 @@
 {
     "display_name": "Rock Boss",
-    "dialogue":  {
-        "lines":  [
-            "This is the final Rock test. Win, and the badge is yours."
+    "dialogue": {
+        "lines": [
+            "If your team can weather this, the badge is yours."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Balanced Rock Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Tyranitar",
                     "ability": "Sand Stream",
                     "held_item": "Smooth Rock",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Crunch",
                         "Earthquake",
@@ -27,7 +27,7 @@
                     "species": "Rhyperior",
                     "ability": "Solid Rock",
                     "held_item": "Weakness Policy",
-                    "moves":  [
+                    "moves": [
                         "Earthquake",
                         "Rock Blast",
                         "Megahorn",
@@ -35,21 +35,21 @@
                     ]
                 },
                 {
-                    "species": "Lycanroc",
-                    "ability": "Sand Rush",
+                    "species": "Golem",
+                    "ability": "Sturdy",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
-                        "Accelerock",
-                        "Drill Run",
-                        "Swords Dance"
+                        "Earthquake",
+                        "Rock Polish",
+                        "Explosion"
                     ]
                 },
                 {
                     "species": "Cradily",
                     "ability": "Storm Drain",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Giga Drain",
                         "Rock Slide",
                         "Recover",
@@ -60,7 +60,7 @@
                     "species": "Venusaur",
                     "ability": "Chlorophyll",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Giga Drain",
                         "Sludge Bomb",
                         "Sleep Powder",
@@ -71,7 +71,7 @@
                     "species": "Aegislash",
                     "ability": "Stance Change",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "King's Shield",
                         "Shadow Ball",
                         "Sacred Sword",
@@ -83,12 +83,12 @@
         {
             "id": "build_b",
             "name": "Aggressive Rock Leader",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Aerodactyl",
                     "ability": "Rock Head",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Dual Wingbeat",
                         "Earthquake",
@@ -99,7 +99,7 @@
                     "species": "Tyrantrum",
                     "ability": "Rock Head",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Head Smash",
                         "Dragon Claw",
                         "Earthquake",
@@ -110,7 +110,7 @@
                     "species": "Omastar",
                     "ability": "Shell Armor",
                     "held_item": "White Herb",
-                    "moves":  [
+                    "moves": [
                         "Hydro Pump",
                         "Ancient Power",
                         "Ice Beam",
@@ -121,7 +121,7 @@
                     "species": "Kabutops",
                     "ability": "Swift Swim",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Stone Edge",
                         "Liquidation",
                         "Aqua Jet",
@@ -132,7 +132,7 @@
                     "species": "Drapion",
                     "ability": "Battle Armor",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Knock Off",
                         "Poison Jab",
                         "Earthquake",
@@ -140,14 +140,17 @@
                     ]
                 },
                 {
-                    "species": "Rotom-Heat",
+                    "species": "Rotom",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Overheat",
                         "Volt Switch",
                         "Thunderbolt",
                         "Will-O-Wisp"
+                    ],
+                    "aspects": [
+                        "heat-appliance"
                     ]
                 }
             ]

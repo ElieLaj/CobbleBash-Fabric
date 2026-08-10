@@ -1,0 +1,168 @@
+{
+    "display_name": "Elite Four Morrigan",
+    "dialogue": {
+        "lines": [
+            "Every victory decays. Every defeat takes root."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds": [
+        {
+            "id": "build_a",
+            "name": "Haunted Canopy",
+            "pokemon": [
+                {
+                    "species": "Ferrothorn",
+                    "level": 95,
+                    "ability": "Iron Barbs",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Power Whip",
+                        "Gyro Ball",
+                        "Leech Seed",
+                        "Spikes"
+                    ]
+                },
+                {
+                    "species": "Gengar",
+                    "level": 95,
+                    "ability": "Cursed Body",
+                    "held_item": "Life Orb",
+                    "moves": [
+                        "Shadow Ball",
+                        "Sludge Wave",
+                        "Focus Blast",
+                        "Nasty Plot"
+                    ]
+                },
+                {
+                    "species": "Trevenant",
+                    "level": 95,
+                    "ability": "Harvest",
+                    "held_item": "Sitrus Berry",
+                    "moves": [
+                        "Horn Leech",
+                        "Shadow Claw",
+                        "Will-O-Wisp",
+                        "Leech Seed"
+                    ]
+                },
+                {
+                    "species": "Roserade",
+                    "level": 95,
+                    "ability": "Natural Cure",
+                    "held_item": "Black Sludge",
+                    "moves": [
+                        "Giga Drain",
+                        "Sludge Bomb",
+                        "Sleep Powder",
+                        "Spikes"
+                    ]
+                },
+                {
+                    "species": "Decidueye",
+                    "level": 96,
+                    "ability": "Overgrow",
+                    "held_item": "Choice Band",
+                    "moves": [
+                        "Spirit Shackle",
+                        "Leaf Blade",
+                        "Shadow Sneak",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Dragapult",
+                    "level": 98,
+                    "ability": "Infiltrator",
+                    "held_item": "Choice Specs",
+                    "moves": [
+                        "Shadow Ball",
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Rotting Grove",
+            "pokemon": [
+                {
+                    "species": "Venusaur",
+                    "level": 95,
+                    "ability": "Chlorophyll",
+                    "held_item": "Black Sludge",
+                    "moves": [
+                        "Giga Drain",
+                        "Sludge Bomb",
+                        "Sleep Powder",
+                        "Growth"
+                    ]
+                },
+                {
+                    "species": "Sableye",
+                    "level": 95,
+                    "ability": "Prankster",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Knock Off",
+                        "Will-O-Wisp",
+                        "Recover",
+                        "Encore"
+                    ]
+                },
+                {
+                    "species": "Chandelure",
+                    "level": 95,
+                    "ability": "Flash Fire",
+                    "held_item": "Choice Scarf",
+                    "moves": [
+                        "Shadow Ball",
+                        "Flamethrower",
+                        "Energy Ball",
+                        "Trick"
+                    ]
+                },
+                {
+                    "species": "Tangrowth",
+                    "level": 95,
+                    "ability": "Regenerator",
+                    "held_item": "Rocky Helmet",
+                    "moves": [
+                        "Giga Drain",
+                        "Knock Off",
+                        "Sleep Powder",
+                        "Earthquake"
+                    ]
+                },
+                {
+                    "species": "Aegislash",
+                    "level": 96,
+                    "ability": "Stance Change",
+                    "held_item": "Leftovers",
+                    "moves": [
+                        "Shadow Ball",
+                        "Flash Cannon",
+                        "Shadow Sneak",
+                        "King's Shield"
+                    ]
+                },
+                {
+                    "species": "Decidueye",
+                    "level": 98,
+                    "ability": "Overgrow",
+                    "held_item": "Life Orb",
+                    "moves": [
+                        "Spirit Shackle",
+                        "Leaf Blade",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

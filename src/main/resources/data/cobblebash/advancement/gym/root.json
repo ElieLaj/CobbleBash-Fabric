@@ -1,23 +1,30 @@
 {
-  "display": {
-    "icon": {
-      "id": "cobblebash:training_simulator"
+    "display": {
+        "icon": {
+            "id": "cobblebash:training_simulator"
+        },
+        "title": "CobbleBash Gyms",
+        "description": "Craft a Training Simulator to challenge CobbleBash Gyms with training disks.",
+        "background": "minecraft:textures/block/deepslate.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
-    "title": "CobbleBash Gyms",
-    "description": "Complete Gyms inside the Training Simulator.",
-    "background": "minecraft:textures/block/deepslate.png",
-    "show_toast": false,
-    "announce_to_chat": false,
-    "hidden": false
-  },
-  "criteria": {
-    "tick": {
-      "trigger": "minecraft:tick"
-    }
-  },
-  "requirements": [
-    [
-      "tick"
+    "criteria": {
+        "has_training_simulator": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "cobblebash:training_simulator"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_training_simulator"
+        ]
     ]
-  ]
 }

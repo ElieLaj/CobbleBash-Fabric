@@ -1,22 +1,22 @@
 {
     "display_name": "Grass Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Grass gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "Roots hold. Vines pull. Let us see where you stand."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Hazard Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Ferrothorn",
                     "ability": "Iron Barbs",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Leech Seed",
                         "Gyro Ball",
@@ -27,7 +27,7 @@
                     "species": "Rillaboom",
                     "ability": "Grassy Surge",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Grassy Glide",
                         "Wood Hammer",
                         "U-turn",
@@ -38,7 +38,7 @@
                     "species": "Amoonguss",
                     "ability": "Regenerator",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Spore",
                         "Giga Drain",
                         "Clear Smog",
@@ -49,7 +49,7 @@
                     "species": "Roserade",
                     "ability": "Natural Cure",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Giga Drain",
                         "Sludge Bomb",
                         "Toxic Spikes",
@@ -60,7 +60,7 @@
                     "species": "Decidueye",
                     "ability": "Overgrow",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Leaf Blade",
                         "Spirit Shackle",
                         "Swords Dance",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Fast Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Rillaboom",
                     "ability": "Grassy Surge",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Grassy Glide",
                         "Wood Hammer",
                         "U-turn",
@@ -88,7 +88,7 @@
                     "species": "Meowscarada",
                     "ability": "Overgrow",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Flower Trick",
                         "Knock Off",
                         "U-turn",
@@ -99,7 +99,7 @@
                     "species": "Breloom",
                     "ability": "Technician",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Spore",
                         "Mach Punch",
                         "Bullet Seed",
@@ -110,7 +110,7 @@
                     "species": "Roserade",
                     "ability": "Natural Cure",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Giga Drain",
                         "Sludge Bomb",
                         "Sleep Powder",
@@ -121,7 +121,7 @@
                     "species": "Whimsicott",
                     "ability": "Prankster",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Tailwind",
                         "Encore",
                         "U-turn",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Sustain & Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Tangrowth",
                     "ability": "Regenerator",
                     "held_item": "Rocky Helmet",
-                    "moves":  [
+                    "moves": [
                         "Giga Drain",
                         "Knock Off",
                         "Sleep Powder",
@@ -149,7 +149,7 @@
                     "species": "Amoonguss",
                     "ability": "Regenerator",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Spore",
                         "Giga Drain",
                         "Clear Smog",
@@ -160,7 +160,7 @@
                     "species": "Ferrothorn",
                     "ability": "Iron Barbs",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Leech Seed",
                         "Gyro Ball",
@@ -171,7 +171,7 @@
                     "species": "Roserade",
                     "ability": "Natural Cure",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Giga Drain",
                         "Sludge Bomb",
                         "Sleep Powder",
@@ -182,7 +182,7 @@
                     "species": "Whimsicott",
                     "ability": "Prankster",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Leech Seed",
                         "Encore",
                         "U-turn",

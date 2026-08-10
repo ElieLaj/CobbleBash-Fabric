@@ -1,0 +1,23 @@
+{
+    "parent": "cobblebash:gym/find_training_disk",
+    "display": {
+        "icon": {
+            "id": "cobblebash:training_simulator"
+        },
+        "title": "Enter Your First Gym",
+        "description": "Use a training disk on a Training Simulator to begin a gym challenge.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "entered": {
+            "trigger": "cobblebash:gym_entered"
+        }
+    },
+    "requirements": [
+        [
+            "entered"
+        ]
+    ]
+}

@@ -1,22 +1,22 @@
 {
     "display_name": "The Swarm",
-    "dialogue":  {
-        "lines":  [
-            "You made it past the first threads. Now face the swarm."
+    "dialogue": {
+        "lines": [
+            "Small wings, sharp instincts. Let us see if you can keep up."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Hazard Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Forretress",
                     "ability": "Sturdy",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Spikes",
                         "Rapid Spin",
@@ -27,7 +27,7 @@
                     "species": "Volcarona",
                     "ability": "Flame Body",
                     "held_item": "Heavy-Duty Boots",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Fiery Dance",
                         "Bug Buzz",
@@ -38,7 +38,7 @@
                     "species": "Araquanid",
                     "ability": "Water Bubble",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Liquidation",
                         "Leech Life",
                         "Mirror Coat",
@@ -49,7 +49,7 @@
                     "species": "Scizor",
                     "ability": "Technician",
                     "held_item": "Choice Band",
-                    "moves":  [
+                    "moves": [
                         "Bullet Punch",
                         "U-turn",
                         "Superpower",
@@ -60,7 +60,7 @@
                     "species": "Frosmoth",
                     "ability": "Ice Scales",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Ice Beam",
                         "Bug Buzz",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Fast Offensive Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Galvantula",
                     "ability": "Compound Eyes",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Sticky Web",
                         "Thunder",
                         "Bug Buzz",
@@ -88,7 +88,7 @@
                     "species": "Heracross",
                     "ability": "Guts",
                     "held_item": "Flame Orb",
-                    "moves":  [
+                    "moves": [
                         "Close Combat",
                         "Megahorn",
                         "Knock Off",
@@ -99,7 +99,7 @@
                     "species": "Scizor",
                     "ability": "Technician",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Bullet Punch",
                         "Swords Dance",
                         "U-turn",
@@ -110,7 +110,7 @@
                     "species": "Volcarona",
                     "ability": "Flame Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Fiery Dance",
                         "Bug Buzz",
@@ -121,7 +121,7 @@
                     "species": "Golisopod",
                     "ability": "Emergency Exit",
                     "held_item": "Assault Vest",
-                    "moves":  [
+                    "moves": [
                         "First Impression",
                         "Liquidation",
                         "Leech Life",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Status and Sustain",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Ribombee",
                     "ability": "Shield Dust",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Sticky Web",
                         "Moonblast",
                         "Bug Buzz",
@@ -149,7 +149,7 @@
                     "species": "Araquanid",
                     "ability": "Water Bubble",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Liquidation",
                         "Toxic",
                         "Protect",
@@ -160,7 +160,7 @@
                     "species": "Forretress",
                     "ability": "Sturdy",
                     "held_item": "Rocky Helmet",
-                    "moves":  [
+                    "moves": [
                         "Stealth Rock",
                         "Rapid Spin",
                         "Volt Switch",
@@ -171,7 +171,7 @@
                     "species": "Scizor",
                     "ability": "Technician",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Bullet Punch",
                         "U-turn",
                         "Roost",
@@ -182,7 +182,7 @@
                     "species": "Frosmoth",
                     "ability": "Ice Scales",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Quiver Dance",
                         "Ice Beam",
                         "Bug Buzz",

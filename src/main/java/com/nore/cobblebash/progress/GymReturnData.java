@@ -1,105 +1,91 @@
 package com.nore.cobblebash.progress;
 
-import net.minecraft.core.HolderLookup;
+import java.util.Optional;
+import java.util.UUID;
+import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.Tag;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.saveddata.SavedData;
-
-import java.util.Optional;
-import java.util.UUID;
+import net.minecraft.world.level.saveddata.SavedData.Factory;
 
 public class GymReturnData extends SavedData {
-    private static final String DATA_NAME = "cobblebash_gym_returns";
-    // Le troisieme parametre est le type de DataFixer. NeoForge ajoute une
-    // surcharge a deux arguments qui le met a null ; en vanilla il faut
-    // l'ecrire, et null convient : ces donnees ne sont pas versionnees.
-    private static final SavedData.Factory<GymReturnData> FACTORY = new SavedData.Factory<>(
-            GymReturnData::new,
-            GymReturnData::load,
-            null
-    );
+   private static final String DATA_NAME = "cobblebash_gym_returns";
+   private static final Factory<GymReturnData> FACTORY = new Factory<>(GymReturnData::new, GymReturnData::load, null);
+   private final CompoundTag returns = new CompoundTag();
 
-    private final CompoundTag returns = new CompoundTag();
+   public static GymReturnData get(MinecraftServer server) {
+      return (GymReturnData)server.overworld().getDataStorage().computeIfAbsent(FACTORY, "cobblebash_gym_returns");
+   }
 
-    public static GymReturnData get(MinecraftServer server) {
-        return server.overworld().getDataStorage().computeIfAbsent(FACTORY, DATA_NAME);
-    }
+   private static GymReturnData load(CompoundTag tag, Provider provider) {
+      GymReturnData gymreturndata = new GymReturnData();
+      if (tag.contains("returns", 10)) {
+         gymreturndata.returns.merge(tag.getCompound("returns"));
+      }
 
-    private static GymReturnData load(CompoundTag tag, HolderLookup.Provider provider) {
-        GymReturnData data = new GymReturnData();
-        if (tag.contains("returns", Tag.TAG_COMPOUND)) {
-            data.returns.merge(tag.getCompound("returns"));
-        }
-        return data;
-    }
+      return gymreturndata;
+   }
 
-    public void put(UUID playerId, ReturnLocation location) {
-        CompoundTag tag = new CompoundTag();
-        tag.putString("dimension", location.dimension().location().toString());
-        tag.putDouble("x", location.x());
-        tag.putDouble("y", location.y());
-        tag.putDouble("z", location.z());
-        tag.putFloat("yRot", location.yRot());
-        tag.putFloat("xRot", location.xRot());
+   public void put(UUID playerId, GymReturnData.ReturnLocation location) {
+      CompoundTag compoundtag = new CompoundTag();
+      compoundtag.putString("dimension", location.dimension().location().toString());
+      compoundtag.putDouble("x", location.x());
+      compoundtag.putDouble("y", location.y());
+      compoundtag.putDouble("z", location.z());
+      compoundtag.putFloat("yRot", location.yRot());
+      compoundtag.putFloat("xRot", location.xRot());
+      this.returns.put(playerId.toString(), compoundtag);
+      this.setDirty();
+   }
 
-        returns.put(playerId.toString(), tag);
-        setDirty();
-    }
+   public Optional<GymReturnData.ReturnLocation> get(UUID playerId) {
+      String s = playerId.toString();
+      if (!this.returns.contains(s, 10)) {
+         return Optional.empty();
+      }
 
-    public Optional<ReturnLocation> get(UUID playerId) {
-        String key = playerId.toString();
-        if (!returns.contains(key, Tag.TAG_COMPOUND)) {
-            return Optional.empty();
-        }
+      CompoundTag compoundtag = this.returns.getCompound(s);
+      ResourceLocation resourcelocation = ResourceLocation.tryParse(compoundtag.getString("dimension"));
+      if (resourcelocation == null) {
+         return Optional.empty();
+      }
 
-        CompoundTag tag = returns.getCompound(key);
-        ResourceLocation dimensionId = ResourceLocation.tryParse(tag.getString("dimension"));
-        if (dimensionId == null) {
-            return Optional.empty();
-        }
+      ResourceKey<Level> resourcekey = ResourceKey.create(Registries.DIMENSION, resourcelocation);
+      return Optional.of(
+         new GymReturnData.ReturnLocation(
+            resourcekey,
+            compoundtag.getDouble("x"),
+            compoundtag.getDouble("y"),
+            compoundtag.getDouble("z"),
+            compoundtag.getFloat("yRot"),
+            compoundtag.getFloat("xRot")
+         )
+      );
+   }
 
-        ResourceKey<Level> dimension = ResourceKey.create(Registries.DIMENSION, dimensionId);
-        return Optional.of(new ReturnLocation(
-                dimension,
-                tag.getDouble("x"),
-                tag.getDouble("y"),
-                tag.getDouble("z"),
-                tag.getFloat("yRot"),
-                tag.getFloat("xRot")
-        ));
-    }
+   public Optional<GymReturnData.ReturnLocation> remove(UUID playerId) {
+      Optional<GymReturnData.ReturnLocation> optional = this.get(playerId);
+      if (this.returns.contains(playerId.toString())) {
+         this.returns.remove(playerId.toString());
+         this.setDirty();
+      }
 
-    public Optional<ReturnLocation> remove(UUID playerId) {
-        Optional<ReturnLocation> location = get(playerId);
-        if (returns.contains(playerId.toString())) {
-            returns.remove(playerId.toString());
-            setDirty();
-        }
-        return location;
-    }
+      return optional;
+   }
 
-    @Override
-    public CompoundTag save(CompoundTag tag, HolderLookup.Provider provider) {
-        tag.put("returns", returns.copy());
-        return tag;
-    }
+   public CompoundTag save(CompoundTag tag, Provider provider) {
+      tag.put("returns", this.returns.copy());
+      return tag;
+   }
 
-    public record ReturnLocation(
-            ResourceKey<Level> dimension,
-            double x,
-            double y,
-            double z,
-            float yRot,
-            float xRot
-    ) {
-        public static ReturnLocation from(ServerLevel level, double x, double y, double z, float yRot, float xRot) {
-            return new ReturnLocation(level.dimension(), x, y, z, yRot, xRot);
-        }
-    }
+   public record ReturnLocation(ResourceKey<Level> dimension, double x, double y, double z, float yRot, float xRot) {
+      public static GymReturnData.ReturnLocation from(ServerLevel level, double x, double y, double z, float yRot, float xRot) {
+         return new GymReturnData.ReturnLocation(level.dimension(), x, y, z, yRot, xRot);
+      }
+   }
 }

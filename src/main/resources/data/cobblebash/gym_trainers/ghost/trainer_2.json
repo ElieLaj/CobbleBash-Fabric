@@ -1,22 +1,22 @@
 {
     "display_name": "Ghost Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Ghost gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "Do not trust the silence. That is when ghosts move first."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Status Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Gengar",
                     "ability": "Cursed Body",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Sludge Bomb",
                         "Focus Blast",
@@ -27,7 +27,7 @@
                     "species": "Mimikyu",
                     "ability": "Disguise",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Shadow Sneak",
                         "Swords Dance",
@@ -38,7 +38,7 @@
                     "species": "Aegislash",
                     "ability": "Stance Change",
                     "held_item": "Weakness Policy",
-                    "moves":  [
+                    "moves": [
                         "King's Shield",
                         "Shadow Ball",
                         "Sacred Sword",
@@ -49,7 +49,7 @@
                     "species": "Froslass",
                     "ability": "Cursed Body",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Spikes",
                         "Ice Beam",
                         "Shadow Ball",
@@ -60,7 +60,7 @@
                     "species": "Chandelure",
                     "ability": "Flash Fire",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Flamethrower",
                         "Energy Ball",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Offensive Ghosts",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Dragapult",
                     "ability": "Infiltrator",
                     "held_item": "Choice Specs",
-                    "moves":  [
+                    "moves": [
                         "Draco Meteor",
                         "Shadow Ball",
                         "Flamethrower",
@@ -88,7 +88,7 @@
                     "species": "Gengar",
                     "ability": "Cursed Body",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Sludge Bomb",
                         "Focus Blast",
@@ -99,7 +99,7 @@
                     "species": "Mimikyu",
                     "ability": "Disguise",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Play Rough",
                         "Shadow Sneak",
                         "Swords Dance",
@@ -110,7 +110,7 @@
                     "species": "Chandelure",
                     "ability": "Flash Fire",
                     "held_item": "Choice Scarf",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Flamethrower",
                         "Energy Ball",
@@ -121,7 +121,7 @@
                     "species": "Froslass",
                     "ability": "Cursed Body",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Spikes",
                         "Ice Beam",
                         "Shadow Ball",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Sustain & Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Spiritomb",
                     "ability": "Pressure",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Dark Pulse",
                         "Will-O-Wisp",
                         "Pain Split",
@@ -149,7 +149,7 @@
                     "species": "Dusclops",
                     "ability": "Pressure",
                     "held_item": "Eviolite",
-                    "moves":  [
+                    "moves": [
                         "Will-O-Wisp",
                         "Night Shade",
                         "Pain Split",
@@ -160,7 +160,7 @@
                     "species": "Aegislash",
                     "ability": "Stance Change",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "King's Shield",
                         "Shadow Ball",
                         "Sacred Sword",
@@ -171,7 +171,7 @@
                     "species": "Gengar",
                     "ability": "Cursed Body",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Sludge Bomb",
                         "Destiny Bond",
@@ -182,7 +182,7 @@
                     "species": "Mismagius",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Mystical Fire",
                         "Nasty Plot",

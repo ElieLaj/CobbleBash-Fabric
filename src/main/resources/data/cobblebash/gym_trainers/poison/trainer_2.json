@@ -1,22 +1,22 @@
 {
     "display_name": "Poison Trainer 2",
-    "dialogue":  {
-        "lines":  [
-            "You made it deeper into the Poison gym. Keep your guard up."
+    "dialogue": {
+        "lines": [
+            "The first mistake stings. The second one decides it."
         ],
         "battle_text": "Battle",
         "cancel_text": "Cancel"
     },
-    "builds":  [
+    "builds": [
         {
             "id": "build_a",
             "name": "Hazard Pressure",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Roserade",
                     "ability": "Natural Cure",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Sludge Bomb",
                         "Giga Drain",
                         "Toxic Spikes",
@@ -27,7 +27,7 @@
                     "species": "Toxapex",
                     "ability": "Regenerator",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Toxic",
                         "Recover",
@@ -38,7 +38,7 @@
                     "species": "Nidoking",
                     "ability": "Sheer Force",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Earth Power",
                         "Sludge Wave",
                         "Thunderbolt",
@@ -49,7 +49,7 @@
                     "species": "Crobat",
                     "ability": "Infiltrator",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Brave Bird",
                         "Cross Poison",
                         "U-turn",
@@ -60,7 +60,7 @@
                     "species": "Drapion",
                     "ability": "Battle Armor",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Knock Off",
                         "Poison Jab",
                         "Earthquake",
@@ -72,12 +72,12 @@
         {
             "id": "build_b",
             "name": "Fast Offense",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Gengar",
                     "ability": "Cursed Body",
                     "held_item": "Focus Sash",
-                    "moves":  [
+                    "moves": [
                         "Shadow Ball",
                         "Sludge Bomb",
                         "Destiny Bond",
@@ -88,7 +88,7 @@
                     "species": "Nidoking",
                     "ability": "Sheer Force",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Earth Power",
                         "Sludge Wave",
                         "Thunderbolt",
@@ -99,7 +99,7 @@
                     "species": "Crobat",
                     "ability": "Infiltrator",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Brave Bird",
                         "Cross Poison",
                         "U-turn",
@@ -110,7 +110,7 @@
                     "species": "Toxicroak",
                     "ability": "Dry Skin",
                     "held_item": "Life Orb",
-                    "moves":  [
+                    "moves": [
                         "Drain Punch",
                         "Gunk Shot",
                         "Sucker Punch",
@@ -121,7 +121,7 @@
                     "species": "Roserade",
                     "ability": "Natural Cure",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Sludge Bomb",
                         "Giga Drain",
                         "Sleep Powder",
@@ -133,12 +133,12 @@
         {
             "id": "build_c",
             "name": "Sustain & Control",
-            "pokemon":  [
+            "pokemon": [
                 {
                     "species": "Toxapex",
                     "ability": "Regenerator",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Scald",
                         "Toxic",
                         "Recover",
@@ -149,7 +149,7 @@
                     "species": "Clodsire",
                     "ability": "Unaware",
                     "held_item": "Leftovers",
-                    "moves":  [
+                    "moves": [
                         "Toxic",
                         "Earthquake",
                         "Recover",
@@ -160,7 +160,7 @@
                     "species": "Amoonguss",
                     "ability": "Regenerator",
                     "held_item": "Black Sludge",
-                    "moves":  [
+                    "moves": [
                         "Spore",
                         "Giga Drain",
                         "Clear Smog",
@@ -171,7 +171,7 @@
                     "species": "Weezing",
                     "ability": "Levitate",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Sludge Bomb",
                         "Will-O-Wisp",
                         "Pain Split",
@@ -182,7 +182,7 @@
                     "species": "Drapion",
                     "ability": "Battle Armor",
                     "held_item": "None",
-                    "moves":  [
+                    "moves": [
                         "Knock Off",
                         "Poison Jab",
                         "Earthquake",

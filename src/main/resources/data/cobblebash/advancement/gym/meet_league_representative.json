@@ -1,0 +1,23 @@
+{
+    "parent": "cobblebash:gym/root",
+    "display": {
+        "icon": {
+            "id": "minecraft:emerald"
+        },
+        "title": "Meet a League Representative",
+        "description": "A villager with a Training Simulator job site can become a League Representative.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "met": {
+            "trigger": "cobblebash:league_representative_met"
+        }
+    },
+    "requirements": [
+        [
+            "met"
+        ]
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "ICI",
+        "ICI",
+        "SRS"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "C": {
+            "item": "minecraft:copper_ingot"
+        },
+        "S": {
+            "item": "minecraft:smooth_stone"
+        },
+        "R": {
+            "item": "minecraft:redstone_block"
+        }
+    },
+    "result": {
+        "count": 1,
+        "id": "cobblebash:training_simulator"
+    }
+}

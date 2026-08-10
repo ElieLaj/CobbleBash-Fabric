@@ -32,7 +32,7 @@ public abstract class PlayerAdvancementsMixin {
 
         PlayerAdvancements self = (PlayerAdvancements) (Object) this;
         if (self.getOrStartProgress(advancement).isDone()) {
-            GymEventHandler.onAdvancementEarned(this.player, advancement.id());
+            GymEventHandler.onAdvancementEarned(this.player, advancement);
         }
     }
 }
