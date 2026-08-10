@@ -67,5 +67,7 @@
   "itemGroup.cobblebash": "CobbleBash",
   "message.cobblebash.cobble_dollars_reward": "Received %s bonus Cobble Dollars.",
   "stat.cobblebash.gyms_completed": "Gyms Completed",
-  "upgrade.cobblebash.champion_upgrade": "Champion Upgrade"
+  "upgrade.cobblebash.champion_upgrade": "Champion Upgrade",
+  "entity.cobblebash.gym_trainer": "Gym Trainer",
+  "entity.cobblebash.gym_leader": "Gym Leader"
 }

@@ -21,5 +21,7 @@
   "gui.cobblebash.gym_level.cancel": "Annuler",
   "gui.cobblebash.gym_level.slider": "Niveau du champion : %s",
   "gui.cobblebash.gym_level.start": "Entrer",
-  "gui.cobblebash.gym_level.title": "Arène %s — choisis le niveau"
+  "gui.cobblebash.gym_level.title": "Arène %s — choisis le niveau",
+  "entity.cobblebash.gym_trainer": "Dresseur d'Arène",
+  "entity.cobblebash.gym_leader": "Champion d'Arène"
 }

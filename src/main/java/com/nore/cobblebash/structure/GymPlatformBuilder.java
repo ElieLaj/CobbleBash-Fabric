@@ -582,9 +582,18 @@ public class GymPlatformBuilder {
    }
 
    private static String getTrainerDisplayName(ServerLevel level, String gymType, String trainerIdPart, GymPlatformBuilder.TrainerVisual visual) {
+      // La fiche du dresseur prime sur le nom tire au sort : elle porte le
+      // personnage ecrit pour cette arene (et la replique qui va avec), et
+      // c'est le seul des deux qu'un datapack peut traduire ou reecrire.
+      // Le nom aleatoire reste le repli quand aucune fiche ne repond.
+      String s = RctApiProbe.getTrainerDisplayName(level.getServer(), gymType, trainerIdPart);
+      if (s != null && !s.isBlank() && !"Gym Trainer".equals(s)) {
+         return s;
+      }
+
       return visual != null && visual.displayName() != null && !visual.displayName().isBlank()
          ? visual.displayName()
-         : RctApiProbe.getTrainerDisplayName(level.getServer(), gymType, trainerIdPart);
+         : s;
    }
 
    private static int takeRandomModel(ServerLevel level, List<Integer> models) {
