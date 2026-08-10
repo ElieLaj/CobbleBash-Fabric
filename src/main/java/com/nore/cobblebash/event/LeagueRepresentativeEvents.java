@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Supplier;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.RandomSource;
@@ -45,12 +46,12 @@ public class LeagueRepresentativeEvents {
     */
    public static void register() {
       TradeOfferHelper.registerVillagerOffers(CobbleBash.LEAGUE_REPRESENTATIVE, 1, factories -> {
-         factories.add(item(CobblemonItems.POKE_BALL, 2, 1, 16, 1));
-         factories.add(item(CobblemonItems.HEAL_BALL, 4, 1, 12, 1));
-         factories.add(item(CobblemonItems.NEST_BALL, 5, 1, 12, 1));
-         factories.add(item(CobblemonItems.X_ATTACK, 3, 1, 12, 2));
-         factories.add(item(CobblemonItems.X_DEFENSE, 3, 1, 12, 2));
-         factories.add(item(CobblemonItems.X_SPEED, 3, 1, 12, 2));
+         factories.add(lazyItem(() -> CobblemonItems.POKE_BALL, 2, 1, 16, 1));
+         factories.add(lazyItem(() -> CobblemonItems.HEAL_BALL, 4, 1, 12, 1));
+         factories.add(lazyItem(() -> CobblemonItems.NEST_BALL, 5, 1, 12, 1));
+         factories.add(lazyItem(() -> CobblemonItems.X_ATTACK, 3, 1, 12, 2));
+         factories.add(lazyItem(() -> CobblemonItems.X_DEFENSE, 3, 1, 12, 2));
+         factories.add(lazyItem(() -> CobblemonItems.X_SPEED, 3, 1, 12, 2));
       });
 
       LootTableEvents.MODIFY.register((key, tableBuilder, source, registries) -> {
@@ -104,6 +105,19 @@ public class LeagueRepresentativeEvents {
       }
    }
 
+
+   /**
+    * Offre dont l'objet n'est resolu qu'a la premiere generation d'echange.
+    *
+    * <p>{@code registerVillagerOffers} execute son lambda des l'initialisation
+    * du mod ; toucher {@code CobblemonItems} a ce moment declenche son
+    * initialisation statique avant celle de Cobblemon, et le jeu s'arrete sur
+    * un {@code lateinit property implementation has not been initialized}.
+    * NeoForge n'avait pas ce souci : son evenement se declenche bien plus tard.
+    */
+   private static ItemListing lazyItem(Supplier<Item> item, int emeraldCost, int count, int maxUses, int xp) {
+      return (entity, random) -> item(item.get(), emeraldCost, count, maxUses, xp).getOffer(entity, random);
+   }
 
    private static ItemListing item(Item item, int emeraldCost, int count, int maxUses, int xp) {
       return new ItemsForEmeralds(item, emeraldCost, count, maxUses, xp);
