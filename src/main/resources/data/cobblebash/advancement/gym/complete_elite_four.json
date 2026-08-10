@@ -1,0 +1,29 @@
+{
+  "parent": "cobblebash:gym/all_gyms",
+  "display": {
+    "icon": {
+      "id": "cobblebash:elite_four_training_disk"
+    },
+    "title": {
+      "translate": "advancements.cobblebash.complete_elite_four.title"
+    },
+    "description": {
+      "translate": "advancements.cobblebash.complete_elite_four.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "beat_champion": {
+      "trigger": "cobblebash:elite_four_completed",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "beat_champion"
+    ]
+  ]
+}

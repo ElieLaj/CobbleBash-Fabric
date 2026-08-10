@@ -1,4 +1,6 @@
 {
+  "advancements.cobblebash.complete_elite_four.description": "Defeat the Elite Four and the Champion.",
+  "advancements.cobblebash.complete_elite_four.title": "Champion of the League",
   "block.cobblebash.champion_beacon": "Champion Beacon",
   "block.cobblebash.elite_four_plaque_electric_ground": "Electric/Ground Elite Four Plaque",
   "block.cobblebash.elite_four_plaque_fire_fairy": "Fire/Fairy Elite Four Plaque",
@@ -31,6 +33,8 @@
   "cobblebash.gym.steel": "Steel",
   "cobblebash.gym.water": "Water",
   "container.cobblebash.champion_beacon": "Champion Beacon",
+  "entity.cobblebash.gym_leader": "Gym Leader",
+  "entity.cobblebash.gym_trainer": "Gym Trainer",
   "entity.minecraft.villager.cobblebash.league_representative": "League Representative",
   "entity.minecraft.villager.cobblebash:league_representative": "League Representative",
   "gui.cobblebash.gym_level": "Gym Level",
@@ -67,7 +71,5 @@
   "itemGroup.cobblebash": "CobbleBash",
   "message.cobblebash.cobble_dollars_reward": "Received %s bonus Cobble Dollars.",
   "stat.cobblebash.gyms_completed": "Gyms Completed",
-  "upgrade.cobblebash.champion_upgrade": "Champion Upgrade",
-  "entity.cobblebash.gym_trainer": "Gym Trainer",
-  "entity.cobblebash.gym_leader": "Gym Leader"
+  "upgrade.cobblebash.champion_upgrade": "Champion Upgrade"
 }

@@ -1,4 +1,6 @@
 {
+  "advancements.cobblebash.complete_elite_four.description": "Viens à bout du Conseil 4 et du Maître.",
+  "advancements.cobblebash.complete_elite_four.title": "Maître de la Ligue",
   "cobblebash.gym.bug": "Insecte",
   "cobblebash.gym.dark": "Ténèbres",
   "cobblebash.gym.dragon": "Dragon",
@@ -17,11 +19,11 @@
   "cobblebash.gym.rock": "Roche",
   "cobblebash.gym.steel": "Acier",
   "cobblebash.gym.water": "Eau",
+  "entity.cobblebash.gym_leader": "Champion d'Arène",
+  "entity.cobblebash.gym_trainer": "Dresseur d'Arène",
   "gui.cobblebash.gym_level": "Niveau de l'arène",
   "gui.cobblebash.gym_level.cancel": "Annuler",
   "gui.cobblebash.gym_level.slider": "Niveau du champion : %s",
   "gui.cobblebash.gym_level.start": "Entrer",
-  "gui.cobblebash.gym_level.title": "Arène %s — choisis le niveau",
-  "entity.cobblebash.gym_trainer": "Dresseur d'Arène",
-  "entity.cobblebash.gym_leader": "Champion d'Arène"
+  "gui.cobblebash.gym_level.title": "Arène %s — choisis le niveau"
 }

@@ -770,6 +770,8 @@ public class GymCommand {
       if ("elite4_champion".equals(gymType) && unit == GymTrainerUnit.BOSS && instance.getSlotId() == slotId && instance.isEliteFourChampionUnlocked()) {
          giveOrDrop(player, new ItemStack((ItemLike)CobbleBash.CHAMPION_UPGRADE_SMITHING_TEMPLATE));
          player.sendSystemMessage(Component.literal("Received a Champion Upgrade Smithing Template."));
+         // Seul endroit ou le Conseil 4 est reellement termine.
+         CobbleBashCriteriaTriggers.triggerEliteFourCompleted(player);
       } else {
          EliteFourMember elitefourmember = EliteFourMember.fromTrainerGymType(gymType);
          if (elitefourmember != null

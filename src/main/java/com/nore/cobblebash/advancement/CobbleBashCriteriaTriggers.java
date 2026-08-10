@@ -12,12 +12,14 @@ public class CobbleBashCriteriaTriggers {
    public static SimpleEventTrigger LEAGUE_REPRESENTATIVE_MET;
    public static SimpleEventTrigger LEAGUE_REPRESENTATIVE_TRADED;
    public static SimpleEventTrigger GYM_ENTERED;
+   public static SimpleEventTrigger ELITE_FOUR_COMPLETED;
 
    public static void bootstrap() {
       GYM_BOSS_DEFEATED = register("gym_boss_defeated", new GymBossDefeatedTrigger());
       LEAGUE_REPRESENTATIVE_MET = register("league_representative_met", new SimpleEventTrigger());
       LEAGUE_REPRESENTATIVE_TRADED = register("league_representative_traded", new SimpleEventTrigger());
       GYM_ENTERED = register("gym_entered", new SimpleEventTrigger());
+      ELITE_FOUR_COMPLETED = register("elite_four_completed", new SimpleEventTrigger());
    }
 
    private static <T extends net.minecraft.advancements.CriterionTrigger<?>> T register(String name, T trigger) {
@@ -42,5 +44,10 @@ public class CobbleBashCriteriaTriggers {
 
    public static void triggerGymEntered(ServerPlayer player) {
       GYM_ENTERED.trigger(player);
+   }
+
+   /** Victoire sur le Maitre : c'est la fin du Conseil 4. */
+   public static void triggerEliteFourCompleted(ServerPlayer player) {
+      ELITE_FOUR_COMPLETED.trigger(player);
    }
 }
