@@ -1,0 +1,112 @@
+{
+    "display_name": "Grass Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Grass gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Leech & Setup",
+            "pokemon":  [
+                {
+                    "species": "Roserade",
+                    "ability": "Natural Cure",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Giga Drain",
+                        "Sludge Bomb",
+                        "Toxic Spikes",
+                        "Sleep Powder"
+                    ]
+                },
+                {
+                    "species": "Whimsicott",
+                    "ability": "Prankster",
+                    "held_item": "None",
+                    "moves":  [
+                        "Leech Seed",
+                        "Encore",
+                        "Tailwind",
+                        "Moonblast"
+                    ]
+                },
+                {
+                    "species": "Breloom",
+                    "ability": "Technician",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Spore",
+                        "Mach Punch",
+                        "Bullet Seed",
+                        "Rock Tomb"
+                    ]
+                },
+                {
+                    "species": "Tangrowth",
+                    "ability": "Regenerator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Giga Drain",
+                        "Knock Off",
+                        "Sleep Powder",
+                        "Protect"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Bulky Growth",
+            "pokemon":  [
+                {
+                    "species": "Ferrothorn",
+                    "ability": "Iron Barbs",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Leech Seed",
+                        "Gyro Ball",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Amoonguss",
+                    "ability": "Regenerator",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Spore",
+                        "Giga Drain",
+                        "Clear Smog",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Decidueye",
+                    "ability": "Overgrow",
+                    "held_item": "None",
+                    "moves":  [
+                        "Leaf Blade",
+                        "Spirit Shackle",
+                        "Swords Dance",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Whimsicott",
+                    "ability": "Prankster",
+                    "held_item": "None",
+                    "moves":  [
+                        "Leech Seed",
+                        "Encore",
+                        "U-turn",
+                        "Moonblast"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "display_name": "Dragon Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Dragon gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Classic Offense",
+            "pokemon":  [
+                {
+                    "species": "Dragonite",
+                    "ability": "Multiscale",
+                    "held_item": "Weakness Policy",
+                    "moves":  [
+                        "Dragon Dance",
+                        "Dual Wingbeat",
+                        "Earthquake",
+                        "Extreme Speed"
+                    ]
+                },
+                {
+                    "species": "Noivern",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Hurricane",
+                        "Flamethrower",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Haxorus",
+                    "ability": "Mold Breaker",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Dragon Dance",
+                        "Outrage",
+                        "Earthquake",
+                        "Poison Jab"
+                    ]
+                },
+                {
+                    "species": "Altaria",
+                    "ability": "Natural Cure",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dragon Pulse",
+                        "Roost",
+                        "Defog",
+                        "Cotton Guard"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Mixed Pressure",
+            "pokemon":  [
+                {
+                    "species": "Hydreigon",
+                    "ability": "Levitate",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Dragapult",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dragon Darts",
+                        "Shadow Ball",
+                        "U-turn",
+                        "Flamethrower"
+                    ]
+                },
+                {
+                    "species": "Flygon",
+                    "ability": "Levitate",
+                    "held_item": "Expert Belt",
+                    "moves":  [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "U-turn",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Tyrantrum",
+                    "ability": "Rock Head",
+                    "held_item": "None",
+                    "moves":  [
+                        "Head Smash",
+                        "Outrage",
+                        "Earthquake",
+                        "Dragon Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

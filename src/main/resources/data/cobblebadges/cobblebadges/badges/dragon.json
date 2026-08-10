@@ -1,0 +1,126 @@
+﻿{
+    "name":  {
+                 "translate":  "badge.cobblebadges.dragon",
+                 "color":  "#7580FF"
+             },
+    "category":  "cobblebadges:elemental_types",
+    "tiers":  [
+                  {
+                      "tier":  "cobblebadges:poke",
+                      "acquired_by":  {
+                                          "dragon_gym_advancement":  {
+                                                                         "trigger":  "minecraft:tick",
+                                                                         "conditions":  {
+                                                                                            "player":  {
+                                                                                                           "type_specific":  {
+                                                                                                                                 "type":  "minecraft:player",
+                                                                                                                                 "advancements":  {
+                                                                                                                                                      "cobblebash:gym/dragon":  true
+                                                                                                                                                  }
+                                                                                                                             }
+                                                                                                       }
+                                                                                        }
+                                                                     }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:dragon_poke.entity_interaction_range",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.entity_interaction_range",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:great",
+                      "acquired_by":  {
+                                          "dragon_points":  {
+                                                                "trigger":  "cobblebadges:points_owned",
+                                                                "conditions":  {
+                                                                                   "points":  {
+                                                                                                  "cobblebadges:dragon":  100
+                                                                                              }
+                                                                               }
+                                                            }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:dragon_great.entity_interaction_range",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.entity_interaction_range",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:ultra",
+                      "acquired_by":  {
+                                          "dragon_points":  {
+                                                                "trigger":  "cobblebadges:points_owned",
+                                                                "conditions":  {
+                                                                                   "points":  {
+                                                                                                  "cobblebadges:dragon":  200
+                                                                                              }
+                                                                               }
+                                                            }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:dragon_ultra.entity_interaction_range",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.entity_interaction_range",
+                                                                            "amount":  {
+                                                                                           "max":  1.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:master",
+                      "acquired_by":  {
+                                          "dragon_points":  {
+                                                                "trigger":  "cobblebadges:points_owned",
+                                                                "conditions":  {
+                                                                                   "points":  {
+                                                                                                  "cobblebadges:dragon":  300
+                                                                                              }
+                                                                               }
+                                                            }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:dragon_master.entity_interaction_range",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.entity_interaction_range",
+                                                                            "amount":  {
+                                                                                           "max":  2
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  }
+              ]
+}

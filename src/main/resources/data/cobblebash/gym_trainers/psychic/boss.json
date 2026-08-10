@@ -1,0 +1,156 @@
+{
+    "display_name": "Psychic Boss",
+    "dialogue":  {
+        "lines":  [
+            "This is the final Psychic test. Win, and the badge is yours."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Psychic Leader",
+            "pokemon":  [
+                {
+                    "species": "Metagross",
+                    "ability": "Clear Body",
+                    "held_item": "Assault Vest",
+                    "moves":  [
+                        "Meteor Mash",
+                        "Zen Headbutt",
+                        "Earthquake",
+                        "Bullet Punch"
+                    ]
+                },
+                {
+                    "species": "Gardevoir",
+                    "ability": "Trace",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Psychic",
+                        "Moonblast",
+                        "Thunderbolt",
+                        "Mystical Fire"
+                    ]
+                },
+                {
+                    "species": "Reuniclus",
+                    "ability": "Magic Guard",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Psychic",
+                        "Focus Blast",
+                        "Recover",
+                        "Calm Mind"
+                    ]
+                },
+                {
+                    "species": "Slowbro",
+                    "ability": "Regenerator",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Scald",
+                        "Psychic",
+                        "Slack Off",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Tyranitar",
+                    "ability": "Sand Stream",
+                    "held_item": "None",
+                    "moves":  [
+                        "Crunch",
+                        "Stone Edge",
+                        "Earthquake",
+                        "Dragon Dance"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "None",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Swords Dance",
+                        "Knock Off"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Psychic Leader",
+            "pokemon":  [
+                {
+                    "species": "Alakazam",
+                    "ability": "Magic Guard",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Psychic",
+                        "Shadow Ball",
+                        "Focus Blast",
+                        "Encore"
+                    ]
+                },
+                {
+                    "species": "Metagross",
+                    "ability": "Clear Body",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Meteor Mash",
+                        "Zen Headbutt",
+                        "Earthquake",
+                        "Bullet Punch"
+                    ]
+                },
+                {
+                    "species": "Gardevoir",
+                    "ability": "Trace",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Psychic",
+                        "Moonblast",
+                        "Thunderbolt",
+                        "Mystical Fire"
+                    ]
+                },
+                {
+                    "species": "Gallade",
+                    "ability": "Sharpness",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Psycho Cut",
+                        "Close Combat",
+                        "Swords Dance",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Hydreigon",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Excadrill",
+                    "ability": "Mold Breaker",
+                    "held_item": "None",
+                    "moves":  [
+                        "Earthquake",
+                        "Iron Head",
+                        "Rock Slide",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

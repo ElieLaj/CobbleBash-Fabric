@@ -1,0 +1,195 @@
+{
+    "display_name": "Flying Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Flying gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Hazard and Pivot Control",
+            "pokemon":  [
+                {
+                    "species": "Skarmory",
+                    "ability": "Sturdy",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Brave Bird",
+                        "Spikes",
+                        "Roost",
+                        "Whirlwind"
+                    ]
+                },
+                {
+                    "species": "Corviknight",
+                    "ability": "Pressure",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Brave Bird",
+                        "Body Press",
+                        "Roost",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Noivern",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Hurricane",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Staraptor",
+                    "ability": "Intimidate",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Brave Bird",
+                        "Close Combat",
+                        "U-turn",
+                        "Double-Edge"
+                    ]
+                },
+                {
+                    "species": "Crobat",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Cross Poison",
+                        "U-turn",
+                        "Roost"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Sky Offense",
+            "pokemon":  [
+                {
+                    "species": "Talonflame",
+                    "ability": "Gale Wings",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves":  [
+                        "Brave Bird",
+                        "Flare Blitz",
+                        "Roost",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Hawlucha",
+                    "ability": "Unburden",
+                    "held_item": "None",
+                    "moves":  [
+                        "Acrobatics",
+                        "Close Combat",
+                        "Swords Dance",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Aerodactyl",
+                    "ability": "Rock Head",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Stone Edge",
+                        "Dual Wingbeat",
+                        "Earthquake",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Staraptor",
+                    "ability": "Intimidate",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Brave Bird",
+                        "Close Combat",
+                        "U-turn",
+                        "Double-Edge"
+                    ]
+                },
+                {
+                    "species": "Noivern",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Hurricane",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Status and Sustain",
+            "pokemon":  [
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Aura Sphere"
+                    ]
+                },
+                {
+                    "species": "Gliscor",
+                    "ability": "Poison Heal",
+                    "held_item": "Toxic Orb",
+                    "moves":  [
+                        "Earthquake",
+                        "Roost",
+                        "Toxic",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Crobat",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Cross Poison",
+                        "U-turn",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Corviknight",
+                    "ability": "Pressure",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Body Press",
+                        "Roost",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Skarmory",
+                    "ability": "Sturdy",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Brave Bird",
+                        "Spikes",
+                        "Roost",
+                        "Whirlwind"
+                    ]
+                }
+            ]
+        }
+    ]
+}

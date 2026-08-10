@@ -1,0 +1,195 @@
+{
+    "display_name": "Fighting Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Fighting gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Fighters",
+            "pokemon":  [
+                {
+                    "species": "Lucario",
+                    "ability": "Inner Focus",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Close Combat",
+                        "Extreme Speed",
+                        "Swords Dance",
+                        "Crunch"
+                    ]
+                },
+                {
+                    "species": "Conkeldurr",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Drain Punch",
+                        "Mach Punch",
+                        "Knock Off",
+                        "Facade"
+                    ]
+                },
+                {
+                    "species": "Gallade",
+                    "ability": "Sharpness",
+                    "held_item": "None",
+                    "moves":  [
+                        "Sacred Sword",
+                        "Psycho Cut",
+                        "Swords Dance",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Hawlucha",
+                    "ability": "Unburden",
+                    "held_item": "None",
+                    "moves":  [
+                        "Acrobatics",
+                        "Close Combat",
+                        "Swords Dance",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Mienshao",
+                    "ability": "Regenerator",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Close Combat",
+                        "U-turn",
+                        "Knock Off",
+                        "Stone Edge"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Fast Offensive Core",
+            "pokemon":  [
+                {
+                    "species": "Mienshao",
+                    "ability": "Regenerator",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Close Combat",
+                        "U-turn",
+                        "Knock Off",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Infernape",
+                    "ability": "Blaze",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Close Combat",
+                        "Flare Blitz",
+                        "U-turn",
+                        "Grass Knot"
+                    ]
+                },
+                {
+                    "species": "Lucario",
+                    "ability": "Inner Focus",
+                    "held_item": "None",
+                    "moves":  [
+                        "Close Combat",
+                        "Extreme Speed",
+                        "Swords Dance",
+                        "Crunch"
+                    ]
+                },
+                {
+                    "species": "Hawlucha",
+                    "ability": "Unburden",
+                    "held_item": "None",
+                    "moves":  [
+                        "Acrobatics",
+                        "Close Combat",
+                        "Swords Dance",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Breloom",
+                    "ability": "Technician",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Spore",
+                        "Mach Punch",
+                        "Bullet Seed",
+                        "Rock Tomb"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Disruption & Sustain",
+            "pokemon":  [
+                {
+                    "species": "Conkeldurr",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Drain Punch",
+                        "Mach Punch",
+                        "Knock Off",
+                        "Facade"
+                    ]
+                },
+                {
+                    "species": "Scrafty",
+                    "ability": "Intimidate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Drain Punch",
+                        "Knock Off",
+                        "Dragon Dance",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Toxicroak",
+                    "ability": "Dry Skin",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Drain Punch",
+                        "Sucker Punch",
+                        "Gunk Shot",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Gallade",
+                    "ability": "Sharpness",
+                    "held_item": "None",
+                    "moves":  [
+                        "Sacred Sword",
+                        "Psycho Cut",
+                        "Swords Dance",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Mienshao",
+                    "ability": "Regenerator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Close Combat",
+                        "U-turn",
+                        "Knock Off",
+                        "Fake Out"
+                    ]
+                }
+            ]
+        }
+    ]
+}

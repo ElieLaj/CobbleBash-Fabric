@@ -1,0 +1,195 @@
+{
+    "display_name": "Water Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Water gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Rain Offense",
+            "pokemon":  [
+                {
+                    "species": "Pelipper",
+                    "ability": "Drizzle",
+                    "held_item": "Damp Rock",
+                    "moves":  [
+                        "Scald",
+                        "Hurricane",
+                        "Roost",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Barraskewda",
+                    "ability": "Swift Swim",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Liquidation",
+                        "Close Combat",
+                        "Psychic Fangs",
+                        "Aqua Jet"
+                    ]
+                },
+                {
+                    "species": "Kingdra",
+                    "ability": "Swift Swim",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Draco Meteor",
+                        "Ice Beam",
+                        "Surf"
+                    ]
+                },
+                {
+                    "species": "Swampert",
+                    "ability": "Torrent",
+                    "held_item": "None",
+                    "moves":  [
+                        "Waterfall",
+                        "Earthquake",
+                        "Ice Punch",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Tentacruel",
+                    "ability": "Liquid Ooze",
+                    "held_item": "None",
+                    "moves":  [
+                        "Scald",
+                        "Sludge Bomb",
+                        "Rapid Spin",
+                        "Toxic Spikes"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Balanced Water Core",
+            "pokemon":  [
+                {
+                    "species": "Milotic",
+                    "ability": "Marvel Scale",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Scald",
+                        "Recover",
+                        "Ice Beam",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Azumarill",
+                    "ability": "Huge Power",
+                    "held_item": "Sitrus Berry",
+                    "moves":  [
+                        "Play Rough",
+                        "Aqua Jet",
+                        "Belly Drum",
+                        "Liquidation"
+                    ]
+                },
+                {
+                    "species": "Gyarados",
+                    "ability": "Intimidate",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Dragon Dance",
+                        "Waterfall",
+                        "Ice Fang",
+                        "Crunch"
+                    ]
+                },
+                {
+                    "species": "Slowbro",
+                    "ability": "Regenerator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Scald",
+                        "Psychic",
+                        "Slack Off",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Lapras",
+                    "ability": "Water Absorb",
+                    "held_item": "None",
+                    "moves":  [
+                        "Freeze-Dry",
+                        "Surf",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Sustain & Control",
+            "pokemon":  [
+                {
+                    "species": "Toxapex",
+                    "ability": "Regenerator",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Scald",
+                        "Toxic",
+                        "Recover",
+                        "Haze"
+                    ]
+                },
+                {
+                    "species": "Slowbro",
+                    "ability": "Regenerator",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Scald",
+                        "Psychic",
+                        "Slack Off",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Swampert",
+                    "ability": "Torrent",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Waterfall",
+                        "Earthquake",
+                        "Ice Punch",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Tentacruel",
+                    "ability": "Liquid Ooze",
+                    "held_item": "None",
+                    "moves":  [
+                        "Scald",
+                        "Sludge Bomb",
+                        "Rapid Spin",
+                        "Toxic Spikes"
+                    ]
+                },
+                {
+                    "species": "Gyarados",
+                    "ability": "Intimidate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dragon Dance",
+                        "Waterfall",
+                        "Ice Fang",
+                        "Crunch"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,195 @@
+{
+    "display_name": "Steel Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Steel gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Hazard Steel Core",
+            "pokemon":  [
+                {
+                    "species": "Ferrothorn",
+                    "ability": "Iron Barbs",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Leech Seed",
+                        "Gyro Ball",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Skarmory",
+                    "ability": "Sturdy",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Brave Bird",
+                        "Spikes",
+                        "Roost",
+                        "Whirlwind"
+                    ]
+                },
+                {
+                    "species": "Magnezone",
+                    "ability": "Magnet Pull",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Flash Cannon",
+                        "Volt Switch",
+                        "Body Press"
+                    ]
+                },
+                {
+                    "species": "Lucario",
+                    "ability": "Inner Focus",
+                    "held_item": "None",
+                    "moves":  [
+                        "Close Combat",
+                        "Meteor Mash",
+                        "Extreme Speed",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Empoleon",
+                    "ability": "Torrent",
+                    "held_item": "None",
+                    "moves":  [
+                        "Scald",
+                        "Flash Cannon",
+                        "Ice Beam",
+                        "Roost"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Steel",
+            "pokemon":  [
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Swords Dance",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Bisharp",
+                    "ability": "Defiant",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Iron Head",
+                        "Knock Off",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Metagross",
+                    "ability": "Clear Body",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Meteor Mash",
+                        "Zen Headbutt",
+                        "Earthquake",
+                        "Bullet Punch"
+                    ]
+                },
+                {
+                    "species": "Lucario",
+                    "ability": "Inner Focus",
+                    "held_item": "None",
+                    "moves":  [
+                        "Close Combat",
+                        "Meteor Mash",
+                        "Extreme Speed",
+                        "Crunch"
+                    ]
+                },
+                {
+                    "species": "Magnezone",
+                    "ability": "Magnet Pull",
+                    "held_item": "None",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Flash Cannon",
+                        "Volt Switch",
+                        "Body Press"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Sustain & Control",
+            "pokemon":  [
+                {
+                    "species": "Ferrothorn",
+                    "ability": "Iron Barbs",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Leech Seed",
+                        "Gyro Ball",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Bronzong",
+                    "ability": "Levitate",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Gyro Ball",
+                        "Stealth Rock",
+                        "Toxic",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Empoleon",
+                    "ability": "Torrent",
+                    "held_item": "Assault Vest",
+                    "moves":  [
+                        "Scald",
+                        "Flash Cannon",
+                        "Ice Beam",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Skarmory",
+                    "ability": "Sturdy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Spikes",
+                        "Roost",
+                        "Whirlwind"
+                    ]
+                },
+                {
+                    "species": "Aegislash",
+                    "ability": "Stance Change",
+                    "held_item": "None",
+                    "moves":  [
+                        "King's Shield",
+                        "Shadow Ball",
+                        "Sacred Sword",
+                        "Shadow Sneak"
+                    ]
+                }
+            ]
+        }
+    ]
+}

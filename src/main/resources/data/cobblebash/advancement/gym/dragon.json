@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:dragon_training_disk"
+    },
+    "title": "Dragon Gym Completed",
+    "description": "Complete the Dragon Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_dragon_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "dragon"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_dragon_boss"
+    ]
+  ]
+}

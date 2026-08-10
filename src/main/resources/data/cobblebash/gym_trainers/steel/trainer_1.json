@@ -1,0 +1,112 @@
+{
+    "display_name": "Steel Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Steel gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Iron Offense",
+            "pokemon":  [
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Swords Dance",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Lucario",
+                    "ability": "Inner Focus",
+                    "held_item": "None",
+                    "moves":  [
+                        "Close Combat",
+                        "Meteor Mash",
+                        "Extreme Speed",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Magnezone",
+                    "ability": "Magnet Pull",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Flash Cannon",
+                        "Volt Switch",
+                        "Body Press"
+                    ]
+                },
+                {
+                    "species": "Skarmory",
+                    "ability": "Sturdy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Spikes",
+                        "Roost",
+                        "Whirlwind"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Defensive Steel",
+            "pokemon":  [
+                {
+                    "species": "Ferrothorn",
+                    "ability": "Iron Barbs",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Leech Seed",
+                        "Gyro Ball",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Bronzong",
+                    "ability": "Levitate",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Gyro Ball",
+                        "Stealth Rock",
+                        "Toxic",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Empoleon",
+                    "ability": "Torrent",
+                    "held_item": "None",
+                    "moves":  [
+                        "Scald",
+                        "Flash Cannon",
+                        "Ice Beam",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Bisharp",
+                    "ability": "Defiant",
+                    "held_item": "None",
+                    "moves":  [
+                        "Iron Head",
+                        "Knock Off",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

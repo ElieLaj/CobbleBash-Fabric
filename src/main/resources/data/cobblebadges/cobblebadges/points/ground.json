@@ -1,0 +1,48 @@
+﻿{
+    "name":  {
+                 "translate":  "point.cobblebadges.ground",
+                 "color":  "#F4A453"
+             },
+    "acquired_by":  [
+                        {
+                            "trigger":  "cobblebadges:pokemon_defeated",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=ground",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/ground":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        },
+                        {
+                            "trigger":  "cobblebadges:pokemon_captured",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=ground",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/ground":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        }
+                    ]
+}

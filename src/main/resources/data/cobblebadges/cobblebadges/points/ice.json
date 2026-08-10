@@ -1,0 +1,48 @@
+﻿{
+    "name":  {
+                 "translate":  "point.cobblebadges.ice",
+                 "color":  "#54F2F2"
+             },
+    "acquired_by":  [
+                        {
+                            "trigger":  "cobblebadges:pokemon_defeated",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=ice",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/ice":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        },
+                        {
+                            "trigger":  "cobblebadges:pokemon_captured",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=ice",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/ice":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        }
+                    ]
+}

@@ -1,0 +1,112 @@
+{
+    "display_name": "Dark Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Dark gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Intimidate and Priority",
+            "pokemon":  [
+                {
+                    "species": "Mightyena",
+                    "ability": "Intimidate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Crunch",
+                        "Play Rough",
+                        "Sucker Punch",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Sableye",
+                    "ability": "Prankster",
+                    "held_item": "None",
+                    "moves":  [
+                        "Will-O-Wisp",
+                        "Recover",
+                        "Knock Off",
+                        "Taunt"
+                    ]
+                },
+                {
+                    "species": "Absol",
+                    "ability": "Super Luck",
+                    "held_item": "Scope Lens",
+                    "moves":  [
+                        "Night Slash",
+                        "Play Rough",
+                        "Swords Dance",
+                        "Sucker Punch"
+                    ]
+                },
+                {
+                    "species": "Weavile",
+                    "ability": "Pressure",
+                    "held_item": "None",
+                    "moves":  [
+                        "Knock Off",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Bulky Control",
+            "pokemon":  [
+                {
+                    "species": "Umbreon",
+                    "ability": "Synchronize",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Foul Play",
+                        "Wish",
+                        "Protect",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Mandibuzz",
+                    "ability": "Overcoat",
+                    "held_item": "None",
+                    "moves":  [
+                        "Foul Play",
+                        "Roost",
+                        "Defog",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Skuntank",
+                    "ability": "Aftermath",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Poison Jab",
+                        "Crunch",
+                        "Taunt",
+                        "Sucker Punch"
+                    ]
+                },
+                {
+                    "species": "Drapion",
+                    "ability": "Battle Armor",
+                    "held_item": "None",
+                    "moves":  [
+                        "Knock Off",
+                        "Poison Jab",
+                        "Earthquake",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,195 @@
+{
+    "display_name": "Dark Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Dark gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Screens and Setup",
+            "pokemon":  [
+                {
+                    "species": "Grimmsnarl",
+                    "ability": "Prankster",
+                    "held_item": "Light Clay",
+                    "moves":  [
+                        "Reflect",
+                        "Light Screen",
+                        "Spirit Break",
+                        "Taunt"
+                    ]
+                },
+                {
+                    "species": "Bisharp",
+                    "ability": "Defiant",
+                    "held_item": "None",
+                    "moves":  [
+                        "Sucker Punch",
+                        "Iron Head",
+                        "Swords Dance",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Hydreigon",
+                    "ability": "Levitate",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Draco Meteor",
+                        "U-turn",
+                        "Flamethrower"
+                    ]
+                },
+                {
+                    "species": "Weavile",
+                    "ability": "Pressure",
+                    "held_item": "None",
+                    "moves":  [
+                        "Knock Off",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Low Kick"
+                    ]
+                },
+                {
+                    "species": "Umbreon",
+                    "ability": "Synchronize",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Foul Play",
+                        "Wish",
+                        "Protect",
+                        "Toxic"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Sand Pressure",
+            "pokemon":  [
+                {
+                    "species": "Tyranitar",
+                    "ability": "Sand Stream",
+                    "held_item": "Smooth Rock",
+                    "moves":  [
+                        "Stone Edge",
+                        "Crunch",
+                        "Stealth Rock",
+                        "Earthquake"
+                    ]
+                },
+                {
+                    "species": "Excadrill",
+                    "ability": "Sand Rush",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earthquake",
+                        "Iron Head",
+                        "Rapid Spin",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Mandibuzz",
+                    "ability": "Overcoat",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Foul Play",
+                        "Roost",
+                        "Defog",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Hydreigon",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Drapion",
+                    "ability": "Battle Armor",
+                    "held_item": "None",
+                    "moves":  [
+                        "Knock Off",
+                        "Poison Jab",
+                        "Earthquake",
+                        "Toxic Spikes"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Fast Offense",
+            "pokemon":  [
+                {
+                    "species": "Weavile",
+                    "ability": "Pressure",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Knock Off",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Low Kick"
+                    ]
+                },
+                {
+                    "species": "Houndoom",
+                    "ability": "Flash Fire",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Nasty Plot",
+                        "Fire Blast",
+                        "Dark Pulse",
+                        "Sludge Bomb"
+                    ]
+                },
+                {
+                    "species": "Bisharp",
+                    "ability": "Defiant",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Sucker Punch",
+                        "Iron Head",
+                        "Swords Dance",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Absol",
+                    "ability": "Super Luck",
+                    "held_item": "None",
+                    "moves":  [
+                        "Night Slash",
+                        "Play Rough",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Hydreigon",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                }
+            ]
+        }
+    ]
+}

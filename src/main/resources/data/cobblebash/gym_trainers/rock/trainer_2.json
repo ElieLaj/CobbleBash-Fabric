@@ -1,0 +1,195 @@
+{
+    "display_name": "Rock Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Rock gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Sand and Hazards",
+            "pokemon":  [
+                {
+                    "species": "Gigalith",
+                    "ability": "Sand Stream",
+                    "held_item": "Smooth Rock",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Rock Blast",
+                        "Earthquake",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Lycanroc",
+                    "ability": "Sand Rush",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Stone Edge",
+                        "Accelerock",
+                        "Drill Run",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Cradily",
+                    "ability": "Storm Drain",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Giga Drain",
+                        "Rock Slide",
+                        "Recover",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Rhyperior",
+                    "ability": "Solid Rock",
+                    "held_item": "None",
+                    "moves":  [
+                        "Earthquake",
+                        "Rock Blast",
+                        "Megahorn",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Aerodactyl",
+                    "ability": "Rock Head",
+                    "held_item": "None",
+                    "moves":  [
+                        "Stone Edge",
+                        "Dual Wingbeat",
+                        "Earthquake",
+                        "Taunt"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Offensive Rock Core",
+            "pokemon":  [
+                {
+                    "species": "Tyrantrum",
+                    "ability": "Rock Head",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Head Smash",
+                        "Dragon Claw",
+                        "Earthquake",
+                        "Dragon Dance"
+                    ]
+                },
+                {
+                    "species": "Aerodactyl",
+                    "ability": "Rock Head",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Stone Edge",
+                        "Dual Wingbeat",
+                        "Earthquake",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Omastar",
+                    "ability": "Shell Armor",
+                    "held_item": "White Herb",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Ancient Power",
+                        "Ice Beam",
+                        "Shell Smash"
+                    ]
+                },
+                {
+                    "species": "Kabutops",
+                    "ability": "Swift Swim",
+                    "held_item": "None",
+                    "moves":  [
+                        "Stone Edge",
+                        "Liquidation",
+                        "Aqua Jet",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Aggron",
+                    "ability": "Rock Head",
+                    "held_item": "None",
+                    "moves":  [
+                        "Head Smash",
+                        "Heavy Slam",
+                        "Earthquake",
+                        "Stealth Rock"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Sustain and Counterplay",
+            "pokemon":  [
+                {
+                    "species": "Cradily",
+                    "ability": "Storm Drain",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Giga Drain",
+                        "Rock Slide",
+                        "Recover",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Rhyperior",
+                    "ability": "Solid Rock",
+                    "held_item": "Weakness Policy",
+                    "moves":  [
+                        "Earthquake",
+                        "Rock Blast",
+                        "Megahorn",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Gigalith",
+                    "ability": "Sand Stream",
+                    "held_item": "Smooth Rock",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Rock Blast",
+                        "Earthquake",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Sudowoodo",
+                    "ability": "Sturdy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Stone Edge",
+                        "Wood Hammer",
+                        "Earthquake",
+                        "Sucker Punch"
+                    ]
+                },
+                {
+                    "species": "Armaldo",
+                    "ability": "Battle Armor",
+                    "held_item": "None",
+                    "moves":  [
+                        "Stone Edge",
+                        "X-Scissor",
+                        "Rapid Spin",
+                        "Knock Off"
+                    ]
+                }
+            ]
+        }
+    ]
+}

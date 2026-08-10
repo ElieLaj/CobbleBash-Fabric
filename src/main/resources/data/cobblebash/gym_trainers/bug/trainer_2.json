@@ -1,0 +1,195 @@
+{
+    "display_name": "The Swarm",
+    "dialogue":  {
+        "lines":  [
+            "You made it past the first threads. Now face the swarm."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Hazard Control",
+            "pokemon":  [
+                {
+                    "species": "Forretress",
+                    "ability": "Sturdy",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Spikes",
+                        "Rapid Spin",
+                        "Volt Switch"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "ability": "Flame Body",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Araquanid",
+                    "ability": "Water Bubble",
+                    "held_item": "None",
+                    "moves":  [
+                        "Liquidation",
+                        "Leech Life",
+                        "Mirror Coat",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Superpower",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Frosmoth",
+                    "ability": "Ice Scales",
+                    "held_item": "None",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Ice Beam",
+                        "Bug Buzz",
+                        "Roost"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Fast Offensive Pressure",
+            "pokemon":  [
+                {
+                    "species": "Galvantula",
+                    "ability": "Compound Eyes",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Sticky Web",
+                        "Thunder",
+                        "Bug Buzz",
+                        "Volt Switch"
+                    ]
+                },
+                {
+                    "species": "Heracross",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Close Combat",
+                        "Megahorn",
+                        "Knock Off",
+                        "Facade"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "None",
+                    "moves":  [
+                        "Bullet Punch",
+                        "Swords Dance",
+                        "U-turn",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "ability": "Flame Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Giga Drain"
+                    ]
+                },
+                {
+                    "species": "Golisopod",
+                    "ability": "Emergency Exit",
+                    "held_item": "Assault Vest",
+                    "moves":  [
+                        "First Impression",
+                        "Liquidation",
+                        "Leech Life",
+                        "Aqua Jet"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Status and Sustain",
+            "pokemon":  [
+                {
+                    "species": "Ribombee",
+                    "ability": "Shield Dust",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Sticky Web",
+                        "Moonblast",
+                        "Bug Buzz",
+                        "Stun Spore"
+                    ]
+                },
+                {
+                    "species": "Araquanid",
+                    "ability": "Water Bubble",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Liquidation",
+                        "Toxic",
+                        "Protect",
+                        "Leech Life"
+                    ]
+                },
+                {
+                    "species": "Forretress",
+                    "ability": "Sturdy",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Rapid Spin",
+                        "Volt Switch",
+                        "Gyro Ball"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "None",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Roost",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Frosmoth",
+                    "ability": "Ice Scales",
+                    "held_item": "None",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Ice Beam",
+                        "Bug Buzz",
+                        "Giga Drain"
+                    ]
+                }
+            ]
+        }
+    ]
+}

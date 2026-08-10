@@ -1,0 +1,195 @@
+{
+    "display_name": "Ghost Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Ghost gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Status Pressure",
+            "pokemon":  [
+                {
+                    "species": "Gengar",
+                    "ability": "Cursed Body",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Sludge Bomb",
+                        "Focus Blast",
+                        "Destiny Bond"
+                    ]
+                },
+                {
+                    "species": "Mimikyu",
+                    "ability": "Disguise",
+                    "held_item": "None",
+                    "moves":  [
+                        "Play Rough",
+                        "Shadow Sneak",
+                        "Swords Dance",
+                        "Shadow Claw"
+                    ]
+                },
+                {
+                    "species": "Aegislash",
+                    "ability": "Stance Change",
+                    "held_item": "Weakness Policy",
+                    "moves":  [
+                        "King's Shield",
+                        "Shadow Ball",
+                        "Sacred Sword",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Froslass",
+                    "ability": "Cursed Body",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Spikes",
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Taunt"
+                    ]
+                },
+                {
+                    "species": "Chandelure",
+                    "ability": "Flash Fire",
+                    "held_item": "None",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Flamethrower",
+                        "Energy Ball",
+                        "Calm Mind"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Offensive Ghosts",
+            "pokemon":  [
+                {
+                    "species": "Dragapult",
+                    "ability": "Infiltrator",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Shadow Ball",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Gengar",
+                    "ability": "Cursed Body",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Sludge Bomb",
+                        "Focus Blast",
+                        "Destiny Bond"
+                    ]
+                },
+                {
+                    "species": "Mimikyu",
+                    "ability": "Disguise",
+                    "held_item": "None",
+                    "moves":  [
+                        "Play Rough",
+                        "Shadow Sneak",
+                        "Swords Dance",
+                        "Shadow Claw"
+                    ]
+                },
+                {
+                    "species": "Chandelure",
+                    "ability": "Flash Fire",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Flamethrower",
+                        "Energy Ball",
+                        "Trick"
+                    ]
+                },
+                {
+                    "species": "Froslass",
+                    "ability": "Cursed Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Spikes",
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Taunt"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Sustain & Control",
+            "pokemon":  [
+                {
+                    "species": "Spiritomb",
+                    "ability": "Pressure",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Will-O-Wisp",
+                        "Pain Split",
+                        "Calm Mind"
+                    ]
+                },
+                {
+                    "species": "Dusclops",
+                    "ability": "Pressure",
+                    "held_item": "Eviolite",
+                    "moves":  [
+                        "Will-O-Wisp",
+                        "Night Shade",
+                        "Pain Split",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Aegislash",
+                    "ability": "Stance Change",
+                    "held_item": "None",
+                    "moves":  [
+                        "King's Shield",
+                        "Shadow Ball",
+                        "Sacred Sword",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Gengar",
+                    "ability": "Cursed Body",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Sludge Bomb",
+                        "Destiny Bond",
+                        "Focus Blast"
+                    ]
+                },
+                {
+                    "species": "Mismagius",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Mystical Fire",
+                        "Nasty Plot",
+                        "Thunderbolt"
+                    ]
+                }
+            ]
+        }
+    ]
+}

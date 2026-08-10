@@ -1,0 +1,195 @@
+{
+    "display_name": "Electric Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Electric gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Volt Core",
+            "pokemon":  [
+                {
+                    "species": "Rotom-Wash",
+                    "ability": "Levitate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ]
+                },
+                {
+                    "species": "Magnezone",
+                    "ability": "Magnet Pull",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Flash Cannon",
+                        "Volt Switch",
+                        "Tri Attack"
+                    ]
+                },
+                {
+                    "species": "Galvantula",
+                    "ability": "Compound Eyes",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Sticky Web",
+                        "Thunder",
+                        "Bug Buzz",
+                        "Volt Switch"
+                    ]
+                },
+                {
+                    "species": "Electivire",
+                    "ability": "Motor Drive",
+                    "held_item": "None",
+                    "moves":  [
+                        "Thunder Punch",
+                        "Ice Punch",
+                        "Earthquake",
+                        "Volt Switch"
+                    ]
+                },
+                {
+                    "species": "Zebstrika",
+                    "ability": "Lightning Rod",
+                    "held_item": "None",
+                    "moves":  [
+                        "Wild Charge",
+                        "Flame Charge",
+                        "Volt Switch",
+                        "Overheat"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Pressure",
+            "pokemon":  [
+                {
+                    "species": "Jolteon",
+                    "ability": "Volt Absorb",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Shadow Ball",
+                        "Volt Switch",
+                        "Signal Beam"
+                    ]
+                },
+                {
+                    "species": "Electivire",
+                    "ability": "Motor Drive",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Thunder Punch",
+                        "Ice Punch",
+                        "Earthquake",
+                        "Cross Chop"
+                    ]
+                },
+                {
+                    "species": "Rotom-Heat",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Overheat",
+                        "Volt Switch",
+                        "Thunderbolt",
+                        "Will-O-Wisp"
+                    ]
+                },
+                {
+                    "species": "Galvantula",
+                    "ability": "Compound Eyes",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Sticky Web",
+                        "Thunder",
+                        "Bug Buzz",
+                        "Volt Switch"
+                    ]
+                },
+                {
+                    "species": "Raichu",
+                    "ability": "Lightning Rod",
+                    "held_item": "None",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Grass Knot",
+                        "Volt Switch",
+                        "Encore"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Utility & Control",
+            "pokemon":  [
+                {
+                    "species": "Magnezone",
+                    "ability": "Magnet Pull",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Flash Cannon",
+                        "Volt Switch",
+                        "Substitute"
+                    ]
+                },
+                {
+                    "species": "Rotom-Wash",
+                    "ability": "Levitate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ]
+                },
+                {
+                    "species": "Eelektross",
+                    "ability": "Levitate",
+                    "held_item": "Assault Vest",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Flamethrower",
+                        "Giga Drain",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Ampharos",
+                    "ability": "Static",
+                    "held_item": "None",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Dragon Pulse",
+                        "Light Screen",
+                        "Volt Switch"
+                    ]
+                },
+                {
+                    "species": "Galvantula",
+                    "ability": "Compound Eyes",
+                    "held_item": "None",
+                    "moves":  [
+                        "Sticky Web",
+                        "Thunder",
+                        "Bug Buzz",
+                        "Volt Switch"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:ground_training_disk"
+    },
+    "title": "Ground Gym Completed",
+    "description": "Complete the Ground Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_ground_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "ground"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_ground_boss"
+    ]
+  ]
+}

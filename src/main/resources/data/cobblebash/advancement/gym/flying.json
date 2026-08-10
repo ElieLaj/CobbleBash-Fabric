@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:flying_training_disk"
+    },
+    "title": "Flying Gym Completed",
+    "description": "Complete the Flying Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_flying_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "flying"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_flying_boss"
+    ]
+  ]
+}

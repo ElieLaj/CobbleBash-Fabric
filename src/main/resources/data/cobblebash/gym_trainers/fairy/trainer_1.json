@@ -1,0 +1,112 @@
+{
+    "display_name": "Fairy Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Fairy gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Support",
+            "pokemon":  [
+                {
+                    "species": "Sylveon",
+                    "ability": "Pixilate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Hyper Voice",
+                        "Wish",
+                        "Protect",
+                        "Mystical Fire"
+                    ]
+                },
+                {
+                    "species": "Mimikyu",
+                    "ability": "Disguise",
+                    "held_item": "None",
+                    "moves":  [
+                        "Play Rough",
+                        "Shadow Claw",
+                        "Swords Dance",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Klefki",
+                    "ability": "Prankster",
+                    "held_item": "Light Clay",
+                    "moves":  [
+                        "Thunder Wave",
+                        "Spikes",
+                        "Play Rough",
+                        "Reflect"
+                    ]
+                },
+                {
+                    "species": "Granbull",
+                    "ability": "Intimidate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Play Rough",
+                        "Crunch",
+                        "Close Combat",
+                        "Thunder Wave"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Status Pressure",
+            "pokemon":  [
+                {
+                    "species": "Florges",
+                    "ability": "Flower Veil",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Moonblast",
+                        "Wish",
+                        "Protect",
+                        "Aromatherapy"
+                    ]
+                },
+                {
+                    "species": "Togetic",
+                    "ability": "Serene Grace",
+                    "held_item": "None",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Dazzling Gleam"
+                    ]
+                },
+                {
+                    "species": "Mawile",
+                    "ability": "Intimidate",
+                    "held_item": "Black Glasses",
+                    "moves":  [
+                        "Play Rough",
+                        "Iron Head",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Mimikyu",
+                    "ability": "Disguise",
+                    "held_item": "None",
+                    "moves":  [
+                        "Play Rough",
+                        "Shadow Sneak",
+                        "Swords Dance",
+                        "Will-O-Wisp"
+                    ]
+                }
+            ]
+        }
+    ]
+}

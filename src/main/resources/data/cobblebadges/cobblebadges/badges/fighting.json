@@ -1,0 +1,178 @@
+﻿{
+    "name":  {
+                 "translate":  "badge.cobblebadges.fighting",
+                 "color":  "#EF565D"
+             },
+    "category":  "cobblebadges:elemental_types",
+    "tiers":  [
+                  {
+                      "tier":  "cobblebadges:poke",
+                      "acquired_by":  {
+                                          "fighting_gym_advancement":  {
+                                                                           "trigger":  "minecraft:tick",
+                                                                           "conditions":  {
+                                                                                              "player":  {
+                                                                                                             "type_specific":  {
+                                                                                                                                   "type":  "minecraft:player",
+                                                                                                                                   "advancements":  {
+                                                                                                                                                        "cobblebash:gym/fighting":  true
+                                                                                                                                                    }
+                                                                                                                               }
+                                                                                                         }
+                                                                                          }
+                                                                       }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:fighting_poke.attack_damage",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.attack_damage",
+                                                                            "amount":  {
+                                                                                           "max":  0.1
+                                                                                       },
+                                                                            "operation":  "add_multiplied_total"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:fighting_poke.sweeping_damage_ratio",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.sweeping_damage_ratio",
+                                                                            "amount":  {
+                                                                                           "max":  0.1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:great",
+                      "acquired_by":  {
+                                          "fighting_points":  {
+                                                                  "trigger":  "cobblebadges:points_owned",
+                                                                  "conditions":  {
+                                                                                     "points":  {
+                                                                                                    "cobblebadges:fighting":  100
+                                                                                                }
+                                                                                 }
+                                                              }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:fighting_great.attack_damage",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.attack_damage",
+                                                                            "amount":  {
+                                                                                           "max":  0.25
+                                                                                       },
+                                                                            "operation":  "add_multiplied_total"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:fighting_great.sweeping_damage_ratio",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.sweeping_damage_ratio",
+                                                                            "amount":  {
+                                                                                           "max":  0.25
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:ultra",
+                      "acquired_by":  {
+                                          "fighting_points":  {
+                                                                  "trigger":  "cobblebadges:points_owned",
+                                                                  "conditions":  {
+                                                                                     "points":  {
+                                                                                                    "cobblebadges:fighting":  200
+                                                                                                }
+                                                                                 }
+                                                              }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:fighting_ultra.attack_damage",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.attack_damage",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_multiplied_total"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:fighting_ultra.sweeping_damage_ratio",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.sweeping_damage_ratio",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:master",
+                      "acquired_by":  {
+                                          "fighting_points":  {
+                                                                  "trigger":  "cobblebadges:points_owned",
+                                                                  "conditions":  {
+                                                                                     "points":  {
+                                                                                                    "cobblebadges:fighting":  300
+                                                                                                }
+                                                                                 }
+                                                              }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:fighting_master.attack_damage",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.attack_damage",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_multiplied_total"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:fighting_master.sweeping_damage_ratio",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.sweeping_damage_ratio",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  }
+              ]
+}

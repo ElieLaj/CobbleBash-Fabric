@@ -1,0 +1,9 @@
+build/
+.gradle/
+run/
+*.iml
+.idea/
+.vscode/
+
+# Jars de compilation : ce sont ceux du pack, ils ne se redistribuent pas ici.
+libs/

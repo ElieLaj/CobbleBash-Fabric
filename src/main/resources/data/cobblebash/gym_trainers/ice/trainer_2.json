@@ -1,0 +1,195 @@
+{
+    "display_name": "Ice Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Ice gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Hail Core",
+            "pokemon":  [
+                {
+                    "species": "Alolan Ninetales",
+                    "ability": "Snow Warning",
+                    "held_item": "Light Clay",
+                    "moves":  [
+                        "Aurora Veil",
+                        "Freeze-Dry",
+                        "Moonblast",
+                        "Encore"
+                    ]
+                },
+                {
+                    "species": "Weavile",
+                    "ability": "Pressure",
+                    "held_item": "None",
+                    "moves":  [
+                        "Icicle Crash",
+                        "Knock Off",
+                        "Ice Shard",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Mamoswine",
+                    "ability": "Thick Fat",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Earthquake",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Froslass",
+                    "ability": "Cursed Body",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Spikes",
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Taunt"
+                    ]
+                },
+                {
+                    "species": "Lapras",
+                    "ability": "Water Absorb",
+                    "held_item": "None",
+                    "moves":  [
+                        "Freeze-Dry",
+                        "Surf",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Fast Ice Offense",
+            "pokemon":  [
+                {
+                    "species": "Weavile",
+                    "ability": "Pressure",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Icicle Crash",
+                        "Knock Off",
+                        "Ice Shard",
+                        "Low Kick"
+                    ]
+                },
+                {
+                    "species": "Mamoswine",
+                    "ability": "Thick Fat",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earthquake",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Glaceon",
+                    "ability": "Ice Body",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Freeze-Dry",
+                        "Wish"
+                    ]
+                },
+                {
+                    "species": "Froslass",
+                    "ability": "Cursed Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Spikes",
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Taunt"
+                    ]
+                },
+                {
+                    "species": "Lapras",
+                    "ability": "Water Absorb",
+                    "held_item": "None",
+                    "moves":  [
+                        "Freeze-Dry",
+                        "Surf",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Sustain & Utility",
+            "pokemon":  [
+                {
+                    "species": "Avalugg",
+                    "ability": "Sturdy",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Rapid Spin",
+                        "Recover",
+                        "Avalanche",
+                        "Body Press"
+                    ]
+                },
+                {
+                    "species": "Lapras",
+                    "ability": "Water Absorb",
+                    "held_item": "Assault Vest",
+                    "moves":  [
+                        "Freeze-Dry",
+                        "Surf",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                },
+                {
+                    "species": "Frosmoth",
+                    "ability": "Ice Scales",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Ice Beam",
+                        "Bug Buzz",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Glaceon",
+                    "ability": "Ice Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Wish",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Mamoswine",
+                    "ability": "Thick Fat",
+                    "held_item": "None",
+                    "moves":  [
+                        "Earthquake",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Stone Edge"
+                    ]
+                }
+            ]
+        }
+    ]
+}

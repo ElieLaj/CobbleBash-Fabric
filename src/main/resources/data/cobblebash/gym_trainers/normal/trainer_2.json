@@ -1,0 +1,195 @@
+{
+    "display_name": "Normal Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Normal gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Bulky Normal Core",
+            "pokemon":  [
+                {
+                    "species": "Snorlax",
+                    "ability": "Thick Fat",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Body Slam",
+                        "Earthquake",
+                        "Curse",
+                        "Rest"
+                    ]
+                },
+                {
+                    "species": "Porygon2",
+                    "ability": "Trace",
+                    "held_item": "Eviolite",
+                    "moves":  [
+                        "Tri Attack",
+                        "Ice Beam",
+                        "Recover",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Staraptor",
+                    "ability": "Intimidate",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Brave Bird",
+                        "Close Combat",
+                        "U-turn",
+                        "Double-Edge"
+                    ]
+                },
+                {
+                    "species": "Kangaskhan",
+                    "ability": "Scrappy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Fake Out",
+                        "Double-Edge",
+                        "Earthquake",
+                        "Sucker Punch"
+                    ]
+                },
+                {
+                    "species": "Exploud",
+                    "ability": "Scrappy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Boomburst",
+                        "Fire Blast",
+                        "Surf",
+                        "Focus Blast"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Guts and Breakers",
+            "pokemon":  [
+                {
+                    "species": "Obstagoon",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Facade",
+                        "Knock Off",
+                        "Close Combat",
+                        "Obstruct"
+                    ]
+                },
+                {
+                    "species": "Ursaring",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Facade",
+                        "Close Combat",
+                        "Crunch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Braviary",
+                    "ability": "Defiant",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Brave Bird",
+                        "Close Combat",
+                        "U-turn",
+                        "Return"
+                    ]
+                },
+                {
+                    "species": "Porygon-Z",
+                    "ability": "Adaptability",
+                    "held_item": "None",
+                    "moves":  [
+                        "Tri Attack",
+                        "Thunderbolt",
+                        "Ice Beam",
+                        "Nasty Plot"
+                    ]
+                },
+                {
+                    "species": "Blissey",
+                    "ability": "Natural Cure",
+                    "held_item": "None",
+                    "moves":  [
+                        "Seismic Toss",
+                        "Soft-Boiled",
+                        "Toxic",
+                        "Thunder Wave"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Sustain & Control",
+            "pokemon":  [
+                {
+                    "species": "Blissey",
+                    "ability": "Natural Cure",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Seismic Toss",
+                        "Soft-Boiled",
+                        "Toxic",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Snorlax",
+                    "ability": "Thick Fat",
+                    "held_item": "Chesto Berry",
+                    "moves":  [
+                        "Body Slam",
+                        "Earthquake",
+                        "Curse",
+                        "Rest"
+                    ]
+                },
+                {
+                    "species": "Porygon2",
+                    "ability": "Trace",
+                    "held_item": "Eviolite",
+                    "moves":  [
+                        "Tri Attack",
+                        "Ice Beam",
+                        "Recover",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Stoutland",
+                    "ability": "Intimidate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Return",
+                        "Crunch",
+                        "Play Rough",
+                        "Superpower"
+                    ]
+                },
+                {
+                    "species": "Kangaskhan",
+                    "ability": "Scrappy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Fake Out",
+                        "Double-Edge",
+                        "Earthquake",
+                        "Sucker Punch"
+                    ]
+                }
+            ]
+        }
+    ]
+}

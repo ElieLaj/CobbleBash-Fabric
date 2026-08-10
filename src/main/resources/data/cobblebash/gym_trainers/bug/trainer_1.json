@@ -1,0 +1,112 @@
+{
+    "display_name": "The Trapper",
+    "dialogue":  {
+        "lines":  [
+            "The web is already set. Step closer and see if you can slip through."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Web Pressure",
+            "pokemon":  [
+                {
+                    "species": "Galvantula",
+                    "ability": "Compound Eyes",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Sticky Web",
+                        "Thunder",
+                        "Bug Buzz",
+                        "Volt Switch"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "None",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Swords Dance",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Ribombee",
+                    "ability": "Shield Dust",
+                    "held_item": "None",
+                    "moves":  [
+                        "Moonblast",
+                        "Bug Buzz",
+                        "Stun Spore",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Heracross",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Close Combat",
+                        "Megahorn",
+                        "Knock Off",
+                        "Facade"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Defensive Pivot",
+            "pokemon":  [
+                {
+                    "species": "Forretress",
+                    "ability": "Sturdy",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Rapid Spin",
+                        "Volt Switch",
+                        "Gyro Ball"
+                    ]
+                },
+                {
+                    "species": "Araquanid",
+                    "ability": "Water Bubble",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Liquidation",
+                        "Leech Life",
+                        "Mirror Coat",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "None",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Roost",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Ribombee",
+                    "ability": "Shield Dust",
+                    "held_item": "None",
+                    "moves":  [
+                        "Moonblast",
+                        "Bug Buzz",
+                        "Quiver Dance",
+                        "Stun Spore"
+                    ]
+                }
+            ]
+        }
+    ]
+}

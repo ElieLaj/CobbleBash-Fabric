@@ -1,0 +1,112 @@
+{
+    "display_name": "Poison Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Poison gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Toxic Pressure",
+            "pokemon":  [
+                {
+                    "species": "Roserade",
+                    "ability": "Natural Cure",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Sludge Bomb",
+                        "Giga Drain",
+                        "Toxic Spikes",
+                        "Sleep Powder"
+                    ]
+                },
+                {
+                    "species": "Toxicroak",
+                    "ability": "Dry Skin",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Drain Punch",
+                        "Gunk Shot",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Weezing",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Sludge Bomb",
+                        "Will-O-Wisp",
+                        "Pain Split",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Crobat",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Cross Poison",
+                        "U-turn",
+                        "Roost"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Bulky Toxic Core",
+            "pokemon":  [
+                {
+                    "species": "Amoonguss",
+                    "ability": "Regenerator",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Spore",
+                        "Giga Drain",
+                        "Clear Smog",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Clodsire",
+                    "ability": "Unaware",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Toxic",
+                        "Earthquake",
+                        "Recover",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Weezing",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Sludge Bomb",
+                        "Will-O-Wisp",
+                        "Pain Split",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Drapion",
+                    "ability": "Battle Armor",
+                    "held_item": "None",
+                    "moves":  [
+                        "Knock Off",
+                        "Poison Jab",
+                        "Earthquake",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

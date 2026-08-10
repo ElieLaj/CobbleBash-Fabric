@@ -1,0 +1,126 @@
+﻿{
+    "name":  {
+                 "translate":  "badge.cobblebadges.ground",
+                 "color":  "#F4A453"
+             },
+    "category":  "cobblebadges:elemental_types",
+    "tiers":  [
+                  {
+                      "tier":  "cobblebadges:poke",
+                      "acquired_by":  {
+                                          "ground_gym_advancement":  {
+                                                                         "trigger":  "minecraft:tick",
+                                                                         "conditions":  {
+                                                                                            "player":  {
+                                                                                                           "type_specific":  {
+                                                                                                                                 "type":  "minecraft:player",
+                                                                                                                                 "advancements":  {
+                                                                                                                                                      "cobblebash:gym/ground":  true
+                                                                                                                                                  }
+                                                                                                                             }
+                                                                                                       }
+                                                                                        }
+                                                                     }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:ground_poke.block_break_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.block_break_speed",
+                                                                            "amount":  {
+                                                                                           "max":  0.1
+                                                                                       },
+                                                                            "operation":  "add_multiplied_base"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:great",
+                      "acquired_by":  {
+                                          "ground_points":  {
+                                                                "trigger":  "cobblebadges:points_owned",
+                                                                "conditions":  {
+                                                                                   "points":  {
+                                                                                                  "cobblebadges:ground":  100
+                                                                                              }
+                                                                               }
+                                                            }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:ground_great.block_break_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.block_break_speed",
+                                                                            "amount":  {
+                                                                                           "max":  0.25
+                                                                                       },
+                                                                            "operation":  "add_multiplied_base"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:ultra",
+                      "acquired_by":  {
+                                          "ground_points":  {
+                                                                "trigger":  "cobblebadges:points_owned",
+                                                                "conditions":  {
+                                                                                   "points":  {
+                                                                                                  "cobblebadges:ground":  200
+                                                                                              }
+                                                                               }
+                                                            }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:ground_ultra.block_break_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.block_break_speed",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_multiplied_base"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:master",
+                      "acquired_by":  {
+                                          "ground_points":  {
+                                                                "trigger":  "cobblebadges:points_owned",
+                                                                "conditions":  {
+                                                                                   "points":  {
+                                                                                                  "cobblebadges:ground":  300
+                                                                                              }
+                                                                               }
+                                                            }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:ground_master.block_break_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.block_break_speed",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_multiplied_base"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  }
+              ]
+}

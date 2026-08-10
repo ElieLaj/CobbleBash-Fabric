@@ -1,0 +1,156 @@
+{
+    "display_name": "Flying Boss",
+    "dialogue":  {
+        "lines":  [
+            "This is the final Flying test. Win, and the badge is yours."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Flying Leader",
+            "pokemon":  [
+                {
+                    "species": "Corviknight",
+                    "ability": "Pressure",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Brave Bird",
+                        "Body Press",
+                        "Roost",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Staraptor",
+                    "ability": "Intimidate",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Brave Bird",
+                        "Close Combat",
+                        "U-turn",
+                        "Double-Edge"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Aura Sphere"
+                    ]
+                },
+                {
+                    "species": "Gliscor",
+                    "ability": "Poison Heal",
+                    "held_item": "Toxic Orb",
+                    "moves":  [
+                        "Earthquake",
+                        "Roost",
+                        "Toxic",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "ability": "Rough Skin",
+                    "held_item": "None",
+                    "moves":  [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Stealth Rock",
+                        "Fire Fang"
+                    ]
+                },
+                {
+                    "species": "Magnezone",
+                    "ability": "Magnet Pull",
+                    "held_item": "None",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Flash Cannon",
+                        "Volt Switch",
+                        "Body Press"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Flying Leader",
+            "pokemon":  [
+                {
+                    "species": "Talonflame",
+                    "ability": "Gale Wings",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves":  [
+                        "Brave Bird",
+                        "Flare Blitz",
+                        "Roost",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Hawlucha",
+                    "ability": "Unburden",
+                    "held_item": "None",
+                    "moves":  [
+                        "Acrobatics",
+                        "Close Combat",
+                        "Swords Dance",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Noivern",
+                    "ability": "Infiltrator",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Hurricane",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Aerodactyl",
+                    "ability": "Rock Head",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Stone Edge",
+                        "Dual Wingbeat",
+                        "Earthquake",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Excadrill",
+                    "ability": "Mold Breaker",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earthquake",
+                        "Iron Head",
+                        "Rock Slide",
+                        "Rapid Spin"
+                    ]
+                },
+                {
+                    "species": "Rotom-Wash",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ]
+                }
+            ]
+        }
+    ]
+}

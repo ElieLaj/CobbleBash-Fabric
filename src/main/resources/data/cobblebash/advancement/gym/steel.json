@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:steel_training_disk"
+    },
+    "title": "Steel Gym Completed",
+    "description": "Complete the Steel Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_steel_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "steel"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_steel_boss"
+    ]
+  ]
+}

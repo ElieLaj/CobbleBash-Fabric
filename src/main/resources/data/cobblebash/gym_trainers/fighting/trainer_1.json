@@ -1,0 +1,112 @@
+{
+    "display_name": "Fighting Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Fighting gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Aggressive Pressure",
+            "pokemon":  [
+                {
+                    "species": "Lucario",
+                    "ability": "Inner Focus",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Close Combat",
+                        "Extreme Speed",
+                        "Swords Dance",
+                        "Crunch"
+                    ]
+                },
+                {
+                    "species": "Hawlucha",
+                    "ability": "Unburden",
+                    "held_item": "None",
+                    "moves":  [
+                        "Acrobatics",
+                        "Close Combat",
+                        "Swords Dance",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Machamp",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Close Combat",
+                        "Knock Off",
+                        "Facade",
+                        "Bullet Punch"
+                    ]
+                },
+                {
+                    "species": "Passimian",
+                    "ability": "Defiant",
+                    "held_item": "None",
+                    "moves":  [
+                        "Close Combat",
+                        "U-turn",
+                        "Rock Slide",
+                        "Knock Off"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Bulk & Control",
+            "pokemon":  [
+                {
+                    "species": "Conkeldurr",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Drain Punch",
+                        "Mach Punch",
+                        "Knock Off",
+                        "Facade"
+                    ]
+                },
+                {
+                    "species": "Scrafty",
+                    "ability": "Intimidate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Drain Punch",
+                        "Knock Off",
+                        "Dragon Dance",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Gallade",
+                    "ability": "Sharpness",
+                    "held_item": "None",
+                    "moves":  [
+                        "Sacred Sword",
+                        "Psycho Cut",
+                        "Swords Dance",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Hawlucha",
+                    "ability": "Unburden",
+                    "held_item": "None",
+                    "moves":  [
+                        "Acrobatics",
+                        "Close Combat",
+                        "Taunt",
+                        "Roost"
+                    ]
+                }
+            ]
+        }
+    ]
+}

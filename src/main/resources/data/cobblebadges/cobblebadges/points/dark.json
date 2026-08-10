@@ -1,0 +1,48 @@
+﻿{
+    "name":  {
+                 "translate":  "point.cobblebadges.dark",
+                 "color":  "#587DA0"
+             },
+    "acquired_by":  [
+                        {
+                            "trigger":  "cobblebadges:pokemon_defeated",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=dark",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/dark":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        },
+                        {
+                            "trigger":  "cobblebadges:pokemon_captured",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=dark",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/dark":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        }
+                    ]
+}

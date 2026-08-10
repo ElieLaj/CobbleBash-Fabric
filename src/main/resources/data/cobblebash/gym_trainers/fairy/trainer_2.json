@@ -1,0 +1,195 @@
+{
+    "display_name": "Fairy Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Fairy gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Setup & Pressure",
+            "pokemon":  [
+                {
+                    "species": "Azumarill",
+                    "ability": "Huge Power",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Play Rough",
+                        "Aqua Jet",
+                        "Liquidation",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Aura Sphere"
+                    ]
+                },
+                {
+                    "species": "Grimmsnarl",
+                    "ability": "Prankster",
+                    "held_item": "Light Clay",
+                    "moves":  [
+                        "Reflect",
+                        "Light Screen",
+                        "Spirit Break",
+                        "Taunt"
+                    ]
+                },
+                {
+                    "species": "Hatterene",
+                    "ability": "Magic Bounce",
+                    "held_item": "None",
+                    "moves":  [
+                        "Psychic",
+                        "Dazzling Gleam",
+                        "Mystical Fire",
+                        "Calm Mind"
+                    ]
+                },
+                {
+                    "species": "Sylveon",
+                    "ability": "Pixilate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Hyper Voice",
+                        "Wish",
+                        "Protect",
+                        "Mystical Fire"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Offensive Fairy",
+            "pokemon":  [
+                {
+                    "species": "Gardevoir",
+                    "ability": "Trace",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Moonblast",
+                        "Psychic",
+                        "Mystical Fire",
+                        "Thunderbolt"
+                    ]
+                },
+                {
+                    "species": "Mimikyu",
+                    "ability": "Disguise",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Play Rough",
+                        "Shadow Claw",
+                        "Swords Dance",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "None",
+                    "moves":  [
+                        "Air Slash",
+                        "Dazzling Gleam",
+                        "Aura Sphere",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Azumarill",
+                    "ability": "Huge Power",
+                    "held_item": "Sitrus Berry",
+                    "moves":  [
+                        "Play Rough",
+                        "Aqua Jet",
+                        "Belly Drum",
+                        "Liquidation"
+                    ]
+                },
+                {
+                    "species": "Grimmsnarl",
+                    "ability": "Prankster",
+                    "held_item": "None",
+                    "moves":  [
+                        "Spirit Break",
+                        "Taunt",
+                        "Thunder Wave",
+                        "Reflect"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Utility & Sustain",
+            "pokemon":  [
+                {
+                    "species": "Clefable",
+                    "ability": "Magic Guard",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Moonblast",
+                        "Soft-Boiled",
+                        "Calm Mind",
+                        "Flamethrower"
+                    ]
+                },
+                {
+                    "species": "Florges",
+                    "ability": "Flower Veil",
+                    "held_item": "None",
+                    "moves":  [
+                        "Moonblast",
+                        "Wish",
+                        "Protect",
+                        "Aromatherapy"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Aura Sphere"
+                    ]
+                },
+                {
+                    "species": "Mawile",
+                    "ability": "Intimidate",
+                    "held_item": "Black Glasses",
+                    "moves":  [
+                        "Play Rough",
+                        "Sucker Punch",
+                        "Iron Head",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Sylveon",
+                    "ability": "Pixilate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Hyper Voice",
+                        "Wish",
+                        "Protect",
+                        "Mystical Fire"
+                    ]
+                }
+            ]
+        }
+    ]
+}

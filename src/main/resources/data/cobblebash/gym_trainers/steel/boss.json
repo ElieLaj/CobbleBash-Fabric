@@ -1,0 +1,156 @@
+{
+    "display_name": "Steel Boss",
+    "dialogue":  {
+        "lines":  [
+            "This is the final Steel test. Win, and the badge is yours."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Steel Leader",
+            "pokemon":  [
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Swords Dance",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Ferrothorn",
+                    "ability": "Iron Barbs",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Leech Seed",
+                        "Gyro Ball",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Metagross",
+                    "ability": "Clear Body",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Meteor Mash",
+                        "Zen Headbutt",
+                        "Earthquake",
+                        "Bullet Punch"
+                    ]
+                },
+                {
+                    "species": "Magnezone",
+                    "ability": "Magnet Pull",
+                    "held_item": "None",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Flash Cannon",
+                        "Volt Switch",
+                        "Body Press"
+                    ]
+                },
+                {
+                    "species": "Rotom-Wash",
+                    "ability": "Levitate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ]
+                },
+                {
+                    "species": "Dragonite",
+                    "ability": "Multiscale",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dragon Dance",
+                        "Dragon Claw",
+                        "Fire Punch",
+                        "Roost"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Steel Leader",
+            "pokemon":  [
+                {
+                    "species": "Lucario",
+                    "ability": "Inner Focus",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Close Combat",
+                        "Meteor Mash",
+                        "Extreme Speed",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Bisharp",
+                    "ability": "Defiant",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Iron Head",
+                        "Knock Off",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Aegislash",
+                    "ability": "Stance Change",
+                    "held_item": "Weakness Policy",
+                    "moves":  [
+                        "King's Shield",
+                        "Shadow Ball",
+                        "Sacred Sword",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Empoleon",
+                    "ability": "Torrent",
+                    "held_item": "None",
+                    "moves":  [
+                        "Scald",
+                        "Flash Cannon",
+                        "Ice Beam",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "ability": "Rough Skin",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Stealth Rock",
+                        "Fire Fang"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "None",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Aura Sphere"
+                    ]
+                }
+            ]
+        }
+    ]
+}

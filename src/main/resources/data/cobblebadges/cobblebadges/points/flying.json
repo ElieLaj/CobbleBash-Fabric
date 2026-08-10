@@ -1,0 +1,48 @@
+﻿{
+    "name":  {
+                 "translate":  "point.cobblebadges.flying",
+                 "color":  "#B8B2FF"
+             },
+    "acquired_by":  [
+                        {
+                            "trigger":  "cobblebadges:pokemon_defeated",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=flying",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/flying":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        },
+                        {
+                            "trigger":  "cobblebadges:pokemon_captured",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=flying",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/flying":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        }
+                    ]
+}

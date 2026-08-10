@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:poison_training_disk"
+    },
+    "title": "Poison Gym Completed",
+    "description": "Complete the Poison Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_poison_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "poison"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_poison_boss"
+    ]
+  ]
+}

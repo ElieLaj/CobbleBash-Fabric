@@ -1,0 +1,150 @@
+﻿{
+    "name":  {
+                 "translate":  "badge.cobblebadges.ice",
+                 "color":  "#54F2F2"
+             },
+    "category":  "cobblebadges:elemental_types",
+    "tiers":  [
+                  {
+                      "tier":  "cobblebadges:poke",
+                      "acquired_by":  {
+                                          "ice_gym_advancement":  {
+                                                                      "trigger":  "minecraft:tick",
+                                                                      "conditions":  {
+                                                                                         "player":  {
+                                                                                                        "type_specific":  {
+                                                                                                                              "type":  "minecraft:player",
+                                                                                                                              "advancements":  {
+                                                                                                                                                   "cobblebash:gym/ice":  true
+                                                                                                                                               }
+                                                                                                                          }
+                                                                                                    }
+                                                                                     }
+                                                                  }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:ice_poke.freezing_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:freezing_immunity"
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:great",
+                      "acquired_by":  {
+                                          "ice_points":  {
+                                                             "trigger":  "cobblebadges:points_owned",
+                                                             "conditions":  {
+                                                                                "points":  {
+                                                                                               "cobblebadges:ice":  100
+                                                                                           }
+                                                                            }
+                                                         }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:ice_great.freezing_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:freezing_immunity"
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:ice_great.walk_on_powder_snow",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:walk_on_powder_snow"
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:ultra",
+                      "acquired_by":  {
+                                          "ice_points":  {
+                                                             "trigger":  "cobblebadges:points_owned",
+                                                             "conditions":  {
+                                                                                "points":  {
+                                                                                               "cobblebadges:ice":  200
+                                                                                           }
+                                                                            }
+                                                         }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:ice_ultra.freezing_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:freezing_immunity"
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:ice_ultra.walk_on_powder_snow",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:walk_on_powder_snow"
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:ice_ultra.slowness_on_attack",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_on_attack",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "minecraft:slowness",
+                                                                                             "duration":  200
+                                                                                         }
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:master",
+                      "acquired_by":  {
+                                          "ice_points":  {
+                                                             "trigger":  "cobblebadges:points_owned",
+                                                             "conditions":  {
+                                                                                "points":  {
+                                                                                               "cobblebadges:ice":  300
+                                                                                           }
+                                                                            }
+                                                         }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:ice_master.freezing_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:freezing_immunity"
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:ice_master.walk_on_powder_snow",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:walk_on_powder_snow"
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:ice_master.slowness_on_attack",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_on_attack",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "minecraft:slowness",
+                                                                                             "amplifier":  1,
+                                                                                             "duration":  400
+                                                                                         }
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:ice_master.slowness_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_immunity",
+                                                         "properties":  {
+                                                                            "mob_effect":  "minecraft:slowness"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  }
+              ]
+}

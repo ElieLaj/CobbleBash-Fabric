@@ -1,0 +1,181 @@
+﻿{
+    "name":  {
+                 "translate":  "badge.cobblebadges.bug",
+                 "color":  "#D3D319"
+             },
+    "category":  "cobblebadges:elemental_types",
+    "tiers":  [
+                  {
+                      "tier":  "cobblebadges:poke",
+                      "acquired_by":  {
+                                          "bug_gym_advancement":  {
+                                                                      "trigger":  "minecraft:tick",
+                                                                      "conditions":  {
+                                                                                         "player":  {
+                                                                                                        "type_specific":  {
+                                                                                                                              "type":  "minecraft:player",
+                                                                                                                              "advancements":  {
+                                                                                                                                                   "cobblebash:gym/bug":  true
+                                                                                                                                               }
+                                                                                                                          }
+                                                                                                    }
+                                                                                     }
+                                                                  }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:bug_poke.jump_strength",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.jump_strength",
+                                                                            "amount":  {
+                                                                                           "max":  0.1
+                                                                                       },
+                                                                            "operation":  "add_multiplied_base"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:great",
+                      "acquired_by":  {
+                                          "bug_points":  {
+                                                             "trigger":  "cobblebadges:points_owned",
+                                                             "conditions":  {
+                                                                                "points":  {
+                                                                                               "cobblebadges:bug":  100
+                                                                                           }
+                                                                            }
+                                                         }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:bug_great.jump_strength",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.jump_strength",
+                                                                            "amount":  {
+                                                                                           "max":  0.25
+                                                                                       },
+                                                                            "operation":  "add_multiplied_base"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:bug_great.decay_on_attack",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_on_attack",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "cobblebadges:decay",
+                                                                                             "duration":  60
+                                                                                         }
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:ultra",
+                      "acquired_by":  {
+                                          "bug_points":  {
+                                                             "trigger":  "cobblebadges:points_owned",
+                                                             "conditions":  {
+                                                                                "points":  {
+                                                                                               "cobblebadges:bug":  200
+                                                                                           }
+                                                                            }
+                                                         }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:bug_ultra.jump_strength",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.jump_strength",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_multiplied_base"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:bug_ultra.decay_on_attack",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_on_attack",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "cobblebadges:decay",
+                                                                                             "duration":  200
+                                                                                         }
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:bug_ultra.decay_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_immunity",
+                                                         "properties":  {
+                                                                            "mob_effect":  "cobblebadges:decay"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:master",
+                      "acquired_by":  {
+                                          "bug_points":  {
+                                                             "trigger":  "cobblebadges:points_owned",
+                                                             "conditions":  {
+                                                                                "points":  {
+                                                                                               "cobblebadges:bug":  300
+                                                                                           }
+                                                                            }
+                                                         }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:bug_master.jump_strength",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.jump_strength",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_multiplied_base"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:bug_master.decay_on_attack",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_on_attack",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "cobblebadges:decay",
+                                                                                             "amplifier":  1,
+                                                                                             "duration":  400
+                                                                                         }
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:bug_master.decay_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_immunity",
+                                                         "properties":  {
+                                                                            "mob_effect":  "cobblebadges:decay"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  }
+              ]
+}

@@ -1,0 +1,156 @@
+{
+    "display_name": "Ground Boss",
+    "dialogue":  {
+        "lines":  [
+            "This is the final Ground test. Win, and the badge is yours."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Ground Leader",
+            "pokemon":  [
+                {
+                    "species": "Hippowdon",
+                    "ability": "Sand Stream",
+                    "held_item": "Smooth Rock",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Earthquake",
+                        "Slack Off",
+                        "Whirlwind"
+                    ]
+                },
+                {
+                    "species": "Excadrill",
+                    "ability": "Sand Rush",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earthquake",
+                        "Iron Head",
+                        "Swords Dance",
+                        "Rapid Spin"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "ability": "Rough Skin",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Stone Edge",
+                        "Fire Fang"
+                    ]
+                },
+                {
+                    "species": "Gastrodon",
+                    "ability": "Storm Drain",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Scald",
+                        "Earth Power",
+                        "Recover",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Rotom-Wash",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ]
+                },
+                {
+                    "species": "Dragonite",
+                    "ability": "Multiscale",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dragon Dance",
+                        "Dragon Claw",
+                        "Fire Punch",
+                        "Roost"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Ground Leader",
+            "pokemon":  [
+                {
+                    "species": "Garchomp",
+                    "ability": "Rough Skin",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Swords Dance",
+                        "Fire Fang"
+                    ]
+                },
+                {
+                    "species": "Excadrill",
+                    "ability": "Mold Breaker",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Earthquake",
+                        "Iron Head",
+                        "Rapid Spin",
+                        "Rock Slide"
+                    ]
+                },
+                {
+                    "species": "Mamoswine",
+                    "ability": "Thick Fat",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Earthquake",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Landorus-Therian",
+                    "ability": "Intimidate",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Earthquake",
+                        "U-turn",
+                        "Stone Edge",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "None",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Aura Sphere"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "ability": "Flame Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Giga Drain"
+                    ]
+                }
+            ]
+        }
+    ]
+}

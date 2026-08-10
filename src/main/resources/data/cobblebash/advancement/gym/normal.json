@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:normal_training_disk"
+    },
+    "title": "Normal Gym Completed",
+    "description": "Complete the Normal Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_normal_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "normal"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_normal_boss"
+    ]
+  ]
+}

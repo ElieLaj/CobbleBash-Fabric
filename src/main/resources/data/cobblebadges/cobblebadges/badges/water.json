@@ -1,0 +1,230 @@
+﻿{
+    "name":  {
+                 "translate":  "badge.cobblebadges.water",
+                 "color":  "#3FA5FF"
+             },
+    "category":  "cobblebadges:elemental_types",
+    "tiers":  [
+                  {
+                      "tier":  "cobblebadges:poke",
+                      "acquired_by":  {
+                                          "water_gym_advancement":  {
+                                                                        "trigger":  "minecraft:tick",
+                                                                        "conditions":  {
+                                                                                           "player":  {
+                                                                                                          "type_specific":  {
+                                                                                                                                "type":  "minecraft:player",
+                                                                                                                                "advancements":  {
+                                                                                                                                                     "cobblebash:gym/water":  true
+                                                                                                                                                 }
+                                                                                                                            }
+                                                                                                      }
+                                                                                       }
+                                                                    }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:water_poke.oxygen_bonus",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.oxygen_bonus",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:water_poke.water_movement_efficiency",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.water_movement_efficiency",
+                                                                            "amount":  {
+                                                                                           "max":  0.25
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:water_poke.submerged_mining_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.submerged_mining_speed",
+                                                                            "amount":  {
+                                                                                           "max":  0.25
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:great",
+                      "acquired_by":  {
+                                          "water_points":  {
+                                                               "trigger":  "cobblebadges:points_owned",
+                                                               "conditions":  {
+                                                                                  "points":  {
+                                                                                                 "cobblebadges:water":  100
+                                                                                             }
+                                                                              }
+                                                           }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:water_great.oxygen_bonus",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.oxygen_bonus",
+                                                                            "amount":  {
+                                                                                           "max":  2.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:water_great.water_movement_efficiency",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.water_movement_efficiency",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:water_great.submerged_mining_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.submerged_mining_speed",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:ultra",
+                      "acquired_by":  {
+                                          "water_points":  {
+                                                               "trigger":  "cobblebadges:points_owned",
+                                                               "conditions":  {
+                                                                                  "points":  {
+                                                                                                 "cobblebadges:water":  200
+                                                                                             }
+                                                                              }
+                                                           }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:water_ultra.oxygen_bonus",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.oxygen_bonus",
+                                                                            "amount":  {
+                                                                                           "max":  5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:water_ultra.water_movement_efficiency",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.water_movement_efficiency",
+                                                                            "amount":  {
+                                                                                           "max":  0.75
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:water_ultra.submerged_mining_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.submerged_mining_speed",
+                                                                            "amount":  {
+                                                                                           "max":  0.75
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:master",
+                      "acquired_by":  {
+                                          "water_points":  {
+                                                               "trigger":  "cobblebadges:points_owned",
+                                                               "conditions":  {
+                                                                                  "points":  {
+                                                                                                 "cobblebadges:water":  300
+                                                                                             }
+                                                                              }
+                                                           }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:water_master.oxygen_bonus",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.oxygen_bonus",
+                                                                            "amount":  {
+                                                                                           "max":  10
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:water_master.water_movement_efficiency",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.water_movement_efficiency",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:water_master.submerged_mining_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.submerged_mining_speed",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  }
+              ]
+}

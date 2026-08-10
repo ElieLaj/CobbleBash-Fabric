@@ -1,0 +1,12 @@
+SPDX-License-Identifier: LGPL-3.0-only
+
+Cobble Bash is licensed under the GNU Lesser General Public License version 3.0 only.
+
+Copyright (c) 2026 Norevex
+
+You may redistribute and/or modify this software under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 3.0 only.
+
+Official license text:
+https://www.gnu.org/licenses/lgpl-3.0.html
+
+This source distribution also includes NeoForge MDK-derived template files. Those template files are provided by the NeoForged project under the MIT License; see TEMPLATE_LICENSE.txt in the original development project when applicable.

@@ -1,0 +1,156 @@
+{
+    "display_name": "Poison Boss",
+    "dialogue":  {
+        "lines":  [
+            "This is the final Poison test. Win, and the badge is yours."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Poison Leader",
+            "pokemon":  [
+                {
+                    "species": "Toxapex",
+                    "ability": "Regenerator",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Scald",
+                        "Toxic",
+                        "Recover",
+                        "Haze"
+                    ]
+                },
+                {
+                    "species": "Nidoking",
+                    "ability": "Sheer Force",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earth Power",
+                        "Sludge Wave",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                },
+                {
+                    "species": "Crobat",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Cross Poison",
+                        "U-turn",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Roserade",
+                    "ability": "Natural Cure",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Sludge Bomb",
+                        "Giga Drain",
+                        "Toxic Spikes",
+                        "Sleep Powder"
+                    ]
+                },
+                {
+                    "species": "Excadrill",
+                    "ability": "Mold Breaker",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Earthquake",
+                        "Iron Head",
+                        "Rock Slide",
+                        "Rapid Spin"
+                    ]
+                },
+                {
+                    "species": "Hydreigon",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Poison Leader",
+            "pokemon":  [
+                {
+                    "species": "Gengar",
+                    "ability": "Cursed Body",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Sludge Bomb",
+                        "Destiny Bond",
+                        "Focus Blast"
+                    ]
+                },
+                {
+                    "species": "Nidoking",
+                    "ability": "Sheer Force",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earth Power",
+                        "Sludge Wave",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                },
+                {
+                    "species": "Toxicroak",
+                    "ability": "Dry Skin",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Drain Punch",
+                        "Gunk Shot",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Crobat",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Cross Poison",
+                        "U-turn",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "ability": "Rough Skin",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Stone Edge",
+                        "Fire Fang"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "None",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Swords Dance",
+                        "Knock Off"
+                    ]
+                }
+            ]
+        }
+    ]
+}

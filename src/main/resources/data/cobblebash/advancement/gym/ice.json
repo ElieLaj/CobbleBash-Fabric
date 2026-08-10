@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:ice_training_disk"
+    },
+    "title": "Ice Gym Completed",
+    "description": "Complete the Ice Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_ice_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "ice"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_ice_boss"
+    ]
+  ]
+}

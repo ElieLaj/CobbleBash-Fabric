@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:ghost_training_disk"
+    },
+    "title": "Ghost Gym Completed",
+    "description": "Complete the Ghost Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_ghost_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "ghost"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_ghost_boss"
+    ]
+  ]
+}

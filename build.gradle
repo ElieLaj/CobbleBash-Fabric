@@ -1,0 +1,60 @@
+plugins {
+    id 'fabric-loom' version '1.9-SNAPSHOT'
+    id 'java'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+
+    // Mappings officielles Mojang : ce sont celles de l'original (NeoForge les
+    // utilise aussi), donc les 21 fichiers neutres compilent sans retouche.
+    mappings loom.officialMojangMappings()
+
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+    modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
+
+    // Dependances prises directement dans le pack : ce sont les jars qui
+    // tourneront en jeu, donc aucun ecart de version possible.
+    // Loom les remappe d'intermediary vers les noms officiels pour la compilation.
+    modCompileOnly files('libs/Cobblemon-fabric-1.7.3+1.21.1.jar')
+    modCompileOnly files('libs/rctapi-fabric-1.21.1-0.15.2-beta.jar')
+    modCompileOnly files('libs/CobbleBadges-fabric-4.0.0+Beta-1+1.21.1.jar')
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand 'version': project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = 'UTF-8'
+    it.options.release = 21
+}
+
+java {
+    withSourcesJar()
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+jar {
+    from('LICENSE') {
+        rename { "${it}_${project.base.archivesName.get()}" }
+    }
+}

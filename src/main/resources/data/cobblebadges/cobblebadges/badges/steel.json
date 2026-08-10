@@ -1,0 +1,178 @@
+﻿{
+    "name":  {
+                 "translate":  "badge.cobblebadges.steel",
+                 "color":  "#ABD1F4"
+             },
+    "category":  "cobblebadges:elemental_types",
+    "tiers":  [
+                  {
+                      "tier":  "cobblebadges:poke",
+                      "acquired_by":  {
+                                          "steel_gym_advancement":  {
+                                                                        "trigger":  "minecraft:tick",
+                                                                        "conditions":  {
+                                                                                           "player":  {
+                                                                                                          "type_specific":  {
+                                                                                                                                "type":  "minecraft:player",
+                                                                                                                                "advancements":  {
+                                                                                                                                                     "cobblebash:gym/steel":  true
+                                                                                                                                                 }
+                                                                                                                            }
+                                                                                                      }
+                                                                                       }
+                                                                    }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:steel_poke.armor",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.armor",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:steel_poke.explosion_knockback_resistance",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.explosion_knockback_resistance",
+                                                                            "amount":  {
+                                                                                           "max":  0.1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:great",
+                      "acquired_by":  {
+                                          "steel_points":  {
+                                                               "trigger":  "cobblebadges:points_owned",
+                                                               "conditions":  {
+                                                                                  "points":  {
+                                                                                                 "cobblebadges:steel":  100
+                                                                                             }
+                                                                              }
+                                                           }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:steel_great.armor",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.armor",
+                                                                            "amount":  {
+                                                                                           "max":  2.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:steel_great.explosion_knockback_resistance",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.explosion_knockback_resistance",
+                                                                            "amount":  {
+                                                                                           "max":  0.25
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:ultra",
+                      "acquired_by":  {
+                                          "steel_points":  {
+                                                               "trigger":  "cobblebadges:points_owned",
+                                                               "conditions":  {
+                                                                                  "points":  {
+                                                                                                 "cobblebadges:steel":  200
+                                                                                             }
+                                                                              }
+                                                           }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:steel_ultra.armor",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.armor",
+                                                                            "amount":  {
+                                                                                           "max":  5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:steel_ultra.explosion_knockback_resistance",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.explosion_knockback_resistance",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:master",
+                      "acquired_by":  {
+                                          "steel_points":  {
+                                                               "trigger":  "cobblebadges:points_owned",
+                                                               "conditions":  {
+                                                                                  "points":  {
+                                                                                                 "cobblebadges:steel":  300
+                                                                                             }
+                                                                              }
+                                                           }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:steel_master.armor",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.armor",
+                                                                            "amount":  {
+                                                                                           "max":  10
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:steel_master.explosion_knockback_resistance",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.explosion_knockback_resistance",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  }
+              ]
+}

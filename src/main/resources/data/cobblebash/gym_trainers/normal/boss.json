@@ -1,0 +1,156 @@
+{
+    "display_name": "Normal Boss",
+    "dialogue":  {
+        "lines":  [
+            "This is the final Normal test. Win, and the badge is yours."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Normal Leader",
+            "pokemon":  [
+                {
+                    "species": "Porygon2",
+                    "ability": "Trace",
+                    "held_item": "Eviolite",
+                    "moves":  [
+                        "Tri Attack",
+                        "Ice Beam",
+                        "Recover",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Snorlax",
+                    "ability": "Thick Fat",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Body Slam",
+                        "Earthquake",
+                        "Curse",
+                        "Rest"
+                    ]
+                },
+                {
+                    "species": "Staraptor",
+                    "ability": "Intimidate",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Brave Bird",
+                        "Close Combat",
+                        "U-turn",
+                        "Double-Edge"
+                    ]
+                },
+                {
+                    "species": "Obstagoon",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Facade",
+                        "Knock Off",
+                        "Close Combat",
+                        "Obstruct"
+                    ]
+                },
+                {
+                    "species": "Aegislash",
+                    "ability": "Stance Change",
+                    "held_item": "None",
+                    "moves":  [
+                        "King's Shield",
+                        "Shadow Ball",
+                        "Sacred Sword",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "None",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Aura Sphere"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Normal Leader",
+            "pokemon":  [
+                {
+                    "species": "Porygon-Z",
+                    "ability": "Adaptability",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Tri Attack",
+                        "Thunderbolt",
+                        "Ice Beam",
+                        "Dark Pulse"
+                    ]
+                },
+                {
+                    "species": "Ursaring",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Facade",
+                        "Close Combat",
+                        "Crunch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Braviary",
+                    "ability": "Defiant",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Brave Bird",
+                        "Close Combat",
+                        "U-turn",
+                        "Return"
+                    ]
+                },
+                {
+                    "species": "Kangaskhan",
+                    "ability": "Scrappy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Fake Out",
+                        "Double-Edge",
+                        "Earthquake",
+                        "Sucker Punch"
+                    ]
+                },
+                {
+                    "species": "Gengar",
+                    "ability": "Cursed Body",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Sludge Bomb",
+                        "Destiny Bond",
+                        "Focus Blast"
+                    ]
+                },
+                {
+                    "species": "Tinkaton",
+                    "ability": "Mold Breaker",
+                    "held_item": "None",
+                    "moves":  [
+                        "Gigaton Hammer",
+                        "Play Rough",
+                        "Knock Off",
+                        "Swords Dance"
+                    ]
+                }
+            ]
+        }
+    ]
+}

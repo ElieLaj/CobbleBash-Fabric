@@ -1,0 +1,156 @@
+{
+    "display_name": "Ice Boss",
+    "dialogue":  {
+        "lines":  [
+            "This is the final Ice test. Win, and the badge is yours."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Ice Leader",
+            "pokemon":  [
+                {
+                    "species": "Alolan Ninetales",
+                    "ability": "Snow Warning",
+                    "held_item": "Light Clay",
+                    "moves":  [
+                        "Aurora Veil",
+                        "Freeze-Dry",
+                        "Moonblast",
+                        "Encore"
+                    ]
+                },
+                {
+                    "species": "Weavile",
+                    "ability": "Pressure",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Icicle Crash",
+                        "Knock Off",
+                        "Ice Shard",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Mamoswine",
+                    "ability": "Thick Fat",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Earthquake",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Lapras",
+                    "ability": "Water Absorb",
+                    "held_item": "Assault Vest",
+                    "moves":  [
+                        "Freeze-Dry",
+                        "Surf",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                },
+                {
+                    "species": "Heatran",
+                    "ability": "Flash Fire",
+                    "held_item": "None",
+                    "moves":  [
+                        "Lava Plume",
+                        "Earth Power",
+                        "Toxic",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Rotom-Wash",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Ice Leader",
+            "pokemon":  [
+                {
+                    "species": "Weavile",
+                    "ability": "Pressure",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Icicle Crash",
+                        "Knock Off",
+                        "Ice Shard",
+                        "Low Kick"
+                    ]
+                },
+                {
+                    "species": "Mamoswine",
+                    "ability": "Thick Fat",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earthquake",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Froslass",
+                    "ability": "Cursed Body",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Spikes",
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Taunt"
+                    ]
+                },
+                {
+                    "species": "Glaceon",
+                    "ability": "Ice Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Freeze-Dry",
+                        "Wish"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Swords Dance",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "ability": "Flame Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Giga Drain"
+                    ]
+                }
+            ]
+        }
+    ]
+}

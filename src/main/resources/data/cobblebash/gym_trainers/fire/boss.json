@@ -1,0 +1,156 @@
+{
+    "display_name": "The Ash King",
+    "dialogue":  {
+        "lines":  [
+            "Ash marks what survived the flame. Earn your place."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Fire Leader",
+            "pokemon":  [
+                {
+                    "species": "Torkoal",
+                    "ability": "Drought",
+                    "held_item": "Heat Rock",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Lava Plume",
+                        "Rapid Spin",
+                        "Yawn"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "ability": "Flame Body",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Cinderace",
+                    "ability": "Blaze",
+                    "held_item": "None",
+                    "moves":  [
+                        "Pyro Ball",
+                        "High Jump Kick",
+                        "U-turn",
+                        "Sucker Punch"
+                    ]
+                },
+                {
+                    "species": "Infernape",
+                    "ability": "Blaze",
+                    "held_item": "None",
+                    "moves":  [
+                        "Close Combat",
+                        "Flare Blitz",
+                        "U-turn",
+                        "Grass Knot"
+                    ]
+                },
+                {
+                    "species": "Gastrodon",
+                    "ability": "Storm Drain",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Scald",
+                        "Earth Power",
+                        "Recover",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Tyranitar",
+                    "ability": "Sand Stream",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Stone Edge",
+                        "Crunch",
+                        "Superpower",
+                        "Earthquake"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Fire Leader",
+            "pokemon":  [
+                {
+                    "species": "Cinderace",
+                    "ability": "Blaze",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Pyro Ball",
+                        "High Jump Kick",
+                        "U-turn",
+                        "Sucker Punch"
+                    ]
+                },
+                {
+                    "species": "Infernape",
+                    "ability": "Blaze",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Close Combat",
+                        "Flare Blitz",
+                        "U-turn",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "ability": "Flame Body",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Giga Drain"
+                    ]
+                },
+                {
+                    "species": "Talonflame",
+                    "ability": "Gale Wings",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Flare Blitz",
+                        "Roost",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "ability": "Rough Skin",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "Stealth Rock",
+                        "Fire Fang"
+                    ]
+                },
+                {
+                    "species": "Rotom-Wash",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ]
+                }
+            ]
+        }
+    ]
+}

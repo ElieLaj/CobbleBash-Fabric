@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:psychic_training_disk"
+    },
+    "title": "Psychic Gym Completed",
+    "description": "Complete the Psychic Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_psychic_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "psychic"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_psychic_boss"
+    ]
+  ]
+}

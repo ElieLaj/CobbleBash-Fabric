@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:dark_training_disk"
+    },
+    "title": "Dark Gym Completed",
+    "description": "Complete the Dark Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_dark_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "dark"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_dark_boss"
+    ]
+  ]
+}

@@ -1,0 +1,156 @@
+{
+    "display_name": "Ghost Boss",
+    "dialogue":  {
+        "lines":  [
+            "This is the final Ghost test. Win, and the badge is yours."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Ghost Leader",
+            "pokemon":  [
+                {
+                    "species": "Dragapult",
+                    "ability": "Infiltrator",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Shadow Ball",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Aegislash",
+                    "ability": "Stance Change",
+                    "held_item": "Weakness Policy",
+                    "moves":  [
+                        "King's Shield",
+                        "Shadow Ball",
+                        "Sacred Sword",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Gengar",
+                    "ability": "Cursed Body",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Sludge Bomb",
+                        "Focus Blast",
+                        "Destiny Bond"
+                    ]
+                },
+                {
+                    "species": "Mimikyu",
+                    "ability": "Disguise",
+                    "held_item": "None",
+                    "moves":  [
+                        "Play Rough",
+                        "Shadow Sneak",
+                        "Swords Dance",
+                        "Shadow Claw"
+                    ]
+                },
+                {
+                    "species": "Tyranitar",
+                    "ability": "Sand Stream",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Crunch",
+                        "Stone Edge",
+                        "Superpower",
+                        "Earthquake"
+                    ]
+                },
+                {
+                    "species": "Hydreigon",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Ghost Leader",
+            "pokemon":  [
+                {
+                    "species": "Dragapult",
+                    "ability": "Infiltrator",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Dragon Darts",
+                        "Phantom Force",
+                        "U-turn",
+                        "Steel Wing"
+                    ]
+                },
+                {
+                    "species": "Gengar",
+                    "ability": "Cursed Body",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Sludge Bomb",
+                        "Destiny Bond",
+                        "Focus Blast"
+                    ]
+                },
+                {
+                    "species": "Chandelure",
+                    "ability": "Flash Fire",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Flamethrower",
+                        "Energy Ball",
+                        "Psychic"
+                    ]
+                },
+                {
+                    "species": "Mimikyu",
+                    "ability": "Disguise",
+                    "held_item": "None",
+                    "moves":  [
+                        "Play Rough",
+                        "Shadow Sneak",
+                        "Swords Dance",
+                        "Shadow Claw"
+                    ]
+                },
+                {
+                    "species": "Bisharp",
+                    "ability": "Defiant",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Iron Head",
+                        "Knock Off",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Mandibuzz",
+                    "ability": "Overcoat",
+                    "held_item": "None",
+                    "moves":  [
+                        "Foul Play",
+                        "Roost",
+                        "Defog",
+                        "U-turn"
+                    ]
+                }
+            ]
+        }
+    ]
+}

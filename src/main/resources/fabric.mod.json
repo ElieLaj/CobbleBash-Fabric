@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblebash",
+  "version": "${version}",
+  "name": "CobbleBash (Fabric)",
+  "description": "Arenes instanciees par type : deux dresseurs et un boss dans une dimension privee, avec progression et badges. Portage Fabric du mod NeoForge de Norevex.",
+  "authors": [
+    "Norevex"
+  ],
+  "contributors": [
+    "Portage Fabric"
+  ],
+  "contact": {
+    "sources": "https://github.com/NorevexG/CobbleBash",
+    "issues": "https://github.com/NorevexG/CobbleBash/issues"
+  },
+  "license": "LGPL-3.0-only",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.nore.cobblebash.CobbleBash"
+    ],
+    "client": [
+      "com.nore.cobblebash.CobbleBashClient"
+    ]
+  },
+  "mixins": [
+    "cobblebash.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "cobblemon": ">=1.7.3",
+    "rctapi": ">=0.15.2",
+    "cobblebadges": ">=4.0.0"
+  }
+}

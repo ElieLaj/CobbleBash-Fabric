@@ -1,0 +1,112 @@
+{
+    "display_name": "Electric Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Electric gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Speed Pressure",
+            "pokemon":  [
+                {
+                    "species": "Raichu",
+                    "ability": "Lightning Rod",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Volt Switch",
+                        "Grass Knot",
+                        "Nasty Plot"
+                    ]
+                },
+                {
+                    "species": "Luxray",
+                    "ability": "Intimidate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Wild Charge",
+                        "Crunch",
+                        "Ice Fang",
+                        "Volt Switch"
+                    ]
+                },
+                {
+                    "species": "Electrode",
+                    "ability": "Static",
+                    "held_item": "None",
+                    "moves":  [
+                        "Thunder",
+                        "Volt Switch",
+                        "Taunt",
+                        "Explosion"
+                    ]
+                },
+                {
+                    "species": "Heliolisk",
+                    "ability": "Dry Skin",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Surf",
+                        "Volt Switch",
+                        "Hyper Voice"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Pivot Control",
+            "pokemon":  [
+                {
+                    "species": "Rotom",
+                    "ability": "Levitate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ]
+                },
+                {
+                    "species": "Ampharos",
+                    "ability": "Static",
+                    "held_item": "None",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Dragon Pulse",
+                        "Volt Switch",
+                        "Light Screen"
+                    ]
+                },
+                {
+                    "species": "Luxray",
+                    "ability": "Intimidate",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Wild Charge",
+                        "Crunch",
+                        "Ice Fang",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Raichu",
+                    "ability": "Lightning Rod",
+                    "held_item": "None",
+                    "moves":  [
+                        "Thunderbolt",
+                        "Encore",
+                        "Nasty Plot",
+                        "Volt Switch"
+                    ]
+                }
+            ]
+        }
+    ]
+}

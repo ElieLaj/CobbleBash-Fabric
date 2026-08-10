@@ -1,0 +1,48 @@
+﻿{
+    "name":  {
+                 "translate":  "point.cobblebadges.psychic",
+                 "color":  "#FF5E9E"
+             },
+    "acquired_by":  [
+                        {
+                            "trigger":  "cobblebadges:pokemon_defeated",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=psychic",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/psychic":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        },
+                        {
+                            "trigger":  "cobblebadges:pokemon_captured",
+                            "conditions":  {
+                                               "pokemon_properties":  "type=psychic",
+                                               "player":  [
+                                                              {
+                                                                  "condition":  "minecraft:entity_properties",
+                                                                  "entity":  "this",
+                                                                  "predicate":  {
+                                                                                    "type_specific":  {
+                                                                                                          "type":  "minecraft:player",
+                                                                                                          "advancements":  {
+                                                                                                                               "cobblebash:gym/psychic":  true
+                                                                                                                           }
+                                                                                                      }
+                                                                                }
+                                                              }
+                                                          ]
+                                           }
+                        }
+                    ]
+}

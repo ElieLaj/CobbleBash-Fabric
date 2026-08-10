@@ -1,0 +1,112 @@
+{
+    "display_name": "Water Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Water gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Rain Pressure",
+            "pokemon":  [
+                {
+                    "species": "Pelipper",
+                    "ability": "Drizzle",
+                    "held_item": "Damp Rock",
+                    "moves":  [
+                        "Scald",
+                        "Hurricane",
+                        "Roost",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Barraskewda",
+                    "ability": "Swift Swim",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Liquidation",
+                        "Close Combat",
+                        "Psychic Fangs",
+                        "Aqua Jet"
+                    ]
+                },
+                {
+                    "species": "Swampert",
+                    "ability": "Torrent",
+                    "held_item": "None",
+                    "moves":  [
+                        "Waterfall",
+                        "Earthquake",
+                        "Ice Punch",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Tentacruel",
+                    "ability": "Liquid Ooze",
+                    "held_item": "None",
+                    "moves":  [
+                        "Scald",
+                        "Sludge Bomb",
+                        "Rapid Spin",
+                        "Toxic Spikes"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Bulky Waters",
+            "pokemon":  [
+                {
+                    "species": "Milotic",
+                    "ability": "Marvel Scale",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Scald",
+                        "Recover",
+                        "Ice Beam",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Azumarill",
+                    "ability": "Huge Power",
+                    "held_item": "Sitrus Berry",
+                    "moves":  [
+                        "Play Rough",
+                        "Aqua Jet",
+                        "Belly Drum",
+                        "Liquidation"
+                    ]
+                },
+                {
+                    "species": "Slowbro",
+                    "ability": "Regenerator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Scald",
+                        "Psychic",
+                        "Slack Off",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Lapras",
+                    "ability": "Water Absorb",
+                    "held_item": "None",
+                    "moves":  [
+                        "Freeze-Dry",
+                        "Surf",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                }
+            ]
+        }
+    ]
+}

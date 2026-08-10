@@ -1,0 +1,195 @@
+{
+    "display_name": "The Furnace",
+    "dialogue":  {
+        "lines":  [
+            "Heat, pressure, and patience. That's how challengers are tested."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Sun Pressure",
+            "pokemon":  [
+                {
+                    "species": "Torkoal",
+                    "ability": "Drought",
+                    "held_item": "Heat Rock",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Lava Plume",
+                        "Rapid Spin",
+                        "Yawn"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "ability": "Flame Body",
+                    "held_item": "Heavy-Duty Boots",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Charizard",
+                    "ability": "Solar Power",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Fire Blast",
+                        "Solar Beam",
+                        "Air Slash",
+                        "Focus Blast"
+                    ]
+                },
+                {
+                    "species": "Infernape",
+                    "ability": "Blaze",
+                    "held_item": "None",
+                    "moves":  [
+                        "Close Combat",
+                        "Flare Blitz",
+                        "U-turn",
+                        "Grass Knot"
+                    ]
+                },
+                {
+                    "species": "Arcanine",
+                    "ability": "Intimidate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Flare Blitz",
+                        "Extreme Speed",
+                        "Morning Sun",
+                        "Wild Charge"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Fast Offense",
+            "pokemon":  [
+                {
+                    "species": "Cinderace",
+                    "ability": "Blaze",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Pyro Ball",
+                        "High Jump Kick",
+                        "U-turn",
+                        "Sucker Punch"
+                    ]
+                },
+                {
+                    "species": "Infernape",
+                    "ability": "Blaze",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Close Combat",
+                        "Flare Blitz",
+                        "U-turn",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Talonflame",
+                    "ability": "Gale Wings",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Flare Blitz",
+                        "Roost",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Rotom-Heat",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Overheat",
+                        "Volt Switch",
+                        "Thunderbolt",
+                        "Will-O-Wisp"
+                    ]
+                },
+                {
+                    "species": "Houndoom",
+                    "ability": "Flash Fire",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Nasty Plot",
+                        "Dark Pulse",
+                        "Flamethrower",
+                        "Sludge Bomb"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Bulk & Control",
+            "pokemon":  [
+                {
+                    "species": "Torkoal",
+                    "ability": "Drought",
+                    "held_item": "Heat Rock",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Lava Plume",
+                        "Rapid Spin",
+                        "Yawn"
+                    ]
+                },
+                {
+                    "species": "Rotom-Heat",
+                    "ability": "Levitate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Overheat",
+                        "Volt Switch",
+                        "Will-O-Wisp",
+                        "Pain Split"
+                    ]
+                },
+                {
+                    "species": "Arcanine",
+                    "ability": "Intimidate",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Flare Blitz",
+                        "Morning Sun",
+                        "Toxic",
+                        "Extreme Speed"
+                    ]
+                },
+                {
+                    "species": "Volcarona",
+                    "ability": "Flame Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Fiery Dance",
+                        "Bug Buzz",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Charizard",
+                    "ability": "Blaze",
+                    "held_item": "None",
+                    "moves":  [
+                        "Flamethrower",
+                        "Air Slash",
+                        "Roost",
+                        "Dragon Pulse"
+                    ]
+                }
+            ]
+        }
+    ]
+}

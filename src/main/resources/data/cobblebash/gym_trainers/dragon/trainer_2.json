@@ -1,0 +1,195 @@
+{
+    "display_name": "Dragon Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Dragon gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Setup Core",
+            "pokemon":  [
+                {
+                    "species": "Dragonite",
+                    "ability": "Multiscale",
+                    "held_item": "Weakness Policy",
+                    "moves":  [
+                        "Dragon Dance",
+                        "Dual Wingbeat",
+                        "Earthquake",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "ability": "Rough Skin",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Earthquake",
+                        "Dragon Tail",
+                        "Fire Fang"
+                    ]
+                },
+                {
+                    "species": "Hydreigon",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Kingdra",
+                    "ability": "Swift Swim",
+                    "held_item": "None",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Draco Meteor",
+                        "Ice Beam",
+                        "Rain Dance"
+                    ]
+                },
+                {
+                    "species": "Altaria",
+                    "ability": "Natural Cure",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Dragon Pulse",
+                        "Roost",
+                        "Heal Bell",
+                        "Defog"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Pressure",
+            "pokemon":  [
+                {
+                    "species": "Dragapult",
+                    "ability": "Infiltrator",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Dragon Darts",
+                        "U-turn",
+                        "Phantom Force",
+                        "Steel Wing"
+                    ]
+                },
+                {
+                    "species": "Haxorus",
+                    "ability": "Mold Breaker",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Dragon Dance",
+                        "Outrage",
+                        "Earthquake",
+                        "Poison Jab"
+                    ]
+                },
+                {
+                    "species": "Salamence",
+                    "ability": "Intimidate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dragon Dance",
+                        "Dual Wingbeat",
+                        "Earthquake",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Flygon",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Earthquake",
+                        "Dragon Claw",
+                        "U-turn",
+                        "Fire Punch"
+                    ]
+                },
+                {
+                    "species": "Noivern",
+                    "ability": "Infiltrator",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Hurricane",
+                        "Flamethrower",
+                        "U-turn"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Bulk and Utility",
+            "pokemon":  [
+                {
+                    "species": "Goodra",
+                    "ability": "Sap Sipper",
+                    "held_item": "Assault Vest",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "Thunderbolt",
+                        "Sludge Bomb"
+                    ]
+                },
+                {
+                    "species": "Garchomp",
+                    "ability": "Rough Skin",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Earthquake",
+                        "Dragon Tail",
+                        "Stealth Rock",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Dragonite",
+                    "ability": "Multiscale",
+                    "held_item": "None",
+                    "moves":  [
+                        "Roost",
+                        "Dragon Tail",
+                        "Thunder Wave",
+                        "Fire Punch"
+                    ]
+                },
+                {
+                    "species": "Hydreigon",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Dark Pulse",
+                        "Draco Meteor",
+                        "Flamethrower",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Kingdra",
+                    "ability": "Sniper",
+                    "held_item": "Scope Lens",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Hydro Pump",
+                        "Ice Beam",
+                        "Focus Energy"
+                    ]
+                }
+            ]
+        }
+    ]
+}

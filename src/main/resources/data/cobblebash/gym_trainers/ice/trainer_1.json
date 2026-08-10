@@ -1,0 +1,112 @@
+{
+    "display_name": "Ice Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Ice gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Hail Pressure",
+            "pokemon":  [
+                {
+                    "species": "Alolan Ninetales",
+                    "ability": "Snow Warning",
+                    "held_item": "Light Clay",
+                    "moves":  [
+                        "Aurora Veil",
+                        "Freeze-Dry",
+                        "Moonblast",
+                        "Encore"
+                    ]
+                },
+                {
+                    "species": "Mamoswine",
+                    "ability": "Thick Fat",
+                    "held_item": "None",
+                    "moves":  [
+                        "Earthquake",
+                        "Icicle Crash",
+                        "Ice Shard",
+                        "Stone Edge"
+                    ]
+                },
+                {
+                    "species": "Weavile",
+                    "ability": "Pressure",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Icicle Crash",
+                        "Knock Off",
+                        "Ice Shard",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Froslass",
+                    "ability": "Cursed Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Spikes",
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Taunt"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Defensive Ice",
+            "pokemon":  [
+                {
+                    "species": "Avalugg",
+                    "ability": "Sturdy",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Rapid Spin",
+                        "Recover",
+                        "Avalanche",
+                        "Body Press"
+                    ]
+                },
+                {
+                    "species": "Lapras",
+                    "ability": "Water Absorb",
+                    "held_item": "Assault Vest",
+                    "moves":  [
+                        "Freeze-Dry",
+                        "Surf",
+                        "Thunderbolt",
+                        "Ice Shard"
+                    ]
+                },
+                {
+                    "species": "Frosmoth",
+                    "ability": "Ice Scales",
+                    "held_item": "None",
+                    "moves":  [
+                        "Quiver Dance",
+                        "Ice Beam",
+                        "Bug Buzz",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Glaceon",
+                    "ability": "Ice Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Ice Beam",
+                        "Shadow Ball",
+                        "Wish",
+                        "Protect"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,195 @@
+{
+    "display_name": "Poison Trainer 2",
+    "dialogue":  {
+        "lines":  [
+            "You made it deeper into the Poison gym. Keep your guard up."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Hazard Pressure",
+            "pokemon":  [
+                {
+                    "species": "Roserade",
+                    "ability": "Natural Cure",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Sludge Bomb",
+                        "Giga Drain",
+                        "Toxic Spikes",
+                        "Sleep Powder"
+                    ]
+                },
+                {
+                    "species": "Toxapex",
+                    "ability": "Regenerator",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Scald",
+                        "Toxic",
+                        "Recover",
+                        "Haze"
+                    ]
+                },
+                {
+                    "species": "Nidoking",
+                    "ability": "Sheer Force",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earth Power",
+                        "Sludge Wave",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                },
+                {
+                    "species": "Crobat",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Cross Poison",
+                        "U-turn",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Drapion",
+                    "ability": "Battle Armor",
+                    "held_item": "None",
+                    "moves":  [
+                        "Knock Off",
+                        "Poison Jab",
+                        "Earthquake",
+                        "Toxic Spikes"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Fast Offense",
+            "pokemon":  [
+                {
+                    "species": "Gengar",
+                    "ability": "Cursed Body",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Sludge Bomb",
+                        "Destiny Bond",
+                        "Focus Blast"
+                    ]
+                },
+                {
+                    "species": "Nidoking",
+                    "ability": "Sheer Force",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Earth Power",
+                        "Sludge Wave",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                },
+                {
+                    "species": "Crobat",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Cross Poison",
+                        "U-turn",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Toxicroak",
+                    "ability": "Dry Skin",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Drain Punch",
+                        "Gunk Shot",
+                        "Sucker Punch",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Roserade",
+                    "ability": "Natural Cure",
+                    "held_item": "None",
+                    "moves":  [
+                        "Sludge Bomb",
+                        "Giga Drain",
+                        "Sleep Powder",
+                        "Toxic Spikes"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_c",
+            "name": "Sustain & Control",
+            "pokemon":  [
+                {
+                    "species": "Toxapex",
+                    "ability": "Regenerator",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Scald",
+                        "Toxic",
+                        "Recover",
+                        "Haze"
+                    ]
+                },
+                {
+                    "species": "Clodsire",
+                    "ability": "Unaware",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Toxic",
+                        "Earthquake",
+                        "Recover",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Amoonguss",
+                    "ability": "Regenerator",
+                    "held_item": "Black Sludge",
+                    "moves":  [
+                        "Spore",
+                        "Giga Drain",
+                        "Clear Smog",
+                        "Protect"
+                    ]
+                },
+                {
+                    "species": "Weezing",
+                    "ability": "Levitate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Sludge Bomb",
+                        "Will-O-Wisp",
+                        "Pain Split",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Drapion",
+                    "ability": "Battle Armor",
+                    "held_item": "None",
+                    "moves":  [
+                        "Knock Off",
+                        "Poison Jab",
+                        "Earthquake",
+                        "Toxic Spikes"
+                    ]
+                }
+            ]
+        }
+    ]
+}

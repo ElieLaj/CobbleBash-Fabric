@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:fire_training_disk"
+    },
+    "title": "Fire Gym Completed",
+    "description": "Complete the Fire Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_fire_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "fire"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_fire_boss"
+    ]
+  ]
+}

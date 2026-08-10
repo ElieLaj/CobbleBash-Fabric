@@ -1,0 +1,224 @@
+﻿{
+    "name":  {
+                 "translate":  "badge.cobblebadges.dark",
+                 "color":  "#587DA0"
+             },
+    "category":  "cobblebadges:elemental_types",
+    "tiers":  [
+                  {
+                      "tier":  "cobblebadges:poke",
+                      "acquired_by":  {
+                                          "dark_gym_advancement":  {
+                                                                       "trigger":  "minecraft:tick",
+                                                                       "conditions":  {
+                                                                                          "player":  {
+                                                                                                         "type_specific":  {
+                                                                                                                               "type":  "minecraft:player",
+                                                                                                                               "advancements":  {
+                                                                                                                                                    "cobblebash:gym/dark":  true
+                                                                                                                                                }
+                                                                                                                           }
+                                                                                                     }
+                                                                                      }
+                                                                   }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:dark_poke.sneaking_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.sneaking_speed",
+                                                                            "amount":  {
+                                                                                           "max":  0.1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:great",
+                      "acquired_by":  {
+                                          "dark_points":  {
+                                                              "trigger":  "cobblebadges:points_owned",
+                                                              "conditions":  {
+                                                                                 "points":  {
+                                                                                                "cobblebadges:dark":  100
+                                                                                            }
+                                                                             }
+                                                          }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:dark_great.sneaking_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.sneaking_speed",
+                                                                            "amount":  {
+                                                                                           "max":  0.25
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:dark_great.blindness_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_immunity",
+                                                         "properties":  {
+                                                                            "mob_effect":  "minecraft:blindness"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:dark_great.blindness_on_attack",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_on_attack",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "minecraft:blindness",
+                                                                                             "duration":  60
+                                                                                         }
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:ultra",
+                      "acquired_by":  {
+                                          "dark_points":  {
+                                                              "trigger":  "cobblebadges:points_owned",
+                                                              "conditions":  {
+                                                                                 "points":  {
+                                                                                                "cobblebadges:dark":  200
+                                                                                            }
+                                                                             }
+                                                          }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:dark_ultra.sneaking_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.sneaking_speed",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:dark_ultra.blindness_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_immunity",
+                                                         "properties":  {
+                                                                            "mob_effect":  "minecraft:blindness"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:dark_ultra.blindness_on_attack",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_on_attack",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "minecraft:blindness",
+                                                                                             "duration":  200
+                                                                                         }
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:dark_ultra.night_vision",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "minecraft:night_vision",
+                                                                                             "ambient":  true,
+                                                                                             "show_particles":  false
+                                                                                         }
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:master",
+                      "acquired_by":  {
+                                          "dark_points":  {
+                                                              "trigger":  "cobblebadges:points_owned",
+                                                              "conditions":  {
+                                                                                 "points":  {
+                                                                                                "cobblebadges:dark":  300
+                                                                                            }
+                                                                             }
+                                                          }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:dark_master.sneaking_speed",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:player.sneaking_speed",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:dark_master.blindness_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_immunity",
+                                                         "properties":  {
+                                                                            "mob_effect":  "minecraft:blindness"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:dark_master.darkness_immunity",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_immunity",
+                                                         "properties":  {
+                                                                            "mob_effect":  "minecraft:darkness"
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:dark_master.blindness_on_attack",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect_on_attack",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "minecraft:blindness",
+                                                                                             "duration":  600
+                                                                                         }
+                                                                        }
+                                                     }
+                                      },
+                                      {
+                                          "id":  "cobblebadges:dark_master.night_vision",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:mob_effect",
+                                                         "properties":  {
+                                                                            "instance":  {
+                                                                                             "id":  "minecraft:night_vision",
+                                                                                             "ambient":  true,
+                                                                                             "show_particles":  false
+                                                                                         }
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  }
+              ]
+}

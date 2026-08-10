@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:electric_training_disk"
+    },
+    "title": "Electric Gym Completed",
+    "description": "Complete the Electric Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_electric_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "electric"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_electric_boss"
+    ]
+  ]
+}

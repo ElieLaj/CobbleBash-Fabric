@@ -1,0 +1,156 @@
+{
+    "display_name": "Fairy Boss",
+    "dialogue":  {
+        "lines":  [
+            "This is the final Fairy test. Win, and the badge is yours."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Fairy Leader",
+            "pokemon":  [
+                {
+                    "species": "Hatterene",
+                    "ability": "Magic Bounce",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Psychic",
+                        "Dazzling Gleam",
+                        "Mystical Fire",
+                        "Calm Mind"
+                    ]
+                },
+                {
+                    "species": "Azumarill",
+                    "ability": "Huge Power",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Play Rough",
+                        "Aqua Jet",
+                        "Liquidation",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "None",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Aura Sphere"
+                    ]
+                },
+                {
+                    "species": "Clefable",
+                    "ability": "Magic Guard",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Moonblast",
+                        "Soft-Boiled",
+                        "Calm Mind",
+                        "Flamethrower"
+                    ]
+                },
+                {
+                    "species": "Excadrill",
+                    "ability": "Mold Breaker",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Earthquake",
+                        "Iron Head",
+                        "Rock Slide",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Gengar",
+                    "ability": "Cursed Body",
+                    "held_item": "None",
+                    "moves":  [
+                        "Shadow Ball",
+                        "Sludge Bomb",
+                        "Destiny Bond",
+                        "Focus Blast"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Aggressive Fairy Leader",
+            "pokemon":  [
+                {
+                    "species": "Mimikyu",
+                    "ability": "Disguise",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Play Rough",
+                        "Shadow Claw",
+                        "Swords Dance",
+                        "Shadow Sneak"
+                    ]
+                },
+                {
+                    "species": "Gardevoir",
+                    "ability": "Trace",
+                    "held_item": "Choice Specs",
+                    "moves":  [
+                        "Moonblast",
+                        "Psychic",
+                        "Mystical Fire",
+                        "Thunderbolt"
+                    ]
+                },
+                {
+                    "species": "Grimmsnarl",
+                    "ability": "Prankster",
+                    "held_item": "None",
+                    "moves":  [
+                        "Reflect",
+                        "Light Screen",
+                        "Spirit Break",
+                        "Taunt"
+                    ]
+                },
+                {
+                    "species": "Azumarill",
+                    "ability": "Huge Power",
+                    "held_item": "Sitrus Berry",
+                    "moves":  [
+                        "Play Rough",
+                        "Aqua Jet",
+                        "Belly Drum",
+                        "Liquidation"
+                    ]
+                },
+                {
+                    "species": "Scizor",
+                    "ability": "Technician",
+                    "held_item": "Choice Band",
+                    "moves":  [
+                        "Bullet Punch",
+                        "U-turn",
+                        "Superpower",
+                        "Knock Off"
+                    ]
+                },
+                {
+                    "species": "Nidoking",
+                    "ability": "Sheer Force",
+                    "held_item": "None",
+                    "moves":  [
+                        "Earth Power",
+                        "Sludge Wave",
+                        "Thunderbolt",
+                        "Ice Beam"
+                    ]
+                }
+            ]
+        }
+    ]
+}

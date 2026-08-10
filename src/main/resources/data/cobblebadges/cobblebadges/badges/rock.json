@@ -1,0 +1,126 @@
+﻿{
+    "name":  {
+                 "translate":  "badge.cobblebadges.rock",
+                 "color":  "#B7A16E"
+             },
+    "category":  "cobblebadges:elemental_types",
+    "tiers":  [
+                  {
+                      "tier":  "cobblebadges:poke",
+                      "acquired_by":  {
+                                          "rock_gym_advancement":  {
+                                                                       "trigger":  "minecraft:tick",
+                                                                       "conditions":  {
+                                                                                          "player":  {
+                                                                                                         "type_specific":  {
+                                                                                                                               "type":  "minecraft:player",
+                                                                                                                               "advancements":  {
+                                                                                                                                                    "cobblebash:gym/rock":  true
+                                                                                                                                                }
+                                                                                                                           }
+                                                                                                     }
+                                                                                      }
+                                                                   }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:rock_poke.armor_toughness",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.armor_toughness",
+                                                                            "amount":  {
+                                                                                           "max":  0.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:great",
+                      "acquired_by":  {
+                                          "rock_points":  {
+                                                              "trigger":  "cobblebadges:points_owned",
+                                                              "conditions":  {
+                                                                                 "points":  {
+                                                                                                "cobblebadges:rock":  100
+                                                                                            }
+                                                                             }
+                                                          }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:rock_great.armor_toughness",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.armor_toughness",
+                                                                            "amount":  {
+                                                                                           "max":  1
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:ultra",
+                      "acquired_by":  {
+                                          "rock_points":  {
+                                                              "trigger":  "cobblebadges:points_owned",
+                                                              "conditions":  {
+                                                                                 "points":  {
+                                                                                                "cobblebadges:rock":  200
+                                                                                            }
+                                                                             }
+                                                          }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:rock_ultra.armor_toughness",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.armor_toughness",
+                                                                            "amount":  {
+                                                                                           "max":  2.5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  },
+                  {
+                      "tier":  "cobblebadges:master",
+                      "acquired_by":  {
+                                          "rock_points":  {
+                                                              "trigger":  "cobblebadges:points_owned",
+                                                              "conditions":  {
+                                                                                 "points":  {
+                                                                                                "cobblebadges:rock":  300
+                                                                                            }
+                                                                             }
+                                                          }
+                                      },
+                      "effects":  [
+                                      {
+                                          "id":  "cobblebadges:rock_master.armor_toughness",
+                                          "effect":  {
+                                                         "type":  "cobblebadges:attribute_modifier",
+                                                         "properties":  {
+                                                                            "type":  "minecraft:generic.armor_toughness",
+                                                                            "amount":  {
+                                                                                           "max":  5
+                                                                                       },
+                                                                            "operation":  "add_value"
+                                                                        }
+                                                     }
+                                      }
+                                  ]
+                  }
+              ]
+}

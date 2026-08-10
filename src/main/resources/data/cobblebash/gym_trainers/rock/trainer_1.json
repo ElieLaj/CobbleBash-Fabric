@@ -1,0 +1,112 @@
+{
+    "display_name": "Rock Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Rock gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Stone Wall Pressure",
+            "pokemon":  [
+                {
+                    "species": "Tyrantrum",
+                    "ability": "Rock Head",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Head Smash",
+                        "Dragon Claw",
+                        "Earthquake",
+                        "Dragon Dance"
+                    ]
+                },
+                {
+                    "species": "Gigalith",
+                    "ability": "Sand Stream",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Stealth Rock",
+                        "Rock Blast",
+                        "Earthquake",
+                        "Toxic"
+                    ]
+                },
+                {
+                    "species": "Lycanroc",
+                    "ability": "Sand Rush",
+                    "held_item": "None",
+                    "moves":  [
+                        "Stone Edge",
+                        "Accelerock",
+                        "Drill Run",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Cradily",
+                    "ability": "Storm Drain",
+                    "held_item": "None",
+                    "moves":  [
+                        "Giga Drain",
+                        "Rock Slide",
+                        "Recover",
+                        "Toxic"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Fossil Pressure",
+            "pokemon":  [
+                {
+                    "species": "Aerodactyl",
+                    "ability": "Rock Head",
+                    "held_item": "Focus Sash",
+                    "moves":  [
+                        "Stone Edge",
+                        "Dual Wingbeat",
+                        "Earthquake",
+                        "Stealth Rock"
+                    ]
+                },
+                {
+                    "species": "Kabutops",
+                    "ability": "Swift Swim",
+                    "held_item": "Life Orb",
+                    "moves":  [
+                        "Stone Edge",
+                        "Liquidation",
+                        "Aqua Jet",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Omastar",
+                    "ability": "Shell Armor",
+                    "held_item": "None",
+                    "moves":  [
+                        "Hydro Pump",
+                        "Ancient Power",
+                        "Ice Beam",
+                        "Shell Smash"
+                    ]
+                },
+                {
+                    "species": "Sudowoodo",
+                    "ability": "Sturdy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Stone Edge",
+                        "Wood Hammer",
+                        "Earthquake",
+                        "Sucker Punch"
+                    ]
+                }
+            ]
+        }
+    ]
+}

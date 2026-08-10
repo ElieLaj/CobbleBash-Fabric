@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.nore.cobblebash.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "LivingEntityUseItemMixin",
+    "PlayerAdvancementsMixin",
+    "ServerLevelEntityJoinMixin"
+  ],
+  "client": [],
+  "server": []
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "cobblebash:gym/root",
+  "display": {
+    "icon": {
+      "id": "cobblebash:water_training_disk"
+    },
+    "title": "Water Gym Completed",
+    "description": "Complete the Water Gym.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "defeat_water_boss": {
+      "trigger": "cobblebash:gym_boss_defeated",
+      "conditions": {
+        "gym_type": "water"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "defeat_water_boss"
+    ]
+  ]
+}

@@ -1,0 +1,112 @@
+{
+    "display_name": "Flying Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Flying gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Fast Aerial Pressure",
+            "pokemon":  [
+                {
+                    "species": "Staraptor",
+                    "ability": "Intimidate",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Brave Bird",
+                        "Close Combat",
+                        "U-turn",
+                        "Double-Edge"
+                    ]
+                },
+                {
+                    "species": "Talonflame",
+                    "ability": "Gale Wings",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Flare Blitz",
+                        "Roost",
+                        "Swords Dance"
+                    ]
+                },
+                {
+                    "species": "Noivern",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Draco Meteor",
+                        "Hurricane",
+                        "Flamethrower",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Skarmory",
+                    "ability": "Sturdy",
+                    "held_item": "Rocky Helmet",
+                    "moves":  [
+                        "Brave Bird",
+                        "Spikes",
+                        "Roost",
+                        "Whirlwind"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Defensive Airspace",
+            "pokemon":  [
+                {
+                    "species": "Corviknight",
+                    "ability": "Pressure",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Brave Bird",
+                        "Body Press",
+                        "Roost",
+                        "U-turn"
+                    ]
+                },
+                {
+                    "species": "Crobat",
+                    "ability": "Infiltrator",
+                    "held_item": "None",
+                    "moves":  [
+                        "Brave Bird",
+                        "Cross Poison",
+                        "U-turn",
+                        "Roost"
+                    ]
+                },
+                {
+                    "species": "Togekiss",
+                    "ability": "Serene Grace",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Air Slash",
+                        "Thunder Wave",
+                        "Roost",
+                        "Aura Sphere"
+                    ]
+                },
+                {
+                    "species": "Aerodactyl",
+                    "ability": "Rock Head",
+                    "held_item": "None",
+                    "moves":  [
+                        "Stone Edge",
+                        "Dual Wingbeat",
+                        "Earthquake",
+                        "Stealth Rock"
+                    ]
+                }
+            ]
+        }
+    ]
+}

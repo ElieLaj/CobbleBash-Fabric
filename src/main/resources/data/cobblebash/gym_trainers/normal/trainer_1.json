@@ -1,0 +1,112 @@
+{
+    "display_name": "Normal Trainer 1",
+    "dialogue":  {
+        "lines":  [
+            "The Normal gym begins here. Show me your opening move."
+        ],
+        "battle_text": "Battle",
+        "cancel_text": "Cancel"
+    },
+    "builds":  [
+        {
+            "id": "build_a",
+            "name": "Balanced Fundamentals",
+            "pokemon":  [
+                {
+                    "species": "Staraptor",
+                    "ability": "Intimidate",
+                    "held_item": "Choice Scarf",
+                    "moves":  [
+                        "Brave Bird",
+                        "Close Combat",
+                        "U-turn",
+                        "Double-Edge"
+                    ]
+                },
+                {
+                    "species": "Snorlax",
+                    "ability": "Thick Fat",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Body Slam",
+                        "Earthquake",
+                        "Curse",
+                        "Rest"
+                    ]
+                },
+                {
+                    "species": "Porygon2",
+                    "ability": "Trace",
+                    "held_item": "None",
+                    "moves":  [
+                        "Tri Attack",
+                        "Ice Beam",
+                        "Recover",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Kangaskhan",
+                    "ability": "Scrappy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Fake Out",
+                        "Double-Edge",
+                        "Earthquake",
+                        "Sucker Punch"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "build_b",
+            "name": "Utility Pressure",
+            "pokemon":  [
+                {
+                    "species": "Blissey",
+                    "ability": "Natural Cure",
+                    "held_item": "Leftovers",
+                    "moves":  [
+                        "Seismic Toss",
+                        "Soft-Boiled",
+                        "Toxic",
+                        "Thunder Wave"
+                    ]
+                },
+                {
+                    "species": "Obstagoon",
+                    "ability": "Guts",
+                    "held_item": "Flame Orb",
+                    "moves":  [
+                        "Facade",
+                        "Knock Off",
+                        "Close Combat",
+                        "Obstruct"
+                    ]
+                },
+                {
+                    "species": "Exploud",
+                    "ability": "Scrappy",
+                    "held_item": "None",
+                    "moves":  [
+                        "Boomburst",
+                        "Fire Blast",
+                        "Surf",
+                        "Focus Blast"
+                    ]
+                },
+                {
+                    "species": "Stoutland",
+                    "ability": "Intimidate",
+                    "held_item": "None",
+                    "moves":  [
+                        "Return",
+                        "Crunch",
+                        "Play Rough",
+                        "Superpower"
+                    ]
+                }
+            ]
+        }
+    ]
+}
