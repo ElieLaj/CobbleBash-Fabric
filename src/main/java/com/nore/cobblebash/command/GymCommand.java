@@ -11,6 +11,7 @@ import com.nore.cobblebash.advancement.CobbleBashCriteriaTriggers;
 import com.nore.cobblebash.beacon.ChampionBeaconAuras;
 import com.nore.cobblebash.dimension.CobbleBashDimensions;
 import com.nore.cobblebash.elitefour.EliteFourMember;
+import com.nore.cobblebash.gym.GymLevelOverride;
 import com.nore.cobblebash.gym.GymLevelSystem;
 import com.nore.cobblebash.gym.GymTrainerUnit;
 import com.nore.cobblebash.gym.GymType;
@@ -306,6 +307,7 @@ public class GymCommand {
          awardTrainerRibbonIfEligible(player, gymType);
          awardEliteFourDiskIfEligible(player, playergymprogress);
          awardGymClearLoot(player);
+         awardGymLootBag(player);
          GymInstance gyminstance = GymInstanceManager.clear(player.getUUID());
          clearInstancePlatform(player, gyminstance);
          teleportToReturnLocation(player, gyminstance);
@@ -345,6 +347,28 @@ public class GymCommand {
       LootTable loottable = player.server.reloadableRegistries().getLootTable(GYM_CLEAR_REWARD_TABLE);
       LootParams lootparams = new Builder(player.serverLevel()).withLuck(player.getLuck()).create(LootContextParamSets.EMPTY);
       loottable.getRandomItems(lootparams, player.getRandom()).forEach(stack -> giveOrDrop(player, stack));
+   }
+
+   /**
+    * Remet le sac de butin, grave au niveau de l'arene qui vient d'etre battue.
+    *
+    * <p>Le niveau retenu est celui du dernier dresseur, c'est-a-dire le plus
+    * haut affronte. L'instance est encore vivante ici — elle n'est liberee que
+    * juste apres — donc le niveau reellement joue est encore lisible, y compris
+    * quand il vient d'un choix manuel et non de la progression.
+    */
+   private static void awardGymLootBag(ServerPlayer player) {
+      GymInstance gyminstance = GymInstanceManager.getActive(player.getUUID());
+      int[] aint = gyminstance == null ? null : gyminstance.getTrainerLevels();
+
+      int level = GymLevelOverride.MIN;
+      if (aint != null) {
+         for (int niveau : aint) {
+            level = Math.max(level, niveau);
+         }
+      }
+
+      giveOrDrop(player, com.nore.cobblebash.item.GymLootBagItem.forLevel(level));
    }
 
    private static void giveOrDrop(ServerPlayer player, ItemStack stack) {

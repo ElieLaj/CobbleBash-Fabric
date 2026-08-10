@@ -19,7 +19,9 @@ import com.nore.cobblebash.event.LeagueRepresentativeEvents;
 import com.nore.cobblebash.gym.GymType;
 import com.nore.cobblebash.integration.RctApiProbe;
 import com.nore.cobblebash.item.ChampionRibbonItem;
+import com.nore.cobblebash.item.CobbleBashComponents;
 import com.nore.cobblebash.item.EliteFourTrainingDiskItem;
+import com.nore.cobblebash.item.GymLootBagItem;
 import com.nore.cobblebash.item.TrainerRibbonItem;
 import com.nore.cobblebash.item.TrainingDiskItem;
 import com.nore.cobblebash.stats.CobbleBashStats;
@@ -102,6 +104,7 @@ public class CobbleBash implements ModInitializer {
    public static ChampionRibbonItem CHAMPION_RIBBON;
    public static TrainerRibbonItem TRAINER_RIBBON;
    public static EliteFourTrainingDiskItem ELITE_FOUR_TRAINING_DISK;
+   public static GymLootBagItem GYM_LOOT_BAG;
    public static SmithingTemplateItem CHAMPION_UPGRADE_SMITHING_TEMPLATE;
    public static PoiType LEAGUE_REPRESENTATIVE_POI;
    public static VillagerProfession LEAGUE_REPRESENTATIVE;
@@ -115,6 +118,8 @@ public class CobbleBash implements ModInitializer {
       Config.load();
 
       registerBlocks();
+      // Avant les objets : le sac de butin s'en sert des sa premiere pile.
+      CobbleBashComponents.bootstrap();
       registerItems();
       registerBlockEntitiesAndMenus();
       registerEntities();
@@ -174,6 +179,7 @@ public class CobbleBash implements ModInitializer {
          new EliteFourTrainingDiskItem(new Item.Properties().stacksTo(16)));
       CHAMPION_UPGRADE_SMITHING_TEMPLATE = registerItem("champion_upgrade_smithing_template",
          createChampionUpgradeTemplate());
+      GYM_LOOT_BAG = registerItem("gym_loot_bag", new GymLootBagItem(new Item.Properties().stacksTo(16)));
 
       Map<GymType, TrainingDiskItem> disks = new EnumMap<>(GymType.class);
       for (GymType type : GymType.values()) {
@@ -253,6 +259,11 @@ public class CobbleBash implements ModInitializer {
                output.accept(CHAMPION_RIBBON);
                output.accept(ELITE_FOUR_TRAINING_DISK);
                TRAINING_DISKS.values().forEach(output::accept);
+               // Un exemplaire par palier : c'est la seule facon de voir le
+               // contenu d'un palier sans refaire l'arene correspondante.
+               for (int level : new int[]{10, 25, 45, 65, 85, 100}) {
+                  output.accept(GymLootBagItem.forLevel(level));
+               }
             })
             .build());
    }
