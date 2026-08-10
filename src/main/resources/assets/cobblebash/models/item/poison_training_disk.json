@@ -1,3 +1,7 @@
 {
-  "parent": "minecraft:item/music_disc_mellohi"
+  "parent": "cobblebash:item/training_disc_base",
+  "textures": {
+    "0": "cobblebash:item/training_disc_poison_texture",
+    "particle": "cobblebash:item/training_disc_poison_texture"
+  }
 }

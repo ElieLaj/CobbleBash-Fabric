@@ -98,30 +98,40 @@ et proviennent directement du pack, donc aucun écart de version avec ce qui tou
 | Fabric API | 0.116.12+1.21.1 |
 | Fabric Language Kotlin | 1.13.12 |
 
-## Les modèles manquants
+## Les assets viennent de la 0.1.2 officielle
 
-Le bloc `training_simulator` et les 18 disques n'avaient **ni modèle ni texture** en
-amont : vérifié sur les quatre commits de l'historique, seul `lang/en_us.json` a jamais
-existé. Le jar publié en contient, mais pour un bloc `champion_beacon` absent du code —
-le jar et le dépôt ont divergé.
+Le dépôt GitHub n'a **jamais** contenu d'assets — vérifié sur ses quatre commits, seul
+`lang/en_us.json` y figure. Mais le mod est publié sur
+[Modrinth](https://modrinth.com/mod/cobblebash), et la **0.1.2** (29 juillet 2026) en a
+219, dont 176 PNG faits sous Blockbench.
 
-On reprend donc la méthode que l'auteur applique à ce `champion_beacon` : hériter d'un
-modèle vanilla plutôt que peindre une texture.
+[`tools/extrait_assets.py`](tools/extrait_assets.py) reprend de ce jar exactement les
+41 fichiers des objets que ce portage possède : le modèle et la texture du simulateur,
+le modèle de base des disques, et les 18 modèles + textures de type. Rien d'autre.
 
-```json
-{ "parent": "minecraft:block/beacon", "render_type": "minecraft:translucent" }
-```
+Une seule adaptation, le **blockstate**. En 0.1.2 le simulateur est un bloc de deux
+hauteurs, orienté (`facing`, `half`) ; celui du code publié sur GitHub est un bloc
+simple, sans état. On écrit donc une variante unique — sinon aucune ne correspondrait et
+le bloc resterait invisible. Le modèle « lower » dessine la machine entière (ses éléments
+montent jusqu'à `y=24`), l'affichage est donc complet.
 
-- Le **simulateur** hérite du `jukebox`. Ce n'est pas qu'un pis-aller : on clique dessus
-  avec un disque en main pour entrer dans l'arène, exactement le geste du juke-box.
-- Chaque **disque d'entraînement** hérite d'un disque de musique différent, choisi pour
-  que la couleur de la pochette évoque le type — Feu sur `chirp` (rouge orangé), Eau sur
-  `creator_music_box` (bleu), Ténèbres sur `11` (noir rayé). Vanilla en compte dix-neuf,
-  il en fallait dix-huit.
+## ⚠ Ce portage est basé sur la 0.1.0
 
-**Zéro fichier de texture ajouté**, donc rien à maintenir : 21 modèles JSON de deux
-lignes. Si Norevex fournit un jour de vraies textures, il suffit de remplacer les
-parents. Les 21 modèles sont produits par [`tools/gen_modeles.py`](tools/gen_modeles.py) — la table type ↔ disque y est en clair.
+Le dépôt GitHub s'est arrêté six semaines avant la dernière version publiée, et l'écart
+est considérable — **44 classes contre 130**. N'existent donc pas ici :
+
+| Absent du portage | Ce que c'est |
+|---|---|
+| **Champion Beacon** | Un bloc à balise, avec interface, faisceau et auras, alimenté par des **blocs de pierres d'évolution** Cobblemon |
+| **Conseil 4** | Quatre plaques, leurs dresseurs bi-types, le Maître, et le `elite_four_training_disk` |
+| **Rubans** | `trainer_ribbon`, `champion_ribbon`, un modèle de forge, intégration Curios |
+| **Représentant de Ligue** | Un métier de villageois, avec le simulateur comme site de travail |
+
+Le simulateur, lui, ne réagit **qu'à un disque d'entraînement en main** — dans les deux
+versions. Cliquer à main vide ne fait rien, c'est son comportement normal.
+
+Rattraper la 0.1.2 demanderait ses sources ; le jar ne contient que du code compilé.
+La bonne marche à suivre est de demander à Norevex de pousser ses commits.
 
 ## État
 
