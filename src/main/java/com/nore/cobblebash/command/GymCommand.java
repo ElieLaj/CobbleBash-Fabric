@@ -3,6 +3,7 @@ package com.nore.cobblebash.command;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
+import com.nore.cobblebash.CobbleBash;
 import com.nore.cobblebash.advancement.CobbleBashCriteriaTriggers;
 import com.nore.cobblebash.dimension.CobbleBashDimensions;
 import com.nore.cobblebash.gym.GymLevelSystem;
@@ -18,10 +19,15 @@ import com.nore.cobblebash.stats.CobbleBashStats;
 import com.nore.cobblebash.structure.GymPlatformBuilder;
 import com.nore.cobblebash.util.DelayedTaskScheduler;
 import com.nore.cobblebash.structure.GymDoorController;
+import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
+import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.PlayerAdvancements;
+import net.minecraft.server.ServerAdvancementManager;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.GameType;
@@ -29,7 +35,10 @@ import com.gitlab.srcmc.rctapi.api.RCTApi;
 import com.nore.cobblebash.integration.RctApiProbe;
 
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -76,6 +85,19 @@ public class GymCommand {
             );
         }
         gymRoot.then(completeNode);
+
+        // Reservee aux operateurs : le reste de l'arbre /gym est ouvert a tous,
+        // mais celle-ci donne dix-huit badges d'un coup.
+        gymRoot.then(Commands.literal("badges")
+                .requires(source -> source.hasPermission(2))
+                .executes(context -> grantTypeBadges(
+                        context.getSource(),
+                        List.of(context.getSource().getPlayerOrException())))
+                .then(Commands.argument("cibles", EntityArgument.players())
+                        .executes(context -> grantTypeBadges(
+                                context.getSource(),
+                                EntityArgument.getPlayers(context, "cibles"))))
+        );
 
         gymRoot.then(Commands.literal("exit")
                 .executes(context -> exitGym(context.getSource()))
@@ -248,6 +270,87 @@ public class GymCommand {
         );
 
         return 1;
+    }
+
+    /**
+     * Accorde les dix-huit badges de type a chaque cible.
+     *
+     * <p>Rien n'est force cote CobbleBadges. Le palier de base de chaque badge
+     * s'obtient en <em>possedant</em> l'avancement {@code cobblebash:gym/<type>}
+     * — le badge se declare acquis par un declencheur {@code minecraft:tick}
+     * conditionne a cet avancement. On accorde donc les avancements, et le
+     * badge suit au tick suivant, par le meme chemin qu'une arene reellement
+     * terminee : badge, statistique et progression restent coherents.
+     *
+     * <p>Seuls les dix-huit types elementaires sont parcourus. Tout autre badge,
+     * Conseil 4 compris, est hors d'atteinte de cette commande par construction :
+     * la boucle ne connait que {@link GymType}.
+     */
+    private static int grantTypeBadges(CommandSourceStack source, Collection<ServerPlayer> targets) {
+        ServerAdvancementManager manager = source.getServer().getAdvancements();
+        int total = 0;
+
+        for (ServerPlayer player : targets) {
+            int granted = 0;
+            int alreadyOwned = 0;
+
+            // Sans la racine, l'arbre n'affiche pas ses enfants dans le menu.
+            awardEveryCriterion(player, manager.get(rootAdvancementId()));
+
+            for (GymType type : GymType.values()) {
+                AdvancementHolder holder = manager.get(gymAdvancementId(type));
+
+                if (holder == null) {
+                    source.sendFailure(Component.literal(
+                            "Advancement missing: " + gymAdvancementId(type)));
+                    continue;
+                }
+
+                if (player.getAdvancements().getOrStartProgress(holder).isDone()) {
+                    alreadyOwned++;
+                    continue;
+                }
+
+                awardEveryCriterion(player, holder);
+                granted++;
+            }
+
+            CobbleBashStats.syncGymsCompleted(player);
+            total += granted;
+
+            String name = player.getGameProfile().getName();
+            int grantedCount = granted;
+            int ownedCount = alreadyOwned;
+            source.sendSuccess(() -> Component.literal(
+                    name + ": granted " + grantedCount + " type badge(s), "
+                            + ownedCount + " already owned. Elite Four untouched."), true);
+        }
+
+        return total;
+    }
+
+    /** Coche tous les criteres restants : c'est ce qui valide l'avancement. */
+    private static void awardEveryCriterion(ServerPlayer player, AdvancementHolder holder) {
+        if (holder == null) {
+            return;
+        }
+
+        PlayerAdvancements advancements = player.getAdvancements();
+        // Copie d'abord : `award` modifie la progression qu'on est en train de lire.
+        List<String> remaining = new ArrayList<>();
+        advancements.getOrStartProgress(holder).getRemainingCriteria().forEach(remaining::add);
+
+        for (String criterion : remaining) {
+            advancements.award(holder, criterion);
+        }
+    }
+
+    private static ResourceLocation rootAdvancementId() {
+        return ResourceLocation.fromNamespaceAndPath(CobbleBash.MODID, "gym/root");
+    }
+
+    private static ResourceLocation gymAdvancementId(GymType type) {
+        return ResourceLocation.fromNamespaceAndPath(CobbleBash.MODID, "gym/" + type.getId());
     }
 
     private static int exitGym(CommandSourceStack source) {

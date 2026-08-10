@@ -60,6 +60,25 @@ Les trois derniers n'existent pas côté Fabric et passent par un mixin :
 - **`SavedData.Factory`** prend trois arguments en vanilla — NeoForge ajoute une surcharge
   à deux. Le type de DataFixer est `null` : ces données ne sont pas versionnées.
 
+## Ajouté par rapport à l'amont
+
+```
+/gym badges [<joueurs>]
+```
+
+Accorde les **dix-huit badges de type**. Réservée aux opérateurs (niveau 2) — le reste
+de l'arbre `/gym` est ouvert à tous, mais celle-ci donne dix-huit badges d'un coup.
+
+Rien n'est forcé côté CobbleBadges : le palier de base de chaque badge s'obtient en
+*possédant* l'avancement `cobblebash:gym/<type>` — un déclencheur `minecraft:tick`
+conditionné à cet avancement. La commande accorde donc les avancements, et le badge suit
+au tick suivant, par le même chemin qu'une arène réellement terminée. Badge, statistique
+`gyms_completed` et progression restent cohérents, et les paliers Great / Ultra / Master
+(100 / 200 / 300 points) restent à gagner en jeu.
+
+La boucle ne connaît que l'énumération `GymType` : **tout autre badge, Conseil 4 compris,
+est hors d'atteinte par construction**, y compris si on en ajoute plus tard.
+
 ## Construire
 
 ```bash
