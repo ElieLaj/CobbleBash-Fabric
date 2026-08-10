@@ -212,11 +212,19 @@ public class GymCommand {
 
    private static int giveBags(CommandSourceStack source, int[] niveaux, String type) throws CommandSyntaxException {
       ServerPlayer player = source.getPlayerOrException();
+
+      // Sans type precise, on en tire un au hasard plutot que d'en laisser le
+      // sac depourvu : aucun sac obtenu en jeu n'est sans type, et un sac nu
+      // ne contiendrait jamais d'oeuf — de quoi croire a une panne.
+      GymType[] types = GymType.values();
+      String choisi = type.isEmpty() ? types[player.getRandom().nextInt(types.length)].getId() : type;
+
       for (int niveau : niveaux) {
-         giveOrDrop(player, com.nore.cobblebash.item.GymLootBagItem.forGym(niveau, type));
+         giveOrDrop(player, com.nore.cobblebash.item.GymLootBagItem.forGym(niveau, choisi));
       }
 
-      String resume = niveaux.length + " gym loot bag(s), type: " + (type.isEmpty() ? "none" : type);
+      String resume = niveaux.length + " gym loot bag(s), type: " + choisi
+         + (type.isEmpty() ? " (picked at random)" : "");
       source.sendSuccess(() -> Component.literal("Gave " + resume + "."), false);
       return niveaux.length;
    }
