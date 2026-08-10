@@ -3,8 +3,11 @@ package com.nore.cobblebash.command;
 import com.gitlab.srcmc.rctapi.api.RCTApi;
 import com.gitlab.srcmc.rctapi.api.trainer.TrainerNPC;
 import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
+import com.mojang.brigadier.builder.RequiredArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.nore.cobblebash.CobbleBash;
 import com.nore.cobblebash.Config;
 import com.nore.cobblebash.advancement.CobbleBashCriteriaTriggers;
@@ -95,6 +98,17 @@ public class GymCommand {
       literalargumentbuilder1.then(literalargumentbuilder5);
       literalargumentbuilder1.then(Commands.literal("advance").executes(context -> advanceGym((CommandSourceStack)context.getSource())));
 
+      // Victoire sur la Ligue sans la rejouer : meme effets que la vraie, pour
+      // tester ce qui en depend (avancement, quete, recompenses).
+      literalargumentbuilder1.then(
+         Commands.literal("league")
+            .executes(context -> winLeague(context.getSource(), List.of(context.getSource().getPlayerOrException())))
+            .then(Commands.argument("cibles", EntityArgument.players())
+               .executes(context -> winLeague(context.getSource(), EntityArgument.getPlayers(context, "cibles"))))
+      );
+
+      literalargumentbuilder1.then(lootBagNode());
+
       // Accorde les dix-huit badges de type. Le palier de base de chaque badge
       // s'obtient en possedant l'avancement correspondant : on coche donc les
       // avancements, et CobbleBadges suit au tick suivant, par le meme chemin
@@ -166,6 +180,82 @@ public class GymCommand {
       }
 
       return total;
+   }
+
+   /** Un niveau par palier du sac de butin : de quoi tous les voir d'un coup. */
+   private static final int[] PALIERS_TEMOINS = {10, 25, 45, 65, 85, 100};
+
+   /**
+    * `/cobblebash gym lootbag` : des sacs de butin sans passer par l'arene.
+    *
+    * <p>Le type est un litteral par valeur plutot qu'une chaine libre : la
+    * completion le propose, et un type invalide ne franchit pas l'analyse.
+    */
+   private static LiteralArgumentBuilder<CommandSourceStack> lootBagNode() {
+      LiteralArgumentBuilder<CommandSourceStack> tous = Commands.literal("all")
+         .executes(context -> giveBags(context.getSource(), PALIERS_TEMOINS, ""));
+
+      RequiredArgumentBuilder<CommandSourceStack, Integer> niveau =
+         Commands.argument("niveau", IntegerArgumentType.integer(1, GymLevelOverride.MAX))
+            .executes(context -> giveBags(context.getSource(),
+               new int[]{IntegerArgumentType.getInteger(context, "niveau")}, ""));
+
+      for (GymType type : GymType.values()) {
+         String id = type.getId();
+         tous.then(Commands.literal(id).executes(context -> giveBags(context.getSource(), PALIERS_TEMOINS, id)));
+         niveau.then(Commands.literal(id).executes(context -> giveBags(context.getSource(),
+            new int[]{IntegerArgumentType.getInteger(context, "niveau")}, id)));
+      }
+
+      return Commands.literal("lootbag").then(tous).then(niveau);
+   }
+
+   private static int giveBags(CommandSourceStack source, int[] niveaux, String type) throws CommandSyntaxException {
+      ServerPlayer player = source.getPlayerOrException();
+      for (int niveau : niveaux) {
+         giveOrDrop(player, com.nore.cobblebash.item.GymLootBagItem.forGym(niveau, type));
+      }
+
+      String resume = niveaux.length + " gym loot bag(s), type: " + (type.isEmpty() ? "none" : type);
+      source.sendSuccess(() -> Component.literal("Gave " + resume + "."), false);
+      return niveaux.length;
+   }
+
+   /**
+    * `/cobblebash gym league` : la victoire sur la Ligue sans la rejouer.
+    *
+    * <p>Passe par le declencheur d'avancement, comme la vraie victoire, puis
+    * coche ce qui resterait : c'est l'avancement que la quete du modpack
+    * observe, pas le combat.
+    */
+   private static int winLeague(CommandSourceStack source, java.util.Collection<ServerPlayer> targets) {
+      net.minecraft.server.ServerAdvancementManager manager = source.getServer().getAdvancements();
+      net.minecraft.advancements.AdvancementHolder holder =
+         manager.get(ResourceLocation.fromNamespaceAndPath("cobblebash", "gym/complete_elite_four"));
+
+      if (holder == null) {
+         source.sendFailure(Component.literal("Advancement missing: cobblebash:gym/complete_elite_four"));
+         return 0;
+      }
+
+      for (ServerPlayer player : targets) {
+         boolean deja = player.getAdvancements().getOrStartProgress(holder).isDone();
+         CobbleBashCriteriaTriggers.triggerEliteFourCompleted(player);
+         awardEveryCriterion(player, holder);
+
+         if (!deja) {
+            giveOrDrop(player, new ItemStack((ItemLike)CobbleBash.CHAMPION_UPGRADE_SMITHING_TEMPLATE));
+         }
+
+         String name = player.getGameProfile().getName();
+         boolean d = deja;
+         source.sendSuccess(
+            () -> Component.literal(name + ": league cleared" + (d ? " (already owned, no template given)." : " + Champion Upgrade Smithing Template.")),
+            true
+         );
+      }
+
+      return targets.size();
    }
 
    /** Coche tous les criteres restants : c'est ce qui valide l'avancement. */
@@ -368,7 +458,8 @@ public class GymCommand {
          }
       }
 
-      giveOrDrop(player, com.nore.cobblebash.item.GymLootBagItem.forLevel(level));
+      String type = gyminstance == null ? "" : gyminstance.getGymType();
+      giveOrDrop(player, com.nore.cobblebash.item.GymLootBagItem.forGym(level, type));
    }
 
    private static void giveOrDrop(ServerPlayer player, ItemStack stack) {

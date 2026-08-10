@@ -46,14 +46,27 @@ public class GymLootBagItem extends Item {
    /** Bornes hautes des paliers ; au-dela du dernier seuil, palier 6. */
    private static final int[] TIER_CEILINGS = {15, 30, 50, 70, 90};
 
+   /** Niveau a partir duquel le sac contient un oeuf du type de l'arene. */
+   public static final int EGG_LEVEL = 50;
+
    public GymLootBagItem(Properties properties) {
       super(properties);
    }
 
-   /** Un sac grave au niveau donne. */
+   /** Un sac grave au niveau donne, sans type : pas d'oeuf a l'ouverture. */
    public static ItemStack forLevel(int gymLevel) {
       ItemStack stack = new ItemStack(CobbleBash.GYM_LOOT_BAG);
       stack.set(CobbleBashComponents.GYM_LEVEL, gymLevel);
+      return stack;
+   }
+
+   /** Un sac grave au niveau et au type de l'arene dont il sort. */
+   public static ItemStack forGym(int gymLevel, String gymType) {
+      ItemStack stack = forLevel(gymLevel);
+      if (gymType != null && !gymType.isBlank()) {
+         stack.set(CobbleBashComponents.GYM_TYPE, gymType);
+      }
+
       return stack;
    }
 
@@ -61,6 +74,12 @@ public class GymLootBagItem extends Item {
    public static int levelOf(ItemStack stack) {
       Integer level = stack.get(CobbleBashComponents.GYM_LEVEL);
       return level == null ? 1 : level;
+   }
+
+   /** Type d'arene grave, ou vide si le sac n'en porte pas. */
+   public static String typeOf(ItemStack stack) {
+      String type = stack.get(CobbleBashComponents.GYM_TYPE);
+      return type == null ? "" : type;
    }
 
    /** Palier 1 a 6 correspondant a un niveau d'arene. */
@@ -75,15 +94,49 @@ public class GymLootBagItem extends Item {
    }
 
    private static ResourceKey<LootTable> tableFor(int tier) {
+      return table("rewards/gym_loot_bag/tier_" + tier);
+   }
+
+   private static ResourceKey<LootTable> table(String path) {
       return ResourceKey.create(Registries.LOOT_TABLE,
-         ResourceLocation.fromNamespaceAndPath(CobbleBash.MODID, "rewards/gym_loot_bag/tier_" + tier));
+         ResourceLocation.fromNamespaceAndPath(CobbleBash.MODID, path));
+   }
+
+   /**
+    * Le lot d'oeufs du type de l'arene, a partir du niveau {@link #EGG_LEVEL}.
+    *
+    * <p>Table separee et non pool du palier : le chemin depend du type grave
+    * dans le sac, et une table de butin ne sait pas se brancher sur un
+    * composant de l'objet qui la declenche. Livree vide par le mod, comme les
+    * `extras` — les oeufs viennent d'un autre mod.
+    */
+   private static ResourceKey<LootTable> eggTableFor(ItemStack stack) {
+      String type = typeOf(stack);
+      if (type.isEmpty() || levelOf(stack) < EGG_LEVEL) {
+         return null;
+      }
+
+      return table("rewards/gym_loot_bag/eggs/" + type);
    }
 
    @Override
    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
       int level = levelOf(stack);
-      tooltip.add(Component.translatable("item.cobblebash.gym_loot_bag.level", level).withStyle(ChatFormatting.AQUA));
+      String type = typeOf(stack);
+
+      if (type.isEmpty()) {
+         tooltip.add(Component.translatable("item.cobblebash.gym_loot_bag.level", level).withStyle(ChatFormatting.AQUA));
+      } else {
+         tooltip.add(Component.translatable("item.cobblebash.gym_loot_bag.level_type",
+            level, Component.translatable("cobblebash.gym." + type)).withStyle(ChatFormatting.AQUA));
+      }
+
       tooltip.add(Component.translatable("item.cobblebash.gym_loot_bag.tier", tierOf(level)).withStyle(ChatFormatting.DARK_GRAY));
+
+      if (!type.isEmpty() && level >= EGG_LEVEL) {
+         tooltip.add(Component.translatable("item.cobblebash.gym_loot_bag.egg").withStyle(ChatFormatting.GREEN));
+      }
+
       tooltip.add(Component.translatable("item.cobblebash.gym_loot_bag.desc").withStyle(ChatFormatting.GRAY));
    }
 
@@ -102,9 +155,15 @@ public class GymLootBagItem extends Item {
       ServerLevel serverLevel = (ServerLevel)level;
       int gymLevel = levelOf(stack);
 
-      LootTable table = serverPlayer.server.reloadableRegistries().getLootTable(tableFor(tierOf(gymLevel)));
       LootParams params = new LootParams.Builder(serverLevel).withLuck(player.getLuck()).create(LootContextParamSets.EMPTY);
-      List<ItemStack> rewards = table.getRandomItems(params, player.getRandom());
+      List<ItemStack> rewards = new java.util.ArrayList<>(serverPlayer.server.reloadableRegistries()
+         .getLootTable(tableFor(tierOf(gymLevel))).getRandomItems(params, player.getRandom()));
+
+      ResourceKey<LootTable> eggs = eggTableFor(stack);
+      if (eggs != null) {
+         rewards.addAll(serverPlayer.server.reloadableRegistries()
+            .getLootTable(eggs).getRandomItems(params, player.getRandom()));
+      }
 
       // Table absente ou entierement vide : on ne consomme rien. Un sac qui
       // disparait sans rien rendre serait pire que le laisser fermer.
