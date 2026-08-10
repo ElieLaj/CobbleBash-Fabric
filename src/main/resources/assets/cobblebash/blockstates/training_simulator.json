@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "cobblebash:block/training_simulator"
+    }
+  }
+}

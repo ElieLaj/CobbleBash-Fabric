@@ -98,14 +98,39 @@ et proviennent directement du pack, donc aucun écart de version avec ce qui tou
 | Fabric API | 0.116.12+1.21.1 |
 | Fabric Language Kotlin | 1.13.12 |
 
-## ⚠ Connu, et venant de l'amont
+## Les modèles manquants
 
-**Le bloc `training_simulator` et les 18 disques d'entraînement n'ont ni modèle ni
-texture** dans les sources de l'original : ils s'afficheront en cube violet et noir.
-Le jar publié `cobblebash-0.1.0.jar` contient bien des assets, mais pour un bloc
-`champion_beacon` qui n'existe nulle part dans les sources — le jar et le dépôt ont
-divergé. Il faut demander les assets à l'auteur, ou en poser de provisoires.
+Le bloc `training_simulator` et les 18 disques n'avaient **ni modèle ni texture** en
+amont : vérifié sur les quatre commits de l'historique, seul `lang/en_us.json` a jamais
+existé. Le jar publié en contient, mais pour un bloc `champion_beacon` absent du code —
+le jar et le dépôt ont divergé.
 
-**Rien n'a été testé en jeu.** Le portage compile et les trois mixins sont correctement
-remappés, mais le cycle de vie des instances, les combats RCTAPI et le placement des
-structures demandent une vérification manette en main.
+On reprend donc la méthode que l'auteur applique à ce `champion_beacon` : hériter d'un
+modèle vanilla plutôt que peindre une texture.
+
+```json
+{ "parent": "minecraft:block/beacon", "render_type": "minecraft:translucent" }
+```
+
+- Le **simulateur** hérite du `jukebox`. Ce n'est pas qu'un pis-aller : on clique dessus
+  avec un disque en main pour entrer dans l'arène, exactement le geste du juke-box.
+- Chaque **disque d'entraînement** hérite d'un disque de musique différent, choisi pour
+  que la couleur de la pochette évoque le type — Feu sur `chirp` (rouge orangé), Eau sur
+  `creator_music_box` (bleu), Ténèbres sur `11` (noir rayé). Vanilla en compte dix-neuf,
+  il en fallait dix-huit.
+
+**Zéro fichier de texture ajouté**, donc rien à maintenir : 21 modèles JSON de deux
+lignes. Si Norevex fournit un jour de vraies textures, il suffit de remplacer les
+parents. Les 21 modèles sont produits par [`tools/gen_modeles.py`](tools/gen_modeles.py) — la table type ↔ disque y est en clair.
+
+## État
+
+Le portage **tourne en jeu**. Reste à éprouver dans la durée : le cycle de vie des
+instances sur un serveur fréquenté, et la tenue des combats RCTAPI quand plusieurs
+arènes sont ouvertes en même temps.
+
+Un piège rencontré au premier lancement, qui vaut d'être noté : la contrainte
+`"rctapi": ">=0.15.2"` refusait le seul jar existant, `0.15.2-beta`. En semver une
+pré-version se classe **avant** la version — il faut écrire `>=0.15.2-beta`. Cobblemon
+et CobbleBadges n'étaient pas concernés : leur suffixe commence par `+`, ce sont des
+métadonnées de build, ignorées à la comparaison.
