@@ -63,6 +63,7 @@ public class CobbleBashClient implements ClientModInitializer {
 
       // `RegisterMenuScreensEvent` cote NeoForge.
       MenuScreens.register(CobbleBash.CHAMPION_BEACON_MENU, ChampionBeaconScreen::new);
+      MenuScreens.register(CobbleBash.GYM_LEVEL_MENU, com.nore.cobblebash.gymlevel.GymLevelScreen::new);
 
       registerRibbonRenderers();
 

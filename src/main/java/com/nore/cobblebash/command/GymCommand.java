@@ -205,7 +205,8 @@ public class GymCommand {
          clearActiveGym(player, true, true);
          boolean flag = playergymprogress.hasCompleted(gymType);
          GameType gametype = player.gameMode.getGameModeForPlayer();
-         int[] aint = GymLevelSystem.getTrainerLevels(playergymprogress.getCompletedGymCount());
+         int[] aint = com.nore.cobblebash.gym.GymLevelOverride.trainerLevels(
+            player.getUUID(), playergymprogress.getCompletedGymCount());
          GymReturnData.ReturnLocation gymreturndata$returnlocation = GymReturnData.ReturnLocation.from(
             (ServerLevel)player.level(), player.getX(), player.getY(), player.getZ(), player.getYRot(), player.getXRot()
          );

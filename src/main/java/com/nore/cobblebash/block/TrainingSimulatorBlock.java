@@ -138,11 +138,11 @@ public class TrainingSimulatorBlock extends Block {
             return ItemInteractionResult.SUCCESS;
          }
 
-         if (player instanceof ServerPlayer serverplayer1 && GymCommand.enterGym(serverplayer1, trainingdiskitem.getGymType().getId())) {
-            if (!serverplayer1.getAbilities().instabuild) {
-               stack.shrink(1);
-            }
-
+         // Au lieu d'entrer tout de suite, on demande le niveau. Le disque
+         // n'est consomme qu'a la confirmation, dans GymLevelMenu.
+         if (player instanceof ServerPlayer serverplayer1) {
+            String gymId = trainingdiskitem.getGymType().getId();
+            serverplayer1.openMenu(new com.nore.cobblebash.gymlevel.GymLevelProvider(gymId));
             return ItemInteractionResult.SUCCESS;
          } else {
             return ItemInteractionResult.FAIL;

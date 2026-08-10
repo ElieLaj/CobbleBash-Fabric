@@ -98,6 +98,7 @@ public class CobbleBash implements ModInitializer {
    public static BlockEntityType<ChampionBeaconBlockEntity> CHAMPION_BEACON_BLOCK_ENTITY;
    public static BlockEntityType<EliteFourChampionBeamBlockEntity> ELITE_FOUR_CHAMPION_BEAM_BLOCK_ENTITY;
    public static MenuType<ChampionBeaconMenu> CHAMPION_BEACON_MENU;
+   public static net.minecraft.world.inventory.MenuType<com.nore.cobblebash.gymlevel.GymLevelMenu> GYM_LEVEL_MENU;
    public static ChampionRibbonItem CHAMPION_RIBBON;
    public static TrainerRibbonItem TRAINER_RIBBON;
    public static EliteFourTrainingDiskItem ELITE_FOUR_TRAINING_DISK;
@@ -194,6 +195,14 @@ public class CobbleBash implements ModInitializer {
       CHAMPION_BEACON_MENU = Registry.register(
          BuiltInRegistries.MENU, id("champion_beacon"),
          new MenuType<>(ChampionBeaconMenu::new, FeatureFlags.DEFAULT_FLAGS));
+
+      // Le type d'arene doit atteindre le client pour l'affichage : c'est ce
+      // que permet le type de menu etendu de Fabric.
+      GYM_LEVEL_MENU = Registry.register(
+         BuiltInRegistries.MENU, id("gym_level"),
+         new net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType<>(
+            com.nore.cobblebash.gymlevel.GymLevelMenu::new,
+            com.nore.cobblebash.gymlevel.GymLevelMenu.DATA_CODEC));
    }
 
    private static void registerEntities() {
