@@ -39,6 +39,7 @@ import java.util.UUID;
 import java.util.Map.Entry;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
+import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -92,7 +93,94 @@ public class GymCommand {
 
       literalargumentbuilder1.then(literalargumentbuilder5);
       literalargumentbuilder1.then(Commands.literal("advance").executes(context -> advanceGym((CommandSourceStack)context.getSource())));
-      dispatcher.register((LiteralArgumentBuilder)literalargumentbuilder.then(literalargumentbuilder1));
+
+      // Accorde les dix-huit badges de type. Le palier de base de chaque badge
+      // s'obtient en possedant l'avancement correspondant : on coche donc les
+      // avancements, et CobbleBadges suit au tick suivant, par le meme chemin
+      // qu'une arene reellement terminee.
+      literalargumentbuilder1.then(
+         Commands.literal("badges")
+            .executes(context -> grantTypeBadges(context.getSource(), List.of(context.getSource().getPlayerOrException())))
+            .then(Commands.argument("cibles", EntityArgument.players())
+               .executes(context -> grantTypeBadges(context.getSource(), EntityArgument.getPlayers(context, "cibles"))))
+      );
+
+      com.mojang.brigadier.tree.LiteralCommandNode<CommandSourceStack> racine =
+         dispatcher.register((LiteralArgumentBuilder)literalargumentbuilder.then(literalargumentbuilder1));
+
+      // `/gym ...` existait avant la 0.1.3, qui a tout deplace sous
+      // `/cobblebash`. Une redirection rend l'ancienne forme sans dupliquer
+      // l'arbre : les deux pointent sur le meme noeud.
+      dispatcher.register(
+         Commands.literal("gym")
+            .requires(source -> source.hasPermission(2))
+            .redirect(racine.getChild("gym"))
+      );
+   }
+
+   /**
+    * Accorde les dix-huit badges de type, sans toucher au Conseil 4.
+    *
+    * <p>La boucle ne connait que {@link GymType} : tout autre badge est hors
+    * d'atteinte par construction, y compris ceux qui viendraient plus tard.
+    */
+   private static int grantTypeBadges(CommandSourceStack source, java.util.Collection<ServerPlayer> targets) {
+      net.minecraft.server.ServerAdvancementManager manager = source.getServer().getAdvancements();
+      int total = 0;
+
+      for (ServerPlayer player : targets) {
+         int granted = 0;
+         int alreadyOwned = 0;
+
+         awardEveryCriterion(player, manager.get(ResourceLocation.fromNamespaceAndPath("cobblebash", "gym/root")));
+
+         for (GymType type : GymType.values()) {
+            ResourceLocation id = ResourceLocation.fromNamespaceAndPath("cobblebash", "gym/complete_gym/" + type.getId());
+            net.minecraft.advancements.AdvancementHolder holder = manager.get(id);
+
+            if (holder == null) {
+               source.sendFailure(Component.literal("Advancement missing: " + id));
+               continue;
+            }
+
+            if (player.getAdvancements().getOrStartProgress(holder).isDone()) {
+               alreadyOwned++;
+               continue;
+            }
+
+            awardEveryCriterion(player, holder);
+            granted++;
+         }
+
+         CobbleBashStats.syncGymsCompleted(player);
+         total += granted;
+
+         String name = player.getGameProfile().getName();
+         int g = granted;
+         int o = alreadyOwned;
+         source.sendSuccess(
+            () -> Component.literal(name + ": granted " + g + " type badge(s), " + o + " already owned. Elite Four untouched."),
+            true
+         );
+      }
+
+      return total;
+   }
+
+   /** Coche tous les criteres restants : c'est ce qui valide l'avancement. */
+   private static void awardEveryCriterion(ServerPlayer player, net.minecraft.advancements.AdvancementHolder holder) {
+      if (holder == null) {
+         return;
+      }
+
+      net.minecraft.server.PlayerAdvancements advancements = player.getAdvancements();
+      // Copie d'abord : `award` modifie la progression qu'on est en train de lire.
+      List<String> remaining = new ArrayList<>();
+      advancements.getOrStartProgress(holder).getRemainingCriteria().forEach(remaining::add);
+
+      for (String criterion : remaining) {
+         advancements.award(holder, criterion);
+      }
    }
 
    private static int enterGym(CommandSourceStack source, String gymType) {
