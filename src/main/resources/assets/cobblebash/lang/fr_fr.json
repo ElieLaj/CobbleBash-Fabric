@@ -29,7 +29,6 @@
   "item.cobblebash.gym_loot_bag.level": "Arène de niveau %s",
   "item.cobblebash.gym_loot_bag.level_type": "Arène %2$s, niveau %1$s",
   "item.cobblebash.gym_loot_bag.opened": "Sac de Butin d'Arène : %sx %s",
-  "item.cobblebash.gym_loot_bag.tier": "Palier de récompense %s / 6",
   "gui.cobblebash.gym_level.cancel": "Annuler",
   "gui.cobblebash.gym_level.slider": "Niveau du champion : %s",
   "gui.cobblebash.gym_level.start": "Entrer",

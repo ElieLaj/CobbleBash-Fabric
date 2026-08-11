@@ -131,8 +131,8 @@ public class GymLootBagItem extends Item {
             level, Component.translatable("cobblebash.gym." + type)).withStyle(ChatFormatting.AQUA));
       }
 
-      tooltip.add(Component.translatable("item.cobblebash.gym_loot_bag.tier", tierOf(level)).withStyle(ChatFormatting.DARK_GRAY));
-
+      // Le palier n'est pas affiche : c'est un detail de reglage des tables,
+      // pas une information de jeu. Le niveau, lui, dit deja tout au joueur.
       if (!type.isEmpty() && level >= EGG_LEVEL) {
          tooltip.add(Component.translatable("item.cobblebash.gym_loot_bag.egg").withStyle(ChatFormatting.GREEN));
       }
