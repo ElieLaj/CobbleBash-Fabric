@@ -874,10 +874,31 @@ public class GymCommand {
 
    private static void handleEliteFourTrainerVictory(ServerPlayer player, String gymType, int slotId, GymTrainerUnit unit, GymInstance instance) {
       if ("elite4_champion".equals(gymType) && unit == GymTrainerUnit.BOSS && instance.getSlotId() == slotId && instance.isEliteFourChampionUnlocked()) {
+         // L'avancement fait office de memoire du premier sacre : il est pose
+         // juste apres, donc le lire maintenant dit si c'est bien la premiere
+         // fois. Pas besoin d'un drapeau de plus dans les donnees sauvegardees.
+         boolean premierSacre = !hasEliteFourAdvancement(player);
+
          giveOrDrop(player, new ItemStack((ItemLike)CobbleBash.CHAMPION_UPGRADE_SMITHING_TEMPLATE));
          player.sendSystemMessage(Component.literal("Received a Champion Upgrade Smithing Template."));
+
+         if (premierSacre) {
+            giveOrDrop(player, new ItemStack((ItemLike)CobbleBash.CHAMPION_RIBBON));
+            player.sendSystemMessage(Component.literal("Received the Champion Ribbon."));
+         }
+
+         // Le Conseil 4 se joue au sommet de l'echelle : son sac est celui du
+         // dernier palier. Sans type : il n'y a pas d'arene elementaire ici.
+         giveOrDrop(player, com.nore.cobblebash.item.GymLootBagItem.forLevel(GymLevelOverride.MAX));
+
          // Seul endroit ou le Conseil 4 est reellement termine.
          CobbleBashCriteriaTriggers.triggerEliteFourCompleted(player);
+
+         // Le mod laissait le joueur sur place, sans liberer son instance :
+         // toute arene terminee raccompagne dehors, la Ligue ne faisait pas
+         // exception par choix mais par oubli. On attend la fin du faisceau
+         // du champion (200 ticks) pour ne pas couper la mise en scene.
+         DelayedTaskScheduler.schedule(200, () -> clearActiveGym(player, true));
       } else {
          EliteFourMember elitefourmember = EliteFourMember.fromTrainerGymType(gymType);
          if (elitefourmember != null
@@ -887,6 +908,13 @@ public class GymCommand {
             playEliteFourVictoryAdvance(player);
          }
       }
+   }
+
+   /** Le joueur a-t-il deja ete sacre ? */
+   private static boolean hasEliteFourAdvancement(ServerPlayer player) {
+      net.minecraft.advancements.AdvancementHolder holder = player.server.getAdvancements()
+         .get(ResourceLocation.fromNamespaceAndPath("cobblebash", "gym/complete_elite_four"));
+      return holder != null && player.getAdvancements().getOrStartProgress(holder).isDone();
    }
 
    private static void playEliteFourVictoryAdvance(ServerPlayer player) {
