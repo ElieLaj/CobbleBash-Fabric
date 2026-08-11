@@ -182,6 +182,30 @@ public class GymCommand {
       return total;
    }
 
+   /** Ecart tolere entre le Pokemon le plus haut de l'equipe et l'arene. */
+   private static final int MAX_LEVEL_GAP = 10;
+
+   /**
+    * Niveau du plus haut Pokemon de l'equipe, ou 0 si on ne peut pas le lire.
+    *
+    * <p>Zero laisse passer : mieux vaut une arene trop facile qu'un joueur
+    * enferme dehors parce que Cobblemon a change d'API.
+    */
+   private static int highestPartyLevel(ServerPlayer player) {
+      try {
+         int plusHaut = 0;
+         for (com.cobblemon.mod.common.pokemon.Pokemon pokemon
+              : com.cobblemon.mod.common.Cobblemon.INSTANCE.getStorage().getParty(player)) {
+            plusHaut = Math.max(plusHaut, pokemon.getLevel());
+         }
+
+         return plusHaut;
+      } catch (RuntimeException exception) {
+         CobbleBash.LOGGER.warn("Impossible de lire l'equipe Cobblemon : verrou de niveau ignore.", exception);
+         return 0;
+      }
+   }
+
    /** Un niveau par palier du sac de butin : de quoi tous les voir d'un coup. */
    private static final int[] PALIERS_TEMOINS = {10, 25, 45, 65, 85, 100};
 
@@ -339,6 +363,17 @@ public class GymCommand {
          GameType gametype = player.gameMode.getGameModeForPlayer();
          int[] aint = com.nore.cobblebash.gym.GymLevelOverride.trainerLevels(
             player.getUUID(), playergymprogress.getCompletedGymCount());
+
+         // Une equipe trop forte pour l'arene choisie : refuse. Sans cela un
+         // joueur de fin de partie pouvait moissonner les paliers bas, qui
+         // restent genereux parce qu'ils s'adressent a des debutants.
+         int plusHaut = highestPartyLevel(player);
+         if (plusHaut - aint[0] > MAX_LEVEL_GAP) {
+            sendFailure(player, source, Component.translatable(
+               "message.cobblebash.party_too_strong", aint[0], plusHaut, MAX_LEVEL_GAP)
+               .withStyle(net.minecraft.ChatFormatting.RED));
+            return 0;
+         }
          GymReturnData.ReturnLocation gymreturndata$returnlocation = GymReturnData.ReturnLocation.from(
             (ServerLevel)player.level(), player.getX(), player.getY(), player.getZ(), player.getYRot(), player.getXRot()
          );
@@ -1213,10 +1248,14 @@ public class GymCommand {
    }
 
    private static void sendFailure(ServerPlayer player, CommandSourceStack source, String message) {
+      sendFailure(player, source, Component.literal(message));
+   }
+
+   private static void sendFailure(ServerPlayer player, CommandSourceStack source, Component message) {
       if (source != null) {
-         source.sendFailure(Component.literal(message));
+         source.sendFailure(message);
       } else {
-         player.sendSystemMessage(Component.literal(message));
+         player.sendSystemMessage(message);
       }
    }
 
