@@ -45,9 +45,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -55,14 +53,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.storage.loot.LootParams;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.LootParams.Builder;
-import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 
 public class GymCommand {
-   private static final ResourceKey<LootTable> GYM_CLEAR_REWARD_TABLE = ResourceKey.create(
-      Registries.LOOT_TABLE, ResourceLocation.fromNamespaceAndPath("cobblebash", "rewards/gym_clear")
-   );
    private static final Map<String, UUID> DEBUG_SLOT_RESERVATIONS = new HashMap<>();
 
    public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
@@ -404,7 +396,6 @@ public class GymCommand {
          CobbleBashStats.syncGymsCompleted(player);
          awardTrainerRibbonIfEligible(player, gymType);
          awardEliteFourDiskIfEligible(player, playergymprogress);
-         awardGymClearLoot(player);
          awardGymLootBag(player);
          GymInstance gyminstance = GymInstanceManager.clear(player.getUUID());
          clearInstancePlatform(player, gyminstance);
@@ -434,12 +425,6 @@ public class GymCommand {
             player.sendSystemMessage(Component.literal("Received an Elite Four Training Disk for conquering all 18 gyms."));
          }
       }
-   }
-
-   private static void awardGymClearLoot(ServerPlayer player) {
-      LootTable loottable = player.server.reloadableRegistries().getLootTable(GYM_CLEAR_REWARD_TABLE);
-      LootParams lootparams = new Builder(player.serverLevel()).withLuck(player.getLuck()).create(LootContextParamSets.EMPTY);
-      loottable.getRandomItems(lootparams, player.getRandom()).forEach(stack -> giveOrDrop(player, stack));
    }
 
    /**
