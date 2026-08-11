@@ -182,7 +182,12 @@ public class GymLootBagItem extends Item {
          // au fur et a mesure, et le nom d'une pile a zero est "Air".
          Component name = reward.getHoverName().copy();
          int count = reward.getCount();
-         if (!player.getInventory().add(reward) && !reward.isEmpty()) {
+
+         // On ne se fie pas au booleen : `add` renvoie vrai des qu'il a case
+         // ne serait-ce qu'un exemplaire, et le reste se perdait. Seul l'etat
+         // de la pile apres coup dit ce qui n'est pas rentre.
+         player.getInventory().add(reward);
+         if (!reward.isEmpty()) {
             player.drop(reward, false);
          }
 

@@ -421,12 +421,7 @@ public class GymCommand {
       GymRewardData gymrewarddata = GymRewardData.get(player.server);
       String s = gymrewarddata.getOrSetTrainerRibbonGym(player.getUUID(), completedGymType);
       if (s.equals(completedGymType)) {
-         ItemStack itemstack = new ItemStack((ItemLike)CobbleBash.TRAINER_RIBBON);
-         boolean flag = player.getInventory().add(itemstack);
-         if (!flag && !itemstack.isEmpty()) {
-            player.drop(itemstack, false);
-         }
-
+         giveOrDrop(player, new ItemStack((ItemLike)CobbleBash.TRAINER_RIBBON));
          player.sendSystemMessage(Component.literal("Received a Trainer Ribbon from the " + completedGymType + " Gym Leader."));
       }
    }
@@ -472,8 +467,11 @@ public class GymCommand {
 
    private static void giveOrDrop(ServerPlayer player, ItemStack stack) {
       if (!stack.isEmpty()) {
-         boolean flag = player.getInventory().add(stack);
-         if (!flag && !stack.isEmpty()) {
+         // Le booleen de `add` vaut vrai des qu'un seul exemplaire est case :
+         // s'y fier faisait disparaitre le reste sur un inventaire presque
+         // plein. Seul l'etat de la pile apres coup fait foi.
+         player.getInventory().add(stack);
+         if (!stack.isEmpty()) {
             player.drop(stack, false);
          }
       }
