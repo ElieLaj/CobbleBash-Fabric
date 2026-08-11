@@ -257,36 +257,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cobblemon:health_feather",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "name": "cobblemon:muscle_feather",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "name": "cobblemon:resist_feather",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "name": "cobblemon:genius_feather",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "name": "cobblemon:clever_feather",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "name": "cobblemon:swift_feather",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
           "name": "cobblemon:health_mochi",
           "weight": 4
         },
