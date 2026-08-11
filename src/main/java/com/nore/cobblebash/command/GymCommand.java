@@ -99,6 +99,14 @@ public class GymCommand {
                .executes(context -> winLeague(context.getSource(), EntityArgument.getPlayers(context, "cibles"))))
       );
 
+      // Victoire sur le Maitre depuis l'interieur : passe par le vrai chemin,
+      // donc ruban, sac, avancement et sortie, contrairement a `league` qui ne
+      // fait que poser l'avancement de l'exterieur.
+      literalargumentbuilder1.then(
+         Commands.literal("elite4").then(
+            Commands.literal("win").executes(context -> winEliteFourHere(context.getSource())))
+      );
+
       literalargumentbuilder1.then(lootBagNode());
 
       // Accorde les dix-huit badges de type. Le palier de base de chaque badge
@@ -219,6 +227,39 @@ public class GymCommand {
          + (type.isEmpty() ? " (picked at random)" : "");
       source.sendSuccess(() -> Component.literal("Gave " + resume + "."), false);
       return niveaux.length;
+   }
+
+   /**
+    * `/cobblebash gym elite4 win` : gagner la Ligue depuis l'interieur.
+    *
+    * <p>Emprunte le meme chemin que la vraie victoire sur le Maitre — d'ou le
+    * ruban, le sac, l'avancement et la sortie. Le champion est debloque au
+    * besoin : la commande sert justement a ne pas avoir a battre les quatre
+    * membres d'abord.
+    */
+   private static int winEliteFourHere(CommandSourceStack source) throws CommandSyntaxException {
+      ServerPlayer player = source.getPlayerOrException();
+      GymInstance instance = GymInstanceManager.getActive(player.getUUID());
+
+      if (instance == null) {
+         source.sendFailure(Component.literal("You do not have an active gym instance."));
+         return 0;
+      }
+
+      if (!"elite4".equals(instance.getGymType())) {
+         source.sendFailure(Component.literal(
+            "Your active gym is " + instance.getGymType() + ", not the Elite Four."));
+         return 0;
+      }
+
+      if (!instance.isEliteFourChampionUnlocked()) {
+         instance.unlockEliteFourChampion();
+      }
+
+      handleEliteFourTrainerVictory(player, "elite4_champion", instance.getSlotId(),
+         GymTrainerUnit.BOSS, instance);
+      source.sendSuccess(() -> Component.literal("Elite Four cleared. Leaving shortly."), true);
+      return 1;
    }
 
    /**
