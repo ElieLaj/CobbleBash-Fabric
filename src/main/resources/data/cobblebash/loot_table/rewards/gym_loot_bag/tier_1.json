@@ -274,6 +274,41 @@
       ]
     },
     {
+      "name": "cuskins_normal",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cuskins:case",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.6
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "cu_case_type": "normal"
+                },
+                "minecraft:custom_model_data": 1
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "🎁 Caisse CU",
+                "color": "gold",
+                "bold": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "extras",
       "rolls": 1,
       "entries": [
